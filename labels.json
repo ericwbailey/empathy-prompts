@@ -1,0 +1,58 @@
+[
+  {
+    "name": "[Status] Rejected",
+    "color": "#ececec"
+  },
+  {
+    "name": "[Status] Submitted",
+    "color": "#fef2c0"
+  },
+  {
+    "name": "[Status] In Progress",
+    "color": "#bfe5bf"
+  },
+  {
+    "name": "[Status] Blocked",
+    "color": "#e11d21"
+  },
+  {
+    "name": "[Status] Abandoned",
+    "color": "#ececec"
+  },
+  {
+    "name": "[Status] Accepted",
+    "color": "#009800"
+  },
+  {
+    "name": "[Priority] Critical",
+    "color": "#e11d21"
+  },
+  {
+    "name": "[Priority] High",
+    "color": "#fad8c7"
+  },
+  {
+    "name": "[Priority] Low",
+    "color": "#bfe5bf"
+  },
+  {
+    "name": "[Priority] Medium",
+    "color": "#fef2c0"
+  },
+  {
+    "name": "[Type] Bug",
+    "color": "#e11d21"
+  },
+  {
+    "name": "[Type] Enhancement",
+    "color": "#c7def8"
+  },
+  {
+    "name": "[Type] Maintenance",
+    "color": "#fef2c0"
+  },
+  {
+    "name": "[Type] Question",
+    "color": "#d4c5f9"
+  }
+]

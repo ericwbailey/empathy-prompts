@@ -1,0 +1,488 @@
+// ============================================================================
+// Forms
+// ============================================================================
+
+
+// Form Toggles ---------------------------------------------------------------
+// Toggles
+// Gives labels the same hover/active/focus states as their child inputs
+$toggle-forms-label-states: true;
+
+// Apply the `data-custom-select` attribute to a `<select>`'s label to remove
+// browser-generated select styling and replace it with your own styling
+// instructions
+$toggle-forms-custom-select: true;
+
+
+// Form Logic -----------------------------------------------------------------
+// Variables
+$forms-custom-select-dropdown-icon: $symbol-arrow-point-down;
+$forms-custom-select-dropdown-distance: ms(-1.2, em);
+$forms-custom-select-dropdown-inset: ms(0.5, em);
+$form-input-padding: ms(0.5, em);
+$form-label-distance: em(6);
+$form-single-line-input-height: ms(2, em);
+
+
+// Mixins
+@mixin form-border() {
+    border: border(thinnest) solid c(form, base);
+}
+
+
+@mixin form-multi-line-input {
+    min-height: ms(7, em);
+}
+
+
+@mixin form-placeholder() {
+    color: transparentize(c(base, type), 0.3);
+}
+
+
+@mixin form-states($input-or-label) {
+    @if ($input-or-label == "input") {
+        &:hover {
+            border-color: c(form, hover);
+        }
+
+        &:active {
+            border-color: c(form, active);
+        }
+
+        &:focus {
+            border-color: c(form, focus);
+        }
+    }
+
+    @else if ($input-or-label == "label") {
+        color: c(form, base);
+
+        &:hover {
+            color: c(form, hover);
+        }
+
+        &:active {
+            color: c(form, active);
+        }
+
+        &:focus {
+            color: c(form, focus);
+        }
+    }
+
+    @else {
+        @error "`#{$input-or-label}`"
+        + $meta-invalid-argument
+        + $meta-invalid-argument-select-either
+        + "`input` or `label`";
+    }
+}
+
+
+@mixin form-width() {
+    display: block;
+    width: 100%;
+}
+
+
+// Form Containers ------------------------------------------------------------
+form {
+
+}
+
+
+fieldset {
+
+}
+
+
+legend {
+
+}
+
+
+// Form Labels ----------------------------------------------------------------
+label {
+    @include content-show-interaction(input);
+    @include form-width();
+
+    @if $toggle-forms-label-states == true {
+        @include form-states(label);
+    }
+
+    @if $toggle-forms-custom-select == true {
+        // `<select>` does not support CSS generated content
+        &[data-custom-select] {
+            &::after {
+                @include component-align(float, end);
+                @include content-remove-interaction();
+                @include generate-unicode-symbol($forms-custom-select-dropdown-icon);
+
+                margin-top: $forms-custom-select-dropdown-distance;
+                margin-right: $forms-custom-select-dropdown-inset;
+
+                font-size: ms(1, em);
+            }
+        }
+    }
+}
+
+// Inputs ---------------------------------------------------------------------
+input:not([type="button"]):not([type="checkbox"]):not([type="radio"]):not([type="range"]) {
+    @include form-border();
+    @include form-states(input);
+}
+
+
+input:not([type="button"]):not([type="checkbox"]):not([type="radio"]) {
+    @include form-width();
+}
+
+
+// Separation between labe and input
+input:not([type="button"]):not([type="range"]) {
+    margin-top: $form-label-distance;
+    padding: $form-input-padding;
+}
+
+
+input {
+    line-height: 1;
+
+    // Placeholder text
+    &::-webkit-input-placeholder {
+        @include form-placeholder();
+    }
+
+    &::-moz-placeholder {
+        @include form-placeholder();
+    }
+
+    // Input types
+    &[type="color"] {
+        height: $form-single-line-input-height;
+
+        background-color: c(base, background);
+
+        // REVIEW: Double-check these values if adjusting input heights
+        &::-webkit-color-swatch-wrapper {
+            @include component-remove-margin-padding();
+
+            height: em(25);
+            position: relative;
+              top: em(-3);
+
+            border: 0;
+
+            background-color: c(base, background);
+        }
+    }
+
+    &[type="date"] {
+
+    }
+
+    &[type="email"] {
+
+    }
+
+    &[list] {
+
+    }
+
+    &[type="month"] {
+
+    }
+
+    &[type="number"] {
+
+    }
+
+    &[type="password"] {
+        @include typography-tracking(loose);
+    }
+
+    &[type="range"] {
+        margin-top: ms(0.75, em); // REVIEW: Set to three quarters of `$form-label-distance`
+        margin-bottom: ms(0.5, em); // Gives range input a little breathing room
+    }
+
+    &[type="search"] {
+
+    }
+
+    &[type="tel"] {
+
+    }
+
+    &[type="text"] {
+
+    }
+
+    &[type="time"] {
+
+    }
+
+    &[type="url"] {
+
+    }
+
+    &[type="week"] {
+
+    }
+}
+
+textarea {
+    @include form-border();
+    @include form-multi-line-input;
+    @include form-states(input);
+    @include form-width();
+
+    margin-top: $form-label-distance;
+    overflow: auto;
+    padding: $form-input-padding;
+
+    resize: vertical;
+}
+
+
+// Prevent zooming on mobile viewports when tapped ----------------------------
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+input[type="tel"],
+input[type="number"],
+input[type="search"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input datalist,
+select,
+textarea {
+    font-size: 1rem;
+}
+
+
+// Text-based Inputs ----------------------------------------------------------
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+input[type="tel"],
+input[type="number"],
+input[type="search"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input datalist,
+select,
+textarea {
+
+}
+
+
+// Non-text-based Inputs ------------------------------------------------------
+input[type="color"],
+input[type="file"],
+input[type="range"] {
+
+}
+
+
+input[type="color"] {
+
+}
+
+
+// http://tympanus.net/codrops/2015/09/15/styling-customizing-file-inputs-smart-way/
+input[type="file"] {
+    background-color: c(base, background);
+}
+
+
+input[type="range"] {
+
+}
+
+
+// Select Inputs --------------------------------------------------------------
+select {
+    @include form-border();
+    @include form-states(input);
+    @include form-width();
+
+    height: $form-single-line-input-height;
+    margin-top: $form-label-distance;
+    padding: $form-input-padding;
+
+    background-color: c(base, background);
+
+    &[multiple] {
+        @include form-multi-line-input;
+
+        padding: 0; // Undoes `$form-input-padding` so <option>s extend full-width
+
+        option {
+            padding: ms(0.4, em); // Highlights entire <option> row when selected
+        }
+    }
+
+    @if $toggle-forms-custom-select == true {
+        border-radius: 0;
+
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+}
+
+
+select optgroup {
+    margin-top: 0;  // Undoes lobotomoized owl selector
+
+    font-weight: $font-weight-bold; // Creates distinction between optgroup and option
+}
+
+
+select option {
+    margin-top: 0; // Undoes lobotomoized owl selector
+
+    font-weight: $font-weight-normal; // Creates distinction between optgroup and option
+}
+
+
+// Checkboxes and Radios ------------------------------------------------------
+input {
+
+    &[type="checkbox"],
+    &[type="radio"] {
+        margin-right: ms(0.3, em);
+
+        line-height: 1;
+    }
+}
+
+input[type="checkbox"] {
+
+}
+
+input[type="radio"] {
+
+}
+
+
+// Output ---------------------------------------------------------------------
+// http://thenewcode.com/875/Using-the-HTML5-meter-Element
+// https://css-tricks.com/html5-meter-element/
+progress,
+meter {
+    @include form-width();
+
+    background: c(form, busy);
+
+    // Bar
+    &::-webkit-progress-value { background: c(form, active); }
+    &::-webkit-meter-optimum-value { background: c(form, active); }
+    &::-webkit-meter-suboptimum-value { background: c(form, active); }
+    &::-webkit-meter-even-less-good-value { background: c(form, active); }
+
+    &::-moz-meter-bar { background: c(form, active); }
+    &::-moz-meter-optimum { background: c(form, active); }
+    &::-moz-meter-sub-optimum { background: c(form, active); }
+    &::-moz-meter-sub-sub-optimum { background: c(form, active); }
+
+    // Background
+    &::-webkit-progress-bar,
+    &::-webkit-meter-bar {
+        background: c(form, busy);
+    }
+}
+
+// Overrides Firefox's progress bar styling
+*::-moz-progress-bar { background: c(form, active); }
+*::-moz-meter-optimum::-moz-meter-bar { background: c(form, active); }
+*::-moz-meter-sub-optimum::-moz-meter-bar { background: c(form, active); }
+*::-moz-meter-sub-sub-optimum::-moz-meter-bar { background: c(form, active); }
+
+
+progress {
+
+}
+
+
+meter {
+
+}
+
+
+output {
+    @include typography-tracking(slight);
+
+    margin-left: em(2);
+    margin-right: em(2);
+    padding-left: em(4);
+    padding-right: em(4);
+
+    font-family: $font-family-code;
+    line-height: $global-type-line-height;
+}
+
+
+// Validation -----------------------------------------------------------------
+input[aria-invalid="false"] {
+
+}
+
+
+input[aria-invalid="true"] {
+
+}
+
+
+input[autosave] {
+
+}
+
+
+// Disabled input should be immutable. `!important` overrides the `input:not()`
+// selector above
+input[disabled] {
+    border-color: transparentize(c(form, base), 0.5) !important;
+
+    background-color: transparentize(c(base, background), 0.5) !important;
+
+    color: transparentize(c(base, type), 0.5) !important;
+
+    &:hover,
+    &:active,
+    &focus {
+        border-color: transparentize(c(form, base), 0.5) !important;
+
+        background-color: transparentize(c(base, background), 0.5) !important;
+
+        color: transparentize(c(base, type), 0.5) !important;
+    }
+}
+
+
+input[minlength] {
+
+}
+
+
+input[maxlength] {
+
+}
+
+
+input[readonly] {
+
+}
+
+
+input[required] {
+
+}

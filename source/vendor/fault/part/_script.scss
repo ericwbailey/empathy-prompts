@@ -1,0 +1,7 @@
+@mixin script() {
+    display: none;
+}
+
+%script {
+    @extend %hidden; //display: none;
+}

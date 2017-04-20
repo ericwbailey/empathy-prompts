@@ -1,0 +1,33 @@
+// ============================================================================
+// Typography
+// Proportional Numbers
+// ============================================================================
+
+
+/// Good for when placed in long form, serifed text.
+///
+/// @group Typography
+///
+/// @example scss
+///  @include typography-numbers-proportional();
+///
+/// @see {mixin} typography-numbers-proportional-lining
+
+
+@mixin typography-numbers-proportional() {
+    font-variant-numeric: proportional-nums;
+
+    @supports not (font-variant-numeric: proportional-nums) {
+        -webkit-font-feature-settings: "pnum", "tnum" 0, "pnum";
+        font-feature-settings: "pnum", "tnum" 0, "pnum";
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-numbers-proportional == true {
+    .typography-numbers-proportional {
+        @include typography-numbers-proportional();
+    }
+}

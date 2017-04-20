@@ -1,0 +1,37 @@
+// ============================================================================
+// Typography
+// Alternate Historical
+// ============================================================================
+
+
+/// Text that references past methods of presentation.
+///
+/// @group Typography
+///
+/// @example scss
+///  @include typography-alternates-historical();
+///
+/// @see {mixin} typography-alternates-contextual
+/// @see {mixin} typography-alternates-titling
+///
+/// @link http://utility-opentype.kennethormandy.com/#hist Utility OpenType: Historical alternates
+
+
+@mixin typography-alternates-historical() {
+    -ms-font-feature-settings: "hist";
+    font-variant-alternates: historical-forms;
+
+    @supports not (font-variant-alternates: historical-forms) {
+        -webkit-font-feature-settings: "hist";
+        font-feature-settings: "hist";
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-alternates-historical == true {
+    .typography-alternates-historical {
+        @include typography-alternates-historical();
+    }
+}

@@ -1,0 +1,7 @@
+@mixin article() {
+  display:block;
+}
+
+%article {
+    @extend %display-block;
+}

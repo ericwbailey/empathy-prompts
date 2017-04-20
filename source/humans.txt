@@ -1,0 +1,31 @@
+The Humans Responsible & Colophon
+humanstxt.org
+
+
+$$projectFullTitle
+$$projectURL
+
+
+## Team
+- Name
+	- Title
+	- Location
+	- Email
+	- Twitter
+
+
+## Thanks
+- Name
+	- URL or contact info
+
+
+## Site
+- Standards
+	- HTML5
+	- CSS3
+	- etc.
+- Components
+	- jQuery
+	- etc.
+- Software
+	- Software used for the development

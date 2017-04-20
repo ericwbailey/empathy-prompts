@@ -1,0 +1,13 @@
+@mixin legend {
+    display: block;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+}
+
+%legend {
+    @extend %display-block; //display: block;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+}

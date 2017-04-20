@@ -1,0 +1,7 @@
+@mixin title() {
+  display:none;
+}
+
+%title {
+    @extend %hidden; //display: none;
+}

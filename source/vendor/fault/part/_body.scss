@@ -1,0 +1,15 @@
+@mixin body() {
+  display:block;
+  margin: 8px;
+  &:focus {
+      outline: none;
+  }
+}
+
+%body {
+    @extend %display-block;
+    margin: 8px;
+    &:focus {
+        outline: none;
+    }
+}

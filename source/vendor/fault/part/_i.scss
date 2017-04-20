@@ -1,0 +1,8 @@
+@mixin i() {
+    font-style: italic;
+}
+
+
+%i {
+    @extend %italic; //font-style: italic;
+}

@@ -1,0 +1,88 @@
+// ============================================================================
+// Colors
+// ============================================================================
+
+
+/// Basic, component, and subcomponent color names.
+///
+/// @group general
+///
+/// @property {Color} key - Aliases for specific colors
+
+
+
+$colors: (
+
+    // Basics -----------------------------------------------------------------
+    // http://clrs.cc/
+    aqua:    #7fdbff,
+    black:   #111111,
+    blue:    #0074d9,
+    fuchsia: #f012be,
+    gray:    #aaaaaa,
+    green:   #2ecc40,
+    lime:    #01ff70,
+    maroon:  #85144b,
+    navy:    #001f3f,
+    olive:   #3d9970,
+    orange:  #ff851b,
+    purple:  #b10dc9,
+    red:     #ff4136,
+    silver:  #dddddd,
+    teal:    #39cccc,
+    yellow:  #ffdc00,
+
+
+    // Base -------------------------------------------------------------------
+    base: (
+        type:       #111111,
+        background: #ffffff
+    ),
+
+
+    // Links -------------------------------------------------------------------
+    link: (
+        base:    #0074d9,
+        hover:   #7fdbff,
+        focus:   #ff851b,
+        active:  #ff4136,
+        visited: #ae00ff,
+        busy:    #dddddd
+    ),
+
+
+    // Headings ---------------------------------------------------------------
+    heading: (
+        base: #111111,
+        odd:  #9b9b9b,
+        even: #4a4a4a
+    ),
+
+
+    // Buttons ----------------------------------------------------------------
+    button: (
+        type:   #ffffff,
+        base:   #0074d9,
+        hover:  #7fdbff,
+        focus:  #ff851b,
+        active: #ff4136,
+        busy:   #dddddd
+    ),
+
+
+    // Forms ------------------------------------------------------------------
+    form: (
+        base:   #0074d9,
+        hover:  #7fdbff,
+        focus:  #ff851b,
+        active: #ff4136,
+        busy:   #dddddd
+    )
+
+
+    // Component --------------------------------------------------------------
+//    c-component: (
+//        subcomponent: value,
+//        subcomponent: value
+//    )
+);

@@ -1,0 +1,7 @@
+@mixin colgroup() {
+  display: table-column-group;
+}
+
+%colgroup {
+    display: table-column-group;
+}

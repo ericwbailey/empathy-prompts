@@ -1,0 +1,98 @@
+// ============================================================================
+// Paths
+// ============================================================================
+
+
+// Modular Scale:
+// http://www.modularscale.com/
+
+
+/// 1:1.618 ratio
+/// @group Modular Scale
+/// @type  Number
+$ratio-phi: 1.618;
+
+/// 1:1.618 ratio
+/// @group Modular Scale
+/// @type  Number
+$ratio-golden: 1.618;
+
+/// 1:4 ratio
+/// @group Modular Scale
+/// @type  Number
+$ratio-double-octave: 4;
+
+/// 1:3 ratio
+/// @group Modular Scale
+/// @type  Number
+$ratio-major-twelfth: 3;
+
+/// 3:8 ratio
+/// @group Modular Scale
+/// @type  Number
+$ratio-major-eleventh: 2.667;
+
+/// 2:5 ratio
+/// @group Modular Scale
+/// @type  Number
+$ratio-major-tenth: 2.5;
+
+/// 1:2 ratio
+/// @group Modular Scale
+/// @type  Number
+$ratio-octave: 2;
+
+/// 8:15 ratio
+/// @group Modular Scale
+/// @type  Number
+$ratio-major-seventh: 1.875;
+
+/// 9:16 ratio
+/// @group Modular Scale
+/// @type  Number
+$ratio-minor-seventh: 1.778;
+
+/// 3:5 ratio
+/// @group Modular Scale
+/// @type  Number
+$ratio-major-sixth: 1.667;
+
+/// 5:8 ratio
+/// @group Modular Scale
+/// @type  Number
+$ratio-minor-sixth: 1.6;
+
+/// 2:3 ratio
+/// @group Modular Scale
+/// @type  Number
+$ratio-fifth: 1.5;
+
+/// 1:√2 ratio
+/// @group Modular Scale
+/// @type  Number
+$ratio-augmented-fourth: 1.414;
+
+/// 3:4 ratio
+/// @group Modular Scale
+/// @type  Number
+$ratio-fourth: 1.333;
+
+/// 4:5 ratio
+/// @group Modular Scale
+/// @type  Number
+$ratio-major-third: 1.25;
+
+/// 5:6 ratio
+/// @group Modular Scale
+/// @type  Number
+$ratio-minor-third: 1.2;
+
+/// 8:9 ratio
+/// @group Modular Scale
+/// @type  Number
+$ratio-major-second: 1.125;
+
+/// 15:16 ratio
+/// @group Modular Scale
+/// @type  Number
+$ratio-minor-second: 1.067;

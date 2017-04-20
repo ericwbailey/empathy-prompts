@@ -1,0 +1,59 @@
+// ============================================================================
+// Typography
+// Scientific Inferiors
+// ============================================================================
+
+
+/// Chemical and mathematical notation.
+///
+/// @group Typography
+///
+/// @example scss
+///  @include typography-scientific-inferiors();
+///
+/// @see {mixin} typography-ordinals
+///
+/// @link http://utility-opentype.kennethormandy.com/#sinf Utility OpenType: Scientific Inferiors
+
+
+@mixin typography-scientific-inferiors() {
+    text-transform: lowercase;
+    font-size: inherit;
+    font-variant-position: sub;
+
+    @supports not (font-variant-position: sub) {
+        -webkit-font-feature-settings: "subs", "subs";
+        font-feature-settings: "subs", "subs";
+
+        @supports ((-webkit-font-feature-settings: "subs") or (font-feature-settings: "subs")) {
+            font-size: 1em;
+            vertical-align: baseline;
+        }
+
+        @supports (overflow: -webkit-marquee) and (justify-content:inherit) {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+    }
+
+    @supports ((-webkit-font-feature-settings: "sinf") or (font-feature-settings: "sinf")) {
+        font-variant-position: normal;
+        -webkit-font-feature-settings: "sinf", "subs" off, "sups" off;
+        font-feature-settings: "sinf", "subs" off, "sups" off;
+        vertical-align: baseline;
+    }
+
+    @supports (overflow: -webkit-marquee) and (justify-content:inherit) {
+        vertical-align: sub;
+        font-size: smaller;
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-scientific-inferiors == true {
+    .typography-scientific-inferiors {
+        @include typography-scientific-inferiors();
+    }
+}

@@ -1,0 +1,8 @@
+@mixin section() {
+    display:block;
+}
+
+
+%section {
+    @extend %display-block;
+}

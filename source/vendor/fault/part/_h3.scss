@@ -1,0 +1,19 @@
+@mixin h3() {
+    display: block;
+    font-weight: bold;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+%h3 {
+    @extend %display-block; //display: block;
+    @extend %bold; //font-weight: bold;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}

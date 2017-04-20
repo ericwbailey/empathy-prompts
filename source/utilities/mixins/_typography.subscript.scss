@@ -1,0 +1,48 @@
+// ============================================================================
+// Typography
+// Subscript
+// ============================================================================
+
+
+/// Less distracting than all capitals for longer form text settings. Renders
+/// all applicable glyphs as small caps, regardless of initial case.
+///
+/// @group Typography
+///
+/// @example scss
+///  @include typography-subscript();
+///
+/// @see {mixin} typography-superscript
+///
+/// @link http://utility-opentype.kennethormandy.com/#subs Utility OpenType: Subscripts
+
+
+@mixin typography-subscript() {
+    text-transform: lowercase;
+    font-size: inherit;
+    font-variant-position: sub;
+
+    @supports not (font-variant-position: sub) {
+        -webkit-font-feature-settings: "subs", "subs";
+        font-feature-settings: "subs", "subs";
+
+        @supports ((-webkit-font-feature-settings: "subs") or (font-feature-settings: "subs")) {
+            font-size: 1em;
+            vertical-align: baseline;
+        }
+
+        @supports (overflow: -webkit-marquee) and (justify-content:inherit) {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-subscript == true {
+    .typography-subscript {
+        @include typography-subscript();
+    }
+}

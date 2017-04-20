@@ -1,0 +1,17 @@
+@mixin iframe() {
+  &:focus {
+      outline: none;
+  }
+  [seamless] {
+      display: block;
+  }
+}
+
+%iframe {
+  &:focus {
+      outline: none;
+  }
+  [seamless] {
+      @extend %display-block; //display: block;
+  }
+}

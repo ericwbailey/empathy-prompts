@@ -1,0 +1,68 @@
+// ============================================================================
+// Content
+// Underline
+// ============================================================================
+
+
+/// Creates a thin underline with gaps for the font's descenders. Settings
+/// provide a decent default, tweak as needed. Set state effects (hover, active,
+/// etc.) on a case-by-case basis. See `_links.scss`.
+///
+/// @group Content
+///
+/// @parameter {Color}       $underline-background-color       [c(background, light)] - Sets the color of the background
+/// @parameter {Color}       $underline-color                  [currentColor]         - Sets the color of the underline
+/// @parameter {Measurement} $underline-outline                [0.75px]               - Sets the width of the text outline
+/// @parameter {Measurement} $underline-thickness              [0.175em,]             - Sets the thickness of the underline in ems
+/// @parameter {Measurement} $underline-distance-from-baseline [0.2em]                - Sets the distance of the underline from the type's basline
+///
+/// @example scss
+///  @include content-underline();
+///
+/// @link https://css-tricks.com/styling-underlines-web/ CSS-Tricks: Styling Underlines on the Web
+
+
+@mixin content-underline(
+    $underline-background-color: c(base, background),
+    $underline-color: currentColor,
+    $underline-outline: 0.75px,
+    $underline-thickness: 0.175em,
+    $underline-distance-from-baseline: 0.2em
+) {
+    display: inline;
+
+    background-size: 2px 1em;
+
+    box-shadow:
+      inset 0 1em $underline-background-color,
+      inset 0 -0.05em $underline-color;
+
+    // Remove default underline
+    text-decoration: none;
+
+    // Text outline
+    text-shadow:
+      -#{$underline-outline} -#{$underline-outline} $underline-background-color, // Top lefthand corner
+      -#{$underline-outline}  #{$underline-outline} $underline-background-color, // Bottom lefhand corner
+       #{$underline-outline} -#{$underline-outline} $underline-background-color, // Top righthand corner
+       #{$underline-outline}  #{$underline-outline} $underline-background-color; // Bottom righthand corner
+
+
+    // Sets the text shadow "outline" color to be system highlight color, for
+    // browsers that support the `Highlight` keyword
+    @supports (text-shadow: -2px -2px Highlight) {
+        &::selection {
+            background-color: Highlight;
+
+            box-shadow:
+              inset 0 1em $underline-background-color,
+              inset 0 -0.05em $underline-color;
+
+            text-shadow:
+              -#{$underline-outline} -#{$underline-outline} Highlight, // Top lefthand corner
+              -#{$underline-outline} #{$underline-outline} Highlight, // Bottom lefhand corner
+               #{$underline-outline} -#{$underline-outline} Highlight, // Top righthand corner
+               #{$underline-outline} #{$underline-outline} Highlight; // Bottom righthand corner
+        }
+    }
+}

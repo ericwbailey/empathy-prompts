@@ -1,0 +1,20 @@
+@mixin h6() {
+    display: block;
+    font-weight: bold;
+    font-size: .67em;
+    margin-top: 2.33em;
+    margin-bottom: 2.33em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+%h6 {
+    @extend %display-block; //display: block;
+    @extend %bold; //font-weight: bold;
+    font-size: .67em;
+    margin-top: 2.33em;
+    margin-bottom: 2.33em;
+    margin-left: 0;
+    margin-right: 0;
+}

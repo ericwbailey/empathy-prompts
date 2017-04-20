@@ -1,0 +1,26 @@
+// ============================================================================
+// Component
+// Z-index
+// ============================================================================
+
+
+/// Returns a predefined `z-index` value. Used to manage stacking contexts for
+/// interface layout, components, etc. Use `ceiling` to send a component to
+/// ensure things are displayed, and `basement` to ensure things are sent out of
+/// sight.
+///
+/// @group Components
+///
+/// @parameter {String} $index - Calls a value from the `_z-index.scss` map
+///
+/// @returns {Number}
+///
+/// @require {variable} $z-index
+///
+/// @example scss
+///  z-index: z(component);
+
+
+@function z($index) {
+    @return map-get($z-index, $index);
+}

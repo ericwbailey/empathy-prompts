@@ -1,0 +1,7 @@
+@mixin del() {
+  text-decoration: line-through;
+}
+
+%del {
+    @include del;
+}

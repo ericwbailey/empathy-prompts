@@ -1,0 +1,13 @@
+@mixin pre() {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0;
+}
+
+%pre {
+    @extend %display-block; //display: block;
+    @extend %monospaced; //font-family: monospace;
+    white-space: pre;
+    margin: 1em 0;
+}

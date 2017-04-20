@@ -1,0 +1,32 @@
+// ============================================================================
+// Content
+// Text Truncate
+// ============================================================================
+
+
+/// Truncates overflowed text with an ellipsis. Requires the element to be set
+/// to `block` or `inline-block`.
+///
+/// @group Content
+///
+/// @example scss
+///  @include content-text-truncate();
+
+
+@mixin content-text-truncate() {
+    overflow: hidden;
+
+    display: inline-block;
+	text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-content-text-truncate == true {
+    .content-text-truncate {
+        @include content-text-truncate();
+    }
+}

@@ -1,0 +1,14 @@
+@mixin html() {
+    display: block;
+    &:focus {
+        outline: none;
+    }
+}
+
+
+%html {
+    @extend %display-block; //display: block;
+    &:focus {
+        outline: none;
+    }
+}

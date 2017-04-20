@@ -1,0 +1,145 @@
+// ============================================================================
+// Text-level
+// ============================================================================
+
+
+// Grouped Styles -------------------------------------------------------------
+b,
+strong {
+    font-weight: $font-weight-bold; // REVIEW: Make sure your font supports this weight
+}
+
+
+em,
+i {
+    font-style: italic;
+
+    // Cites within italicized text
+    cite {
+        font-style: normal;
+    }
+}
+
+
+// Individual Styles ----------------------------------------------------------
+abbr {
+    @include typography-caps-to-small-caps()
+    @include typography-tracking(slight);
+
+    border-bottom: border(thinnest) dotted;
+
+    cursor: help;
+}
+
+
+b {
+
+}
+
+
+// http://html5doctor.com/element-index/#bdi
+bdi {
+
+}
+
+
+// http://html5doctor.com/element-index/#bdo
+bdo {
+
+}
+
+
+cite {
+
+    // Cited cites
+    cite {
+        font-style: italic;
+    }
+}
+
+
+del {
+
+}
+
+
+dfn {
+    @include typography-tracking(slight);
+}
+
+
+em {
+
+}
+
+
+i {
+
+}
+
+
+ins {
+    border-bottom: border(thinnest) double;
+}
+
+
+mark {
+    padding: em(2);
+
+    background-color: c(yellow);
+
+    color: c(base, type);
+}
+
+
+// http://html5doctor.com/element-index/#ruby
+ruby {
+
+}
+
+
+// http://html5doctor.com/element-index/#rp
+rp {
+
+}
+
+
+// http://html5doctor.com/element-index/#rt
+rt {
+
+}
+
+
+s {
+
+}
+
+
+small {
+    font-size: ms(0.6, em); // Use `.paragraph-legal` for larger sections of text. See `_paragraphs.scss`
+}
+
+
+strong {
+
+}
+
+
+sub {
+    @include typography-subscript();
+}
+
+
+sup {
+    @include typography-superscript();
+}
+
+
+time {
+    @include typography-numbers-tabular-oldstyle();
+}
+
+
+u {
+    @include content-underline();
+}

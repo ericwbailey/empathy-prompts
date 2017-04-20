@@ -1,0 +1,7 @@
+@mixin area() {
+  display:none;
+}
+
+%area {
+    @extend %hidden; //display: none;
+}

@@ -1,0 +1,237 @@
+// ============================================================================
+// Typography
+// Stylistic Sets
+// ============================================================================
+
+
+/// Adds additional flare, best applied conservatively. Manually declaring each
+/// of the 20 mixins until Sass supports dynamic mixin creation via a for loop.
+///
+/// @group Typography
+///
+/// @example scss
+///  @include typography-stylistic-set-01();
+
+
+@mixin typography-stylistic-set-01 {
+    -webkit-font-feature-settings: "ss01";
+    font-feature-settings: "ss01";
+}
+
+@mixin typography-stylistic-set-02 {
+    -webkit-font-feature-settings: "ss02";
+    font-feature-settings: "ss02";
+}
+
+@mixin typography-stylistic-set-03 {
+    -webkit-font-feature-settings: "ss03";
+    font-feature-settings: "ss03";
+}
+
+@mixin typography-stylistic-set-04 {
+    -webkit-font-feature-settings: "ss04";
+    font-feature-settings: "ss04";
+}
+
+@mixin typography-stylistic-set-05 {
+    -webkit-font-feature-settings: "ss05";
+    font-feature-settings: "ss05";
+}
+
+@mixin typography-stylistic-set-06 {
+    -webkit-font-feature-settings: "ss06";
+    font-feature-settings: "ss06";
+}
+
+@mixin typography-stylistic-set-07 {
+    -webkit-font-feature-settings: "ss07";
+    font-feature-settings: "ss07";
+}
+
+@mixin typography-stylistic-set-08 {
+    -webkit-font-feature-settings: "ss08";
+    font-feature-settings: "ss08";
+}
+
+@mixin typography-stylistic-set-09 {
+    -webkit-font-feature-settings: "ss09";
+    font-feature-settings: "ss09";
+}
+
+@mixin typography-stylistic-set-10 {
+    -webkit-font-feature-settings: "ss10";
+    font-feature-settings: "ss10";
+}
+
+@mixin typography-stylistic-set-11 {
+    -webkit-font-feature-settings: "ss11";
+    font-feature-settings: "ss11";
+}
+
+@mixin typography-stylistic-set-12 {
+    -webkit-font-feature-settings: "ss12";
+    font-feature-settings: "ss12";
+}
+
+@mixin typography-stylistic-set-13 {
+    -webkit-font-feature-settings: "ss13";
+    font-feature-settings: "ss13";
+}
+
+@mixin typography-stylistic-set-14 {
+    -webkit-font-feature-settings: "ss14";
+    font-feature-settings: "ss14";
+}
+
+@mixin typography-stylistic-set-15 {
+    -webkit-font-feature-settings: "ss15";
+    font-feature-settings: "ss15";
+}
+
+@mixin typography-stylistic-set-16 {
+    -webkit-font-feature-settings: "ss16";
+    font-feature-settings: "ss16";
+}
+
+@mixin typography-stylistic-set-17 {
+    -webkit-font-feature-settings: "ss17";
+    font-feature-settings: "ss17";
+}
+
+@mixin typography-stylistic-set-18 {
+    -webkit-font-feature-settings: "ss18";
+    font-feature-settings: "ss18";
+}
+
+@mixin typography-stylistic-set-19 {
+    -webkit-font-feature-settings: "ss19";
+    font-feature-settings: "ss19";
+}
+
+@mixin typography-stylistic-set-20 {
+    -webkit-font-feature-settings: "ss20";
+    font-feature-settings: "ss20";
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-stylistic-set-01 == true {
+    .typography-stylistic-set-01 {
+        @include typography-stylistic-set-01();
+    }
+}
+
+@if $toggle-typography-stylistic-set-02 == true {
+    .typography-stylistic-set-02 {
+        @include typography-stylistic-set-02();
+    }
+}
+
+@if $toggle-typography-stylistic-set-03 == true {
+    .typography-stylistic-set-03 {
+        @include typography-stylistic-set-03();
+    }
+}
+
+@if $toggle-typography-stylistic-set-04 == true {
+    .typography-stylistic-set-04 {
+        @include typography-stylistic-set-04();
+    }
+}
+
+@if $toggle-typography-stylistic-set-05 == true {
+    .typography-stylistic-set-05 {
+        @include typography-stylistic-set-05();
+    }
+}
+
+@if $toggle-typography-stylistic-set-06 == true {
+    .typography-stylistic-set-06 {
+        @include typography-stylistic-set-06();
+    }
+}
+
+@if $toggle-typography-stylistic-set-07 == true {
+    .typography-stylistic-set-07 {
+        @include typography-stylistic-set-07();
+    }
+}
+
+@if $toggle-typography-stylistic-set-08 == true {
+    .typography-stylistic-set-08 {
+        @include typography-stylistic-set-08();
+    }
+}
+
+@if $toggle-typography-stylistic-set-09 == true {
+    .typography-stylistic-set-09 {
+        @include typography-stylistic-set-09();
+    }
+}
+
+@if $toggle-typography-stylistic-set-10 == true {
+    .typography-stylistic-set-10 {
+        @include typography-stylistic-set-10();
+    }
+}
+
+@if $toggle-typography-stylistic-set-11 == true {
+    .typography-stylistic-set-11 {
+        @include typography-stylistic-set-11();
+    }
+}
+
+@if $toggle-typography-stylistic-set-12 == true {
+    .typography-stylistic-set-12 {
+        @include typography-stylistic-set-12();
+    }
+}
+
+@if $toggle-typography-stylistic-set-13 == true {
+    .typography-stylistic-set-13 {
+        @include typography-stylistic-set-13();
+    }
+}
+
+@if $toggle-typography-stylistic-set-14 == true {
+    .typography-stylistic-set-14 {
+        @include typography-stylistic-set-14();
+    }
+}
+
+@if $toggle-typography-stylistic-set-15 == true {
+    .typography-stylistic-set-15 {
+        @include typography-stylistic-set-15();
+    }
+}
+
+@if $toggle-typography-stylistic-set-16 == true {
+    .typography-stylistic-set-16 {
+        @include typography-stylistic-set-16();
+    }
+}
+
+@if $toggle-typography-stylistic-set-17 == true {
+    .typography-stylistic-set-17 {
+        @include typography-stylistic-set-17();
+    }
+}
+
+@if $toggle-typography-stylistic-set-18 == true {
+    .typography-stylistic-set-18 {
+        @include typography-stylistic-set-18();
+    }
+}
+
+@if $toggle-typography-stylistic-set-19 == true {
+    .typography-stylistic-set-19 {
+        @include typography-stylistic-set-19();
+    }
+}
+
+@if $toggle-typography-stylistic-set-20 == true {
+    .typography-stylistic-set-20 {
+        @include typography-stylistic-set-20();
+    }
+}

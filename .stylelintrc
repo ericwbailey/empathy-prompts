@@ -1,0 +1,118 @@
+{
+    "rules": {
+        "at-rule-no-unknown": [true, {
+            "ignoreAtRules": ["at-root", "debug", "each", "else", "error", "extend", "for", "function", "import", "if", "include", "media", "mixin", "return", "warn", "while"]
+        }],
+        "at-rule-no-vendor-prefix": [true, {
+            "message": "Vendor prefixes are automatically generated (at-rule-no-vendor-prefix)"
+        }],
+        "at-rule-semicolon-newline-after": ["always", {
+            "message": "Make @ rules visually distinct from other declarations (at-rule-semicolon-newline-after)"
+        }],
+        "at-rule-empty-line-before": ["always", {
+            "except": ["blockless-after-blockless", "first-nested"],
+            "ignore": ["after-comment"]
+        }],
+        "block-closing-brace-empty-line-before": "never",
+        "block-closing-brace-newline-after": "always",
+        "block-closing-brace-newline-before": "always-multi-line",
+        "block-closing-brace-space-before": "always-single-line",
+        "block-no-empty": true,
+        "block-opening-brace-newline-after": "always-multi-line",
+        "block-opening-brace-space-after": "always-single-line",
+        "block-opening-brace-space-before": "always",
+        "color-hex-case": ["lower", {
+            "severity": "warning",
+            "message": "Lowercase letters in hex code are more distinct (color-hex-case)"
+        }],
+        "color-hex-length": ["long", {
+            "severity": "warning",
+            "message": "Keep all hex code values at a standardized six character length (color-hex-length)"
+        }],
+        "color-named": ["never", {
+            "severity": "warning",
+            "message": "Browsers can render named colors inconsistently, use variables instead (color-named)"
+        }],
+        "color-no-invalid-hex": true,
+        "comment-no-empty": true,
+        "custom-property-empty-line-before": ["always", {
+            "except": "after-custom-property",
+            "ignore": "after-comment"
+        }],
+        "declaration-bang-space-after": "never",
+        "declaration-bang-space-before": "always",
+        "declaration-colon-newline-after": "always-multi-line",
+        "declaration-colon-space-after": "always-single-line",
+        "declaration-colon-space-before": "never",
+        "declaration-block-no-duplicate-properties": true,
+        "declaration-block-no-shorthand-property-overrides": true,
+        "declaration-block-semicolon-newline-after": "always-multi-line",
+        "declaration-block-semicolon-space-after": "always-single-line",
+        "declaration-block-semicolon-space-before": "never",
+        "declaration-block-single-line-max-declarations": [1, {
+            "severity": "warning"
+        }],
+        "declaration-block-trailing-semicolon": "always",
+        "font-family-name-quotes": "always-unless-keyword",
+        "font-weight-notation": ["numeric", {
+            "severity": "warning",
+            "message": "Use numeric font weights for better typographic control (font-weight-notation)"
+        }],
+        "function-calc-no-unspaced-operator": true,
+        "function-comma-space-after": "always-single-line",
+        "function-comma-space-before": "never-single-line",
+        "function-linear-gradient-no-nonstandard-direction": true,
+        "function-parentheses-newline-inside": "always-multi-line",
+        "function-parentheses-space-inside": "never-single-line",
+        "function-url-quotes": "never",
+        "function-whitespace-after": "always",
+        "length-zero-no-unit": true,
+        "media-feature-colon-space-after": "always",
+        "media-feature-colon-space-before": "never",
+        "media-feature-name-case": "lower",
+        "media-feature-name-no-vendor-prefix": [true, {
+            "message": "Vendor prefixes are automatically generated (media-feature-name-no-vendor-prefix)"
+        }],
+        "media-feature-parentheses-space-inside": "never",
+        "media-feature-range-operator-space-after": "always",
+        "media-feature-range-operator-space-before": "always",
+        "media-query-list-comma-newline-after": "always-multi-line",
+        "media-query-list-comma-newline-before": "never-multi-line",
+        "max-empty-lines": [3, {
+           "severity": "warning",
+           "message": "More than 3 empty lines are present (max-empty-lines)"
+        }],
+        "no-duplicate-selectors": true,
+        "no-eol-whitespace": true,
+        "no-extra-semicolons": true,
+        "no-unknown-animations": true,
+        "number-leading-zero": "always",
+        "number-max-precision": [5, {
+            "severity": "warning",
+            "message": "More than 5 decimal places are present (number-max-precision)"
+        }],
+        "number-no-trailing-zeros": true,
+        "property-no-unknown": true,
+        "property-no-vendor-prefix": [true, {
+            "message": "Vendor prefixes are automatically generated (property-no-vendor-prefix)"
+        }],
+        "selector-combinator-space-after": "always",
+        "selector-combinator-space-before": "always",
+        "selector-no-id": true,
+        "selector-no-vendor-prefix": [true, {
+            "message": "Vendor prefixes are automatically generated (selector-no-vendor-prefix)"
+        }],
+        "selector-pseudo-element-colon-notation": "double",
+        "selector-type-case": "lower",
+        "selector-list-comma-newline-after": "always-multi-line",
+        "selector-list-comma-space-after": "always-single-line",
+        "selector-list-comma-space-before": "never",
+        "selector-max-specificity": "0,3,1",
+        "string-quotes": "double",
+        "value-list-comma-space-after": "always-single-line",
+        "value-list-comma-space-before": "never-single-line",
+        "value-no-vendor-prefix": [true, {
+            "message": "Vendor prefixes are automatically generated (value-no-vendor-prefix)"
+        }]
+    }
+}

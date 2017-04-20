@@ -1,0 +1,26 @@
+// ============================================================================
+// Paragraphs
+// ============================================================================
+
+
+p {
+
+}
+
+
+.paragraph-lede {
+    font-size: ms(1.1, em);
+}
+
+
+.paragraph-legal, // Use `<small>` for smaller sections of text. See `_text-level.scss`
+.paragraph-agate {
+    font-size: ms(0.6, em);
+}
+
+
+.paragraph-agate {
+    @include typography-tracking(slight);
+
+    text-transform: uppercase;
+}

@@ -1,0 +1,33 @@
+// ============================================================================
+// Typography
+// Measure
+// ============================================================================
+
+
+/// Sets the maximium comfortable width for reading a column of text.
+///
+/// @group Typography
+///
+/// @example scss
+///  @include typography-measure();
+///
+/// @see {variable} $global-type-family
+/// @see {variable} $global-type-ratio
+/// @see {variable} $global-type-size
+///
+/// @link http://trentwalton.com/2012/06/19/fluid-type/ Trent Walton: Fluid Type
+/// @link http://webtypography.net/2.1.2 The Elements of Typographic Style Applied to the Web: Choose a comfortable measure
+
+
+@mixin typography-measure() {
+    max-width: $global-type-measure;
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-measure == true {
+    .typography-measure {
+        @include typography-measure();
+    }
+}

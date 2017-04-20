@@ -1,0 +1,37 @@
+// ============================================================================
+// Typography
+// Ordinals
+// ============================================================================
+
+
+/// Glpyhs that commonly follow a number (ex: 1st, 2nd). Also sometimes used
+/// with foreign languages.
+///
+/// @group Typography
+///
+/// @example scss
+///  @include typography-ordinals();
+///
+/// @see {mixin} typography-scientific-inferiors
+///
+/// @link http://utility-opentype.kennethormandy.com/#ordn Utility OpenType: Ordinals
+
+
+@mixin typography-ordinals() {
+    -ms-font-feature-settings: "ordn";
+    font-variant-numeric: ordinal;
+
+    @supports not (font-variant-numeric: ordinal) {
+        -webkit-font-feature-settings: "ordn", "ordn";
+        font-feature-settings: "ordn", "ordn";
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-ordinals == true {
+    .typography-ordinals {
+        @include typography-ordinals();
+    }
+}

@@ -1,0 +1,31 @@
+// ============================================================================
+// Borders
+// ============================================================================
+
+
+/// Use these easing values to provide consistent treatment for site borders.
+///
+/// @group general
+///
+/// @parameter {String} $border-size - Calls a value from the `_borders.scss` map
+///
+/// @returns {String}
+///
+/// @require {variable} $borders
+///
+/// @example scss
+///  border-bottom: border(thin) currentColor;
+
+
+@function border($border-size) {
+    @if (map-has-key($borders, $border-size)) {
+      @return map-get($borders, $border-size);
+    }
+
+    @else {
+        @error "`#{$border-size}`"
+        + $meta-invalid-argument
+        + $meta-invalid-argument-select-multiple
+        + map-keys($border);
+    }
+}

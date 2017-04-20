@@ -1,0 +1,94 @@
+// ============================================================================
+// Reset
+// ============================================================================
+
+
+// Tweaks that sit on top of `normalize.css`
+
+// Zeroing --------------------------------------------------------------------
+// Zeroes out all HTML elements to allow uniform component-level styling
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+
+// Element Tweaks -------------------------------------------------------------
+
+// Removes borders from linked images
+a img {
+    border: none;
+}
+
+
+// Give a help cursor to elements that give extra info on `:hover`.
+abbr[title],
+dfn[title] {
+    cursor: help;
+}
+
+
+// Remove default table spacing
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+[aria-busy="true"],
+[disabled] {
+    cursor: not-allowed;
+}
+
+
+// Selects all content in a read-only input field
+input:not([type="button"]):not([type="checkbox"]):not([type="radio"]),
+textarea {
+    &:read-only {
+        user-select: all;
+    }
+}
+
+
+ol,
+ul {
+    li {
+        list-style: none;
+    }
+
+    ol,
+    ul {
+        margin-top: ms(1, em);
+    }
+}
+
+
+// Better control over ordered lists
+ol {
+    counter-reset: default-ordered-list;
+
+    li {
+        &::before {
+            display: inline-block;
+            margin-right: ms(0.5, em);
+            width: 1em;
+
+            text-align: left;
+            text-align: end;
+
+            content: counter(default-ordered-list);
+	        counter-increment: default-ordered-list;
+        }
+
+        // Nested ordered list
+        ol {
+
+            li {
+                &::before {
+                    content: counter(default-ordered-list, lower-roman);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+@mixin head() {
+  display:none;
+}
+
+%head {
+  @extend %hidden;
+}

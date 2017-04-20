@@ -1,0 +1,7 @@
+@mixin em() {
+  font-style: italic;
+}
+
+%em {
+    @extend %italic; //font-style: italic;
+}

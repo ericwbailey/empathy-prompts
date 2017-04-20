@@ -1,0 +1,33 @@
+// ============================================================================
+// Typography
+// Tabular Numbers
+// ============================================================================
+
+
+/// Good for easily comparing when stacked into columns.
+///
+/// @group Typography
+///
+/// @example scss
+///  @include typography-numbers-tabular();
+///
+/// @see {mixin} typography-numbers-tabular-lining
+
+
+@mixin typography-numbers-tabular() {
+    font-variant-numeric: tabular-nums;
+
+    @supports not (font-variant-numeric: tabular-nums) {
+        -webkit-font-feature-settings: "pnum" 0, "tnum", "tnum";
+        font-feature-settings: "pnum" 0, "tnum", "tnum";
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-numbers-tabular == true {
+    .typography-numbers-tabular {
+        @include typography-numbers-tabular();
+    }
+}

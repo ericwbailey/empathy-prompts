@@ -1,0 +1,96 @@
+// ============================================================================
+// Headings
+// ============================================================================
+
+
+// Visual heading styling. Allows author to use ordered headings to retain an
+// accessible document, but match the needs of the design.
+
+// Giga
+@mixin heading-giga() {
+    font-size: ms(5, em);
+}
+
+.heading-giga {
+    @include heading-giga();
+}
+
+
+// Mega
+@mixin heading-mega() {
+    font-size: ms(4.5, em);
+}
+
+.heading-mega {
+    @include heading-mega();
+}
+
+
+// Alpha
+@mixin heading-alpha() {
+    font-size: ms(4, em);
+}
+
+.heading-alpha {
+    @include heading-alpha();
+}
+
+
+// Beta
+@mixin heading-beta() {
+    font-size: ms(3.5, em);
+}
+
+.heading-beta {
+    @include heading-beta();
+}
+
+
+// Gamma
+@mixin heading-gamma() {
+    font-size: ms(3, em);
+}
+
+.heading-gamma {
+    @include heading-gamma();
+}
+
+
+// Delta
+@mixin heading-delta() {
+    font-size: ms(2.5, em);
+}
+
+.heading-delta {
+    @include heading-delta();
+}
+
+
+// Epsilon
+@mixin heading-epsilon() {
+    font-size: ms(2, em);
+}
+
+.heading-epsilon {
+    @include heading-epsilon();
+}
+
+
+// Zeta
+@mixin heading-zeta() {
+    font-size: ms(1.5, em);
+}
+
+.heading-zeta {
+    @include heading-zeta();
+}
+
+
+// Eta
+@mixin heading-eta() {
+    font-size: ms(1, em);
+}
+
+.heading-eta {
+    @include heading-eta();
+}

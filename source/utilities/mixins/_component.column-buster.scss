@@ -1,0 +1,27 @@
+// ============================================================================
+// Component
+// Component Buster
+// ============================================================================
+
+
+/// Extends the width of a component outside of the width of its parent
+/// container, centered horizontally. Uses `vw` units to scale with the
+/// viewport width.
+///
+/// @parameter {Number} $component-width - Sets the desired with in `vw` units
+///
+/// @group Components
+///
+/// @example scss
+///  @include component-column-buster(40);
+///
+/// @see {mixin} component-aspect-ratio
+/// @see {mixin} component-centerize
+/// @see {mixin} component-responsify
+
+
+@mixin component-column-buster($component-width) {
+    position: relative;
+      left: calc(-#{($component-width / 2) + vw} + 50%);
+    width: $component-width + vw;
+}

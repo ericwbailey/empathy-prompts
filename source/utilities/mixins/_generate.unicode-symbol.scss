@@ -1,0 +1,29 @@
+// ============================================================================
+// Generate
+// Unicode Symbol
+// ============================================================================
+
+
+/// Sets the font to Arial for good support and consistent rendering, and will
+/// optionally print a supplied symbol character. See `_symbols.scss` for a list
+/// of variabalized symbols.
+///
+/// @group Generate
+///
+/// @parameter {Variable | String} $symbol - Prints a string using the CSS `content` property
+///
+/// @example scss
+///  @include generate-unicode-symbol($symbol-star-full);
+///
+/// @link http://unicode-table.com/en/ Unicode Table
+
+
+@mixin generate-unicode-symbol($symbol: null) {
+    font-family: "Arial", sans-serif;
+
+    speak: none;
+
+    @if ($symbol != null) {
+        content: "#{$symbol}";
+    }
+}

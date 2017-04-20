@@ -1,0 +1,317 @@
+// ============================================================================
+// Tables
+// ============================================================================
+
+
+// Table Logic ----------------------------------------------------------------
+// Impose specific column widths on tables, if desired. Always leave one column
+// free, to absorb rounding errors/accidental breakage.
+@mixin table-col-width-05() { width: 5%; }
+@mixin table-col-width-10() { width: 10%; }
+@mixin table-col-width-12() { width: 12.5%; } // 1/8
+@mixin table-col-width-15() { width: 15%; }
+@mixin table-col-width-20() { width: 20%; }
+@mixin table-col-width-25() { width: 25%; } // 1/4
+@mixin table-col-width-30() { width: 30%; }
+@mixin table-col-width-33() { width: 33.333%; } // 1/3
+@mixin table-col-width-35() { width: 35%; }
+@mixin table-col-width-37() { width: 37.5%; } // 3/8
+@mixin table-col-width-40() { width: 40%; }
+@mixin table-col-width-45() { width: 45%; }
+@mixin table-col-width-50() { width: 50%; } // 1/2
+@mixin table-col-width-55() { width: 55%; }
+@mixin table-col-width-60() { width: 60%; }
+@mixin table-col-width-62() { width: 62.5%; } // 5/8
+@mixin table-col-width-65() { width: 65%; }
+@mixin table-col-width-66() { width: 66.666%; } // 2/3
+@mixin table-col-width-70() { width: 70%; }
+@mixin table-col-width-75() { width: 75%; } // 3/4
+@mixin table-col-width-80() { width: 80%; }
+@mixin table-col-width-85() { width: 85%; }
+@mixin table-col-width-87() { width: 87.5%; } // 7/8
+@mixin table-col-width-90() { width: 90%; }
+@mixin table-col-width-95() { width: 95%; }
+
+
+// Column alignments
+@mixin table-col-align-text() { text-align: left; }
+@mixin table-col-align-image() { text-align: center; }
+@mixin table-col-align-number() { text-align: right; }
+
+
+// Row alignments
+@mixin table-row-align-top() { vertical-align: top; }
+@mixin table-row-align-middle { vertical-align: middle; }
+@mixin table-row-align-bottom { vertical-align: bottom; }
+
+
+// Table Styling --------------------------------------------------------------
+table {
+    width: 100%;
+
+    caption {
+        @include typography-align(start);
+
+        margin-bottom: ms(1, em);
+    }
+
+    // Styles all table rows
+    tr {
+
+    }
+
+    // Styles all table cells
+    col,
+    th,
+    td {
+        @include table-col-align-text();
+
+        padding: ms(0.25, em);
+
+        &[colspan] {
+            @include typography-align(center);
+        }
+
+        &[colspan="1"] {
+            @include table-col-align-text();
+        }
+
+        &[rowspan] {
+            vertical-align: middle;
+        }
+
+        &[rowspan="1"] {
+            vertical-align: top;
+        }
+    }
+
+    colgroup {
+
+        col {
+
+        }
+    }
+
+    thead {
+
+        tr {
+
+            th {
+
+            }
+        }
+    }
+
+    tbody {
+        tr {
+
+            td {
+                border-top: border(thinnest) solid c(base, type);
+            }
+        }
+    }
+
+    tfoot {
+
+        tr {
+
+            td {
+                border-top: border(thinnest) solid c(base, type);
+            }
+        }
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+
+// Column widths
+@if $toggle-table-col-width-05 == true {
+    .table-col-width-05 {
+        @include table-col-width-05();
+    }
+}
+
+@if $toggle-table-col-width-10 == true {
+    .table-col-width-10 {
+        @include table-col-width-10();
+    }
+}
+
+@if $toggle-table-col-width-12 == true {
+    .table-col-width-12 {
+        @include table-col-width-12();
+    }
+}
+
+@if $toggle-table-col-width-15 == true {
+    .table-col-width-15 {
+        @include table-col-width-15();
+    }
+}
+
+@if $toggle-table-col-width-20 == true {
+    .table-col-width-20 {
+        @include table-col-width-20();
+    }
+}
+
+@if $toggle-table-col-width-25 == true {
+    .table-col-width-25 {
+        @include table-col-width-25();
+    }
+}
+
+@if $toggle-table-col-width-30 == true {
+    .table-col-width-30 {
+        @include table-col-width-30();
+    }
+}
+
+@if $toggle-table-col-width-33 == true {
+    .table-col-width-33 {
+        @include table-col-width-33();
+    }
+}
+
+@if $toggle-table-col-width-35 == true {
+    .table-col-width-35 {
+        @include table-col-width-35();
+    }
+}
+
+@if $toggle-table-col-width-37 == true {
+    .table-col-width-37 {
+        @include table-col-width-37();
+    }
+}
+
+@if $toggle-table-col-width-40 == true {
+    .table-col-width-40 {
+        @include table-col-width-40();
+    }
+}
+
+@if $toggle-table-col-width-45 == true {
+    .table-col-width-45 {
+        @include table-col-width-45();
+    }
+}
+
+@if $toggle-table-col-width-50 == true {
+    .table-col-width-50 {
+        @include table-col-width-50();
+    }
+}
+
+@if $toggle-table-col-width-55 == true {
+    .table-col-width-55 {
+        @include table-col-width-55();
+    }
+}
+
+@if $toggle-table-col-width-60 == true {
+    .table-col-width-60 {
+        @include table-col-width-60();
+    }
+}
+
+@if $toggle-table-col-width-62 == true {
+    .table-col-width-62 {
+        @include table-col-width-62();
+    }
+}
+
+@if $toggle-table-col-width-65 == true {
+    .table-col-width-65 {
+        @include table-col-width-65();
+    }
+}
+
+@if $toggle-table-col-width-66 == true {
+    .table-col-width-66 {
+        @include table-col-width-66();
+    }
+}
+
+@if $toggle-table-col-width-70 == true {
+    .table-col-width-70 {
+        @include table-col-width-70();
+    }
+}
+
+@if $toggle-table-col-width-75 == true {
+    .table-col-width-75 {
+        @include table-col-width-75();
+    }
+}
+
+@if $toggle-table-col-width-80 == true {
+    .table-col-width-80 {
+        @include table-col-width-80();
+    }
+}
+
+@if $toggle-table-col-width-85 == true {
+    .table-col-width-85 {
+        @include table-col-width-85();
+    }
+}
+
+@if $toggle-table-col-width-67 == true {
+    .table-col-width-67 {
+        @include table-col-width-87();
+    }
+}
+
+@if $toggle-table-col-width-90 == true {
+    .table-col-width-90 {
+        @include table-col-width-90();
+    }
+}
+
+@if $toggle-table-col-width-95 == true {
+    .table-col-width-95 {
+        @include table-col-width-95();
+    }
+}
+
+
+// Column alignments
+@if $toggle-table-col-align-text == true {
+    .table-col-align-text {
+        @include table-col-align-text();
+    }
+}
+
+@if $toggle-table-col-align-image == true {
+    .table-col-align-image {
+        @include table-col-align-image;
+    }
+}
+
+@if $toggle-table-col-align-number == true {
+    .table-col-align-number {
+        @include table-col-align-number;
+    }
+}
+
+// Row alignments
+@if $toggle-table-row-align-top == true {
+    .table-row-align-top {
+        @include table-row-align-top();
+    }
+}
+
+@if $toggle-table-row-align-middle == true {
+    .table-row-align-middle {
+        @include table-row-align-middle;
+    }
+}
+
+@if $toggle-table-row-align-bottom == true {
+    .table-row-align-bottom {
+        @include table-row-align-bottom;
+    }
+}

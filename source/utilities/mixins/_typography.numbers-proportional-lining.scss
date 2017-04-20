@@ -1,0 +1,42 @@
+// ============================================================================
+// Typography
+// Proportional Lining Numbers
+// ============================================================================
+
+
+/// Tabular numerals are monospaced, so different information can be easily
+/// compared when stacked vertically.
+///
+/// @group Typography
+///
+/// @requires {mixin} typography-numbers-lining
+/// @requires {mixin} typography-numbers-proportional
+///
+/// @example scss
+///  @include typography-numbers-proportional-lining();
+///
+/// @see {mixin} typography-numbers-proportional
+///
+/// @link http://utility-opentype.kennethormandy.com/#pnum-lnum Utility OpenType: Proportional, Lining numbers
+
+
+@mixin typography-numbers-proportional-lining() {
+    @include typography-numbers-proportional();
+    @include typography-numbers-lining();
+
+    -ms-font-feature-settings: "lnum", "onum" 0, "pnum", "tnum" 0;
+
+    @supports not ((-webkit-font-feature-settings: "lnum" inherit) or (font-feature-settings: "lnum" inherit)) {
+        -webkit-font-feature-settings: "lnum", "onum" 0, "pnum", "tnum" 0;
+        font-feature-settings: "lnum", "onum" 0, "pnum", "tnum" 0;
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-numbers-proportional-lining == true {
+    .typography-numbers-proportional-lining {
+        @include typography-numbers-proportional-lining();
+    }
+}

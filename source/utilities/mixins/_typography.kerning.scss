@@ -1,0 +1,32 @@
+// ============================================================================
+// Typography
+// Kerning
+// ============================================================================
+
+
+/// Enables kerning pairs, if present.
+///
+/// @group Typography
+///
+/// @example scss
+///  @include typography-kerning();
+///
+/// @link http://blog.typekit.com/2014/02/05/kerning-on-the-web/ Typekit: Kerning on the Web
+
+
+@mixin typography-kerning() {
+    font-kerning: normal;
+    -moz-font-feature-settings: "kern";
+    -ms-font-feature-settings: "kern";
+    -webkit-font-feature-settings: "kern";
+    font-feature-settings: "kern";
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-kerning == true {
+    .typography-kerning {
+        @include typography-kerning();
+    }
+}

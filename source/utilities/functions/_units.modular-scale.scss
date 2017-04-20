@@ -1,0 +1,46 @@
+// ============================================================================
+// Units
+// Modular Scale
+// ============================================================================
+
+
+/// Outputs a number scaled by the document's specified Modular Scale. Use
+/// `$global-type-ratio` when you want to use a unitless ratio.
+///
+/// @group Modular Scale
+///
+/// @parameter {Number}      $scale-by  - Sets the factor for the modular scale to be multiplied by
+/// @parameter {Measurement} $unit [em] - Specifies the unit
+///
+/// @example scss
+///  margin-top: ms(3, em);
+///
+/// @see {function} em
+/// @see {function} rem
+///
+/// @link http://www.modularscale.com/ Modular Scale
+/// @link http://type-scale.com/ Type Scale - A Visual Calculator
+
+
+@function ms($scale-by, $unit: em) {
+
+    // Check to see if scale is a number
+    @if (type-of($scale-by) != number) {
+        @error "`#{$scale-by}`"
+        + $meta-invalid-argument
+        + $meta-invalid-argument-provide
+        + "a number.";
+    }
+
+    // Check to see if unit is a valid unit
+    @if ($unit == null)
+    or (type-of($unit) == number)
+    or not ($units) {
+        @error "`#{$unit}`"
+        + $meta-invalid-argument
+        + $meta-invalid-argument-provide
+        + "a valid CSS unit.";
+    }
+
+    @return #{$scale-by * $global-type-ratio}#{$unit};
+}

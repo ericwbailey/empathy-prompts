@@ -1,0 +1,29 @@
+// ============================================================================
+// Content
+// No Select
+// ============================================================================
+
+
+/// Undoes the Lobotomized Owl selector. Useful for sitatuins where you want to
+/// surgically undo the cascade.
+///
+/// @group Content
+///
+/// @example scss
+///  @include content-delobotomize();
+///
+/// @link http://alistapart.com/article/axiomatic-css-and-lobotomized-owls A List Apart: Axiomatic CSS and Lobotomized Owls
+
+
+@mixin content-delobotomize() {
+    margin-top: 0;
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-content-delobotomize == true {
+    .content-delobotomize {
+        @include content-delobotomize();
+    }
+}

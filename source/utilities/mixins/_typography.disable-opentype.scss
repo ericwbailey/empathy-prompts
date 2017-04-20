@@ -1,0 +1,30 @@
+// ============================================================================
+// Typography
+// Disable OpenType
+// ============================================================================
+
+
+/// Disables all OpenType features.
+///
+/// @group Typography
+///
+/// @example scss
+///  @include typography-disable-opentype();
+///
+/// @link https://www.typotheque.com/articles/opentype_features_in_web_browsers_-_tests Typotheque: OpenType features in web browsers — Tests
+/// @link http://practice.typekit.com/lesson/caring-about-opentype-features/ Typekit: Caring about OpenType features
+/// @link http://utility-opentype.kennethormandy.com Kenneth Ormandy: Utility OpenType
+
+
+@mixin typography-disable-opentype() {
+    font-feature-settings: normal;
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-disable-opentype == true {
+    .typography-disable-opentype {
+        @include typography-disable-opentype();
+    }
+}

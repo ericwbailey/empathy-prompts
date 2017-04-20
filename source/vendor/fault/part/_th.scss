@@ -1,0 +1,13 @@
+@mixin th() {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+}
+
+%th {
+    display: table-cell;
+    vertical-align: inherit;
+    @extend %bold; //font-weight: bold;
+    text-align: center;
+}

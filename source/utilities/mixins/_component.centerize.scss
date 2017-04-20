@@ -1,0 +1,35 @@
+// ============================================================================
+// Component
+// Centerize
+// ============================================================================
+
+
+/// Centers a component horizontally and vertically on the viewport.
+///
+/// @group Components
+///
+/// @example scss
+///  @include component-centerize();
+///
+/// @see {mixin} component-align
+/// @see {mixin} component-column-buster
+/// @see {mixin} typography-align
+///
+/// @link https://css-tricks.com/centering-css-complete-guide/ CSS-Tricks: Centering in CSS: A Complete Guide
+
+
+@mixin component-centerize() {
+    position: absolute;
+      top: 50%;
+      left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-component-centerize == true {
+    .component-centerize {
+        @include component-centerize();
+    }
+}

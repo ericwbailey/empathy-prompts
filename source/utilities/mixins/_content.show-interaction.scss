@@ -1,0 +1,52 @@
+// ============================================================================
+// Content
+// Show Interaction
+// ============================================================================
+
+
+/// Sets the cursor to reflect the kind of content is applies to. Links should
+/// use the traditional pointing hand icon, whereas input elements should use
+/// the default OS cursor, reflecting standard OS input interactions.
+///
+/// @group Content
+///
+/// @parameter {String} $link-or-input - Sets the cursor icon. Can be either `link` or `input`
+///
+/// @example scss
+///  @include content-show-interaction(input);
+///
+/// @see {mixin} content-remove-interaction
+///
+/// @link https://medium.com/simple-human/buttons-shouldnt-have-a-hand-cursor-b11e99ca374b#.dh6l2of9a Medium: Buttons shouldn’t have a hand cursor
+
+
+@mixin content-show-interaction($link-or-input) {
+    @if ($link-or-input == "link") {
+        cursor: pointer;
+    }
+
+    @else if ($link-or-input == "input") {
+        cursor: default;
+    }
+
+    @else {
+        @error "`#{$link-or-input}`" + $meta-invalid-argument
+        + $meta-invalid-argument-select-either
+        + "`link` or `input`";
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-content-show-interaction-link == true {
+    .content-show-interaction {
+        @include content-show-interaction(link);
+    }
+}
+
+@if $toggle-content-show-interaction-input == true {
+    .content-show-interaction {
+        @include content-show-interaction(input);
+    }
+}

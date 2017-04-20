@@ -1,0 +1,31 @@
+// ============================================================================
+// Typography
+// Oldstyle Numbers
+// ============================================================================
+
+
+/// Tends to have descenders that sit below the baseline. Typically default.
+///
+/// @group Typography
+///
+/// @example scss
+///  @include typography-numbers-oldstyle();
+
+
+@mixin typography-numbers-oldstyle() {
+    font-variant-numeric: oldstyle-nums;
+
+    @supports not (font-variant-numeric: oldstyle-nums) {
+        -webkit-font-feature-settings: "lnum" 0, "onum", "onum";
+        font-feature-settings: "lnum" 0, "onum", "onum";
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-numbers-oldstyle == true {
+    .typography-numbers-oldstyle {
+        @include typography-numbers-oldstyle();
+    }
+}

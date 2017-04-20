@@ -1,0 +1,33 @@
+// ============================================================================
+// Typography
+// Case Sensitive Forms
+// ============================================================================
+
+
+/// Alternate glyphs that are specifically designed to work alongside all caps
+/// settings, or alongside text.
+///
+/// @group Typography
+///
+/// @example scss
+///  @include typography-case-sensitive-forms();
+///
+/// @see {mixin} typography-caps-to-small-caps
+/// @see {mixin} typography-small-caps
+///
+/// @link http://utility-opentype.kennethormandy.com/#case Utility OpenType: Case sensitive forms
+
+
+@mixin typography-case-sensitive-forms() {
+    -webkit-font-feature-settings: "case";
+    font-feature-settings: "case";
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-case-sensitive-forms == true {
+    .typography-case-sensitive-forms {
+        @include typography-case-sensitive-forms();
+    }
+}

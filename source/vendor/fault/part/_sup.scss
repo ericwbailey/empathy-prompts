@@ -1,0 +1,9 @@
+@mixin sup() {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+%sup {
+    vertical-align: super;
+    @extend %smaller; //font-size: smaller;
+}

@@ -1,0 +1,7 @@
+@mixin cite() {
+  font-style: italic;
+}
+
+%cite {
+    @extend %italic; //font-style: italic;
+}

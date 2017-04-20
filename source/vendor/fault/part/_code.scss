@@ -1,0 +1,7 @@
+@mixin code() {
+  font-family: monospace;
+}
+
+%code {
+    @extend %monospaced; //font-family: monospace;
+}

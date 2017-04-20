@@ -1,0 +1,18 @@
+// ============================================================================
+// Shadows
+// ============================================================================
+
+
+/// REVIEW: Remember to update these values to match the design.
+///
+/// @group general
+///
+/// @property {String} key - Aliases for shadow size.
+///
+/// @link http://www.cssmatic.com/box-shadow CSSmatic: Box Shadow
+
+$shadows: (
+    large:  0 0.75rem 1rem 0,
+    medium: 0 0.5rem 1rem 0,
+    small:  0 0.25rem 1rem 0
+);

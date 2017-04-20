@@ -1,0 +1,7 @@
+@mixin datalist() {
+  display:none;
+}
+
+%datalist {
+    @extend %hidden; //display: none;
+}

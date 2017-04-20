@@ -1,0 +1,7 @@
+@mixin ins() {
+    text-decoration: underline;
+}
+
+%ins {
+    text-decoration: underline;
+}

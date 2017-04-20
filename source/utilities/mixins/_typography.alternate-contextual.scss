@@ -1,0 +1,38 @@
+// ============================================================================
+// Typography
+// Alternate Contextuals
+// ============================================================================
+
+
+/// Text that intends to mimic hand lettering.
+///
+/// @group Typography
+///
+/// @example scss
+///  @include typography-alternates-contextual();
+///
+/// @see {mixin} typography-alternates-historical
+/// @see {mixin} typography-alternates-titling
+///
+/// @link http://utility-opentype.kennethormandy.com/#titl Utility OpenType: Titling alternates
+
+
+@mixin typography-alternates-contextual() {
+    -ms-font-feature-settings: "calt";
+    -webkit-font-variant-ligatures: contextual;
+    font-variant-ligatures: contextual;
+
+    @supports not ((-webkit-font-variant-ligatures: contextual) or (font-variant-ligatures: contextual)) {
+        -webkit-font-feature-settings: "calt", "calt";
+        font-feature-settings: "calt", "calt";
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-alternates-contextual == true {
+    .typography-alternates-contextual {
+        @include typography-alternates-contextual();
+    }
+}

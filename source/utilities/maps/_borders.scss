@@ -1,0 +1,22 @@
+// ============================================================================
+// Borders
+// ============================================================================
+
+
+/// REVIEW: Remember to update these values to match the design.
+///
+/// @group general
+///
+/// @property {String} key - Aliases for border widths.
+///
+/// @see {variable} global-border-radius
+
+
+$borders: (
+    thickest: 9px,
+    thicker:  7px,
+    thick:    5px,
+    thin:     3px,
+    thinner:  2px,
+    thinnest: 1px
+);

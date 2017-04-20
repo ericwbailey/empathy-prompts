@@ -1,0 +1,39 @@
+// ============================================================================
+// Typography
+// Tabular Lining Numbers
+// ============================================================================
+
+
+/// @group Typography
+///
+/// @example scss
+///  @include typography-numbers-tabular-lining();
+///
+/// @requires {mixin} typography-numbers-lining
+/// @requires {mixin} typography-numbers-tabular
+///
+/// @see {mixin} typography-numbers-tabular
+///
+/// @link http://utility-opentype.kennethormandy.com/#tnum-lnum Utility OpenType: Tabular, Lining numbers
+
+
+@mixin typography-numbers-tabular-lining() {
+    @include typography-numbers-tabular();
+    @include typography-numbers-lining();
+
+    -ms-font-feature-settings: "lnum", "onum" 0, "pnum" 0, "tnum";
+
+    @supports not ((-webkit-font-feature-settings: "lnum" inherit) or (font-feature-settings: "lnum" inherit)) {
+        -webkit-font-feature-settings: "lnum", "onum" 0, "pnum" 0, "tnum";
+        font-feature-settings: "lnum", "onum" 0, "pnum" 0, "tnum";
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-numbers-tabular-lining == true {
+    .typography-numbers-tabular-lining {
+        @include typography-numbers-tabular-lining();
+    }
+}

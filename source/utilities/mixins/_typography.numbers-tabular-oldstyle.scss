@@ -1,0 +1,37 @@
+// ============================================================================
+// Typography
+// Tabular Oldstyle Numbers
+// ============================================================================
+
+
+/// @group Typography
+///
+/// @example scss
+///  @include typography-numbers-tabular-oldstyle();
+///
+/// @requires {mixin} typography-numbers-tabular
+/// @requires {mixin} typography-numbers-oldstyle
+///
+/// @link http://utility-opentype.kennethormandy.com/#tnum-onum Utility OpenType: Tabular, Oldstyle numbers
+
+
+@mixin typography-numbers-tabular-oldstyle() {
+    @include typography-numbers-tabular();
+    @include typography-numbers-oldstyle();
+
+    -ms-font-feature-settings: "lnum" 0, "onum", "pnum" 0, "tnum";
+
+    @supports not ((-webkit-font-feature-settings: "onum" inherit) or (font-feature-settings: "onum" inherit)) {
+        -webkit-font-feature-settings: "lnum" 0, "onum", "pnum" 0, "tnum";
+        font-feature-settings: "lnum" 0, "onum", "pnum" 0, "tnum";
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-numbers-tabular-oldstyle == true {
+    .typography-numbers-tabular-oldstyle {
+        @include typography-numbers-tabular-oldstyle();
+    }
+}

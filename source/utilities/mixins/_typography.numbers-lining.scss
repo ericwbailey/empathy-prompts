@@ -1,0 +1,31 @@
+// ============================================================================
+// Typography
+// Lining Numbers
+// ============================================================================
+
+
+/// Sets figures to align with the baseline and cap height.
+///
+/// @group Typography
+///
+/// @example scss
+///  @include typography-numbers-lining();
+
+
+@mixin typography-numbers-lining() {
+    font-variant-numeric: lining-nums;
+
+    @supports not (font-variant-numeric: lining-nums) {
+        -webkit-font-feature-settings: "lnum", "onum" 0, "lnum";
+        font-feature-settings: "lnum", "onum" 0, "lnum";
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-numbers-lining == true {
+    .typography-numbers-lining {
+        @include typography-numbers-lining();
+    }
+}

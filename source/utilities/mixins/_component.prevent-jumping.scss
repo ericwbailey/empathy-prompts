@@ -1,0 +1,23 @@
+// ============================================================================
+// Component
+// Prevent Content Jumping
+// ============================================================================
+
+
+/// Prevents page layout shifting from ajax-loaded content by specifying a
+/// minimum component height.
+///
+/// @group Components
+///
+/// @parameter {Number} $component-height - Height of the content when it loads
+///
+/// @example scss
+///  @include component-prevent-jumping(10rem);
+///
+/// @link https://css-tricks.com/content-jumping-avoid/ CSS-Tricks: Content Jumping (and How To Avoid It)
+/// @link https://www.smashingmagazine.com/2016/08/ways-to-reduce-content-shifting-on-page-load/ Smashing Magazine: Ways To Reduce Content Shifting On Page Load
+
+
+@mixin component-prevent-jumping($component-height) {
+    min-height: calc(#{$component-height} - 1px);
+}

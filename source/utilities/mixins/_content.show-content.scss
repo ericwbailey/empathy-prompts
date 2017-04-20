@@ -1,0 +1,78 @@
+// ============================================================================
+// Content
+// Show Content
+// ============================================================================
+
+
+/// Reveals hidden content.
+///
+/// @group Content
+///
+/// @parameter {String} $how [visually] - Sets the reveal approach. Can be `visually`, `visible`, or `add`
+///
+/// @example scss
+///  @include content-hide(visually);
+///
+/// @see {mixin} content-hide
+
+
+@mixin content-show($how: visually) {
+    // Reverts `hide(visually)`
+    @if ($how == "visually") {
+        border: initial;
+        rect: initial;
+        height: initial;
+        margin: initial;
+        overflow: initial;
+        padding: initial;
+        position: initial;
+        width: initial;
+
+        &:focus {
+            clip: initial;
+            height: initial;
+            margin: initial;
+            overflow: initial;
+            position: initial;
+            width: initial;
+        }
+    }
+
+    // Reverts `hide(invisible)`
+    @else if ($how == "visible") {
+        visibility: visible;
+    }
+
+    // Reverts `hide(remove)`
+    @else if ($how == "add") {
+        display: initial !important;
+    }
+
+    @else {
+        @error "`#{$how}`"
+        + $meta-invalid-argument
+        + $meta-invalid-argument-select-multiple
+        + "`visually`, `visible`, or `add`";
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-content-show-visually == true {
+    .content-show-visually {
+        @include content-show(visually);
+    }
+}
+
+@if $toggle-content-show-invisible == true {
+    .content-show-invisible {
+        @include content-show(visible);
+    }
+}
+
+@if $toggle-content-show-removed == true {
+    .content-show-removed {
+        @include content-show(add);
+    }
+}

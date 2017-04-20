@@ -1,0 +1,39 @@
+// ============================================================================
+// Animation
+// Ease
+// ============================================================================
+
+
+// Use these easing values to provide consistent behavior for the different
+// "tiers" of interface elements.
+///
+/// Returns a predefined animation easing value. Used to provide consistent
+/// behavior for the different "tiers" of interface elements.
+///
+/// @group Animation
+///
+/// @parameter {String} $ease - Calls a value from the `_animation-ease.scss` map
+///
+/// @returns {Number}
+///
+/// @require {variable} $animation-ease
+///
+/// @example scss
+///  transition-timing-function: animation-ease(character);
+///
+/// @see
+/// {function} animation-duration
+
+
+@function animation-ease($ease) {
+    @if (map-has-key($animation-ease, $ease)) {
+      @return map-get($animation-ease, $ease);
+    }
+
+    @else {
+        @error "`#{$ease}`"
+        + $meta-invalid-argument
+        + $meta-invalid-argument-select-multiple
+        + map-keys($animation-ease);
+    }
+}

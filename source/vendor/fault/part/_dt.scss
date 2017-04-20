@@ -1,0 +1,7 @@
+@mixin dt() {
+  display:block;
+}
+
+%dt {
+    @extend %display-block;
+}

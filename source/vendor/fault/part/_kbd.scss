@@ -1,0 +1,7 @@
+@mixin kbd() {
+    @extend %monospaced; //font-family: monospace;
+}
+
+%kbd {
+    @extend %monospaced; //font-family: monospace;
+}

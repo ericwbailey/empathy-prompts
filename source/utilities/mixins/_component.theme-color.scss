@@ -1,0 +1,52 @@
+// ============================================================================
+// Component
+// Theme Color
+// ============================================================================
+
+
+/// Take advantage of the cascade with the `currentColor` attribute.
+///
+/// @group Components
+///
+/// @parameter {String} $property [color] - Specifies where to apply the color to. Options are `background-color`, `color`, `column-rule-color`, `outline-color`, `text-decoration-color`, and `text-emphasis-color`
+///
+/// @example scss
+///  @include component-theme-color(outline-color);
+///
+/// @see {function} c
+///
+/// @link http://simurai.com/blog/2015/09/09/back-to-the-roots Simurai: Back to the roots
+
+
+@mixin component-theme-color($property: color) {
+    @if ($property == "background-color") {
+        background-color: currentColor;
+    }
+
+    @else if ($property == "color") {
+        color: currentColor;
+    }
+
+    @else if ($property == "column-rule-color") {
+        column-rule-color: currentColor;
+    }
+
+    @else if ($property == "outline-color") {
+        outline-color: currentColor;
+    }
+
+    @else if ($property == "text-decoration-color") {
+        text-decoration-color: currentColor;
+    }
+
+    @else if ($property == "text-emphasis-color") {
+        text-emphasis-color: currentColor;
+    }
+
+    @else {
+        @error "`#{$property}`"
+        + $meta-invalid-argument
+        + "Please select: background-color, color, column-rule-color, "
+        + "outline-color, text-decoration-color, text-emphasis-color";
+    }
+}

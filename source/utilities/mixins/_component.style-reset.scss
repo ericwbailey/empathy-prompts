@@ -1,0 +1,30 @@
+// ============================================================================
+// Component
+// Style Reset
+// ============================================================================
+
+
+/// Prevents a component from inheriting host page's styling.
+///
+/// @group Components
+///
+/// @example scss
+///  @include component-style-reset();
+///
+/// @see {mixin} component-remove-margin-padding
+///
+/// @link http://www.brucelawson.co.uk/2014/css-all-initial-to-prevent-widgets-inheriting-css-from-a-host-page/ Bruce Lawson: CSS {all: initial} to prevent widgets inheriting CSS from a host page
+
+
+@mixin component-style-reset() {
+    all: initial;
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-component-style-reset == true {
+    .component-style-reset {
+        @include component-style-reset();
+    }
+}

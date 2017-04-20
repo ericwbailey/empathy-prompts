@@ -1,0 +1,8 @@
+@mixin mark() {
+  background-color: yellow;
+  color: black;
+}
+
+%mark {
+    @include mark;
+}

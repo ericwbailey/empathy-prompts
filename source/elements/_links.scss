@@ -1,0 +1,230 @@
+// ============================================================================
+// Links
+// ============================================================================
+
+
+a {
+    @include content-underline();
+
+    color: c(link, base);
+
+    // States
+    &:hover {
+        color: c(link, hover);
+    }
+
+    &:focus {
+        color: c(link, focus);
+    }
+
+    &:active {
+        color: c(link, active);
+    }
+
+    &:visited {
+        color: c(link, visited);
+
+        &:hover {
+            color: c(link, hover);
+        }
+
+        &:focus {
+            color: c(link, focus);
+        }
+
+        &:active {
+            color: c(link, active);
+        }
+    }
+
+    // Styles links that don't have a class declared on them
+    &[href]:not([class]) {
+
+    }
+
+    // Display links when the `<a>` element has no text value but the href
+    // attribute has a link
+    &[href^="http"]:empty::before {
+      content: attr(href);
+    }
+
+    &[aria-busy="true"] {
+        color: c(link, busy);
+    }
+
+    &[rel~="external"],
+    &[rel~="noopener"],
+    &[href^="http"] {
+
+    }
+
+    &[download] {
+
+    }
+}
+
+
+// Communication --------------------------------------------------------------
+// Email
+a[href^="mailto"] {
+
+}
+
+// Phone numbers
+a[href^="tel"] {
+
+}
+
+// FTP
+a[href^="ftp"] {
+
+}
+
+
+// Archives -------------------------------------------------------------------
+a[href$=".7z"],
+a[href$=".cab"],
+a[href$=".gz"],
+a[href$=".lzh"],
+a[href$=".rar"],
+a[href$=".tar"],
+a[href$=".zip"] {
+
+}
+
+
+// Design ---------------------------------------------------------------------
+a[href$=".ai"],
+a[href$=".indd"],
+a[href$=".indt"],
+a[href$=".sketch"],
+a[href$=".psb"],
+a[href$=".psd"],
+a[href$=".xcf"] {
+
+}
+
+
+// Development ----------------------------------------------------------------
+a[href$=".atom"],
+a[href$=".cgi"],
+a[href$=".coffee"],
+a[href$=".css"],
+a[href$=".csv"],
+a[href$=".erb"],
+a[href$=".htm"],
+a[href$=".html"],
+a[href$=".js"],
+a[href$=".less"],
+a[href$=".markdown"],
+a[href$=".md"],
+a[href$=".php"],
+a[href$=".php"],
+a[href$=".pl"],
+a[href$=".py"],
+a[href$=".rb"],
+a[href$=".rb"],
+a[href$=".rss"],
+a[href$=".sass"],
+a[href$=".scss"],
+a[href$=".styl"],
+a[href$=".swf"],
+a[href$=".xhtml"],
+a[href$=".xml"],
+a[href$=".yml"] {
+
+}
+
+
+// Documents ------------------------------------------------------------------
+a[href$=".doc"],
+a[href$=".docx"],
+a[href$=".key"],
+a[href$=".numbers"],
+a[href$=".odt"],
+a[href$=".pages"],
+a[href$=".pdf"],
+a[href$=".pps"],
+a[href$=".ppsx"],
+a[href$=".ppt"],
+a[href$=".pptx"],
+a[href$=".ps"],
+a[href$=".pub"],
+a[href$=".rtf"],
+a[href$=".txt"],
+a[href$=".xls"],
+a[href$=".xlr"] {
+
+}
+
+
+// Ebooks ---------------------------------------------------------------------
+a[href$=".azw"],
+a[href$=".azw3"],
+a[href$=".cbr"],
+a[href$=".cbz"],
+a[href$=".epub"],
+a[href$=".mobi"] {
+
+}
+
+
+// Fonts ----------------------------------------------------------------------
+a[href$=".eot"],
+a[href$=".otf"],
+a[href$=".ttf"],
+a[href$=".woff"],
+a[href$=".woff2"] {
+
+}
+
+
+// Images ---------------------------------------------------------------------
+a[href$=".bmp"],
+a[href$=".gif"],
+a[href$=".gifv"],
+a[href$=".ico"],
+a[href$=".jpg"],
+a[href$=".jpeg"],
+a[href$=".png"],
+a[href$=".svg"],
+a[href$=".svz"],
+a[href$=".tiff"],
+a[href$=".tif"],
+a[href$=".webp"] {
+
+}
+
+
+// Movies ---------------------------------------------------------------------
+a[href$=".avi"],
+a[href$=".flv"],
+a[href$=".mkv"],
+a[href$=".mov"],
+a[href$=".mp4"],
+a[href$=".mpg"],
+a[href$=".mpeg"],
+a[href$=".wmv"] {
+
+}
+
+
+// Music ----------------------------------------------------------------------
+a[href$=".aac"],
+a[href$=".aif"],
+a[href$=".aiff"],
+a[href$=".flac"],
+a[href$=".m4a"],
+a[href$=".mid"],
+a[href$=".midi"],
+a[href$=".mp3"],
+a[href$=".ogg"],
+a[href$=".vob"] {
+
+}
+
+
+// Version Control ------------------------------------------------------------
+a[href$=".git"] {
+
+}

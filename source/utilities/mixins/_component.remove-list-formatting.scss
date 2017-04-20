@@ -1,0 +1,47 @@
+// ============================================================================
+// Component
+// Remove List Formatting
+// ============================================================================
+
+
+/// Undoes custom list styling. See `_reset.scss` and `_lists.scss`
+///
+/// @group Components
+///
+/// @example scss
+///  @include component-remove-list-formatting();
+///
+/// @see {mixin} component-remove-margin-padding
+
+
+@mixin component-remove-list-formatting() {
+    counter-reset: initial; // Only `<ol>` tags have custom styling applied to them
+
+    li {
+        margin-left: 0;
+
+        &::before {
+            display: initial;
+            margin-right: 0;
+            position: initial;
+              bottom: 0;
+            width: 0;
+
+            font-family: initial;
+            text-align: initial;
+
+            content: none;
+            counter-increment: initial;
+            speak: initial;
+        }
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-component-remove-list-formatting == true {
+    .component-remove-list-formatting {
+        @include component-remove-list-formatting();
+    }
+}

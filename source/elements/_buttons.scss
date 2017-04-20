@@ -1,0 +1,121 @@
+// ============================================================================
+// Buttons
+// ============================================================================
+
+
+// Form Logic -----------------------------------------------------------------
+@mixin buttons-border() {
+    border: 0;
+    border-radius: $global-border-radius;
+}
+
+
+@mixin buttons-color() {
+    background-color: c(button, base);
+
+    color: c(button, type);
+}
+
+
+@mixin button-states() {
+    &:hover {
+        background-color: c(button, hover);
+    }
+
+    &:active {
+        background-color: c(button, active);
+    }
+
+    &:focus {
+        background-color: c(button, focus);
+    }
+}
+
+
+@mixin buttons-width() {
+    display: block;
+    width: 100%;
+}
+
+
+// Grouped Styles -------------------------------------------------------------
+button,
+input[type="button"] {
+    @include buttons-color();
+    @include button-states();
+    @include buttons-width();
+
+    height: ms(2, em);
+
+    line-height: 1;
+
+    // Primary actions
+    &[data-button-priority="primary"] {
+
+    }
+
+    // Secondary actions
+    &[data-button-priority="secondary"] {
+
+    }
+
+    // Tertiary actions
+    &[data-button-priority="tertiary"] {
+
+    }
+
+    // Busy and Disabled
+    &[aria-busy="true"],
+    &[disabled] {
+        opacity: 0.5;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: c(button, base);
+        }
+    }
+
+    // Busy
+    &[aria-busy="true"] {
+
+    }
+
+    // Disabled
+    &[disabled] {
+
+    }
+}
+
+
+// Individual Styles ----------------------------------------------------------
+button {
+    @include buttons-border();
+}
+
+
+input[type="button"] {
+
+}
+
+
+// Text buttons
+[role="button"][tabindex="0"] {
+    @include buttons-width();
+    @include content-show-interaction(input);
+    @include typography-align(center);
+
+    color: c(button, base);
+
+    &:hover {
+        color: c(button, hover);
+    }
+
+    &:focus {
+        color: c(button, focus);
+    }
+
+    &:active {
+        color: c(button, active);
+    }
+}

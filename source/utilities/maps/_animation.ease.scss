@@ -1,0 +1,18 @@
+// ============================================================================
+// Animation
+// Ease
+// ============================================================================
+
+
+/// Animation easing names.
+///
+/// @group Animation
+///
+/// @property {String} key - Aliases for specific animation easings
+
+
+$animation-ease: (
+    character:  ease-in-out,
+    dialogue:   ease-out,
+    background: linear
+);

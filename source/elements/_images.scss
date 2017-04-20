@@ -1,0 +1,53 @@
+// ============================================================================
+// Images
+// ============================================================================
+
+
+// Grouped Styles -------------------------------------------------------------
+// [1] Differentiate `alt` text from surrounding copy
+// [2] Removes the whitespace that appears under `img` elements
+img,
+figure,
+picture {
+    @include component-responsify();
+    @include typography-align(center); // [1]
+
+    width: 100%; // [1]
+    vertical-align: middle; // [2]
+
+    // Fixed-size, non-fluid images if `height` and/or `width` attributes are
+    // declared
+    &[height],
+    &[width] {
+        max-width: none;
+    }
+}
+
+
+img,
+picture {
+    background-color: c(silver);
+}
+
+
+// Individual Styles ----------------------------------------------------------
+img {
+
+}
+
+
+figure {
+
+    img {
+        display: block;
+    }
+
+    figcaption {
+
+    }
+}
+
+
+picture {
+
+}

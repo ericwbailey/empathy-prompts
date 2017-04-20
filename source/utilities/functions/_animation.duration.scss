@@ -1,0 +1,36 @@
+// ============================================================================
+// Animation
+// Duration
+// ============================================================================
+
+
+/// Returns a predefined animation duration (set in milliseconds). Used to
+/// provide consistent behavior for the different tiers of interface elements.
+///
+/// @group Animation
+///
+/// @parameter {String} $duration - Calls a value from the `_animation-duration.scss` map
+///
+/// @returns {Measurement}
+///
+/// @require {variable} $animation-duration
+///
+/// @example scss
+///  transition-duration: animation-duration(short);
+///
+/// @see
+/// {function} animation-ease
+
+
+@function animation-duration($duration) {
+    @if (map-has-key($animation-duration, $duration)) {
+      @return map-get($animation-duration, $duration);
+    }
+
+    @else {
+        @error "`#{$duration}`"
+        + $meta-invalid-argument
+        + $meta-invalid-argument-select-multiple
+        + map-keys($animation-duration);
+    }
+}

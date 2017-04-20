@@ -1,0 +1,33 @@
+// ============================================================================
+// Component
+// Size
+// ============================================================================
+
+
+/// Specifies a component's height and optionally a width and top margin.
+///
+/// @group Components
+///
+/// @parameter {Measurement} $height            - Sets the height of the component
+/// @parameter {Measurement} $width      [null] - Optionally sets the width of the component
+/// @parameter {Measurement} $top-margin [null] - Optionally sptionally sets the top margin of the component
+///
+/// @example scss
+///  @include component-size(5rem, null, 3rem);
+
+
+@mixin component-size(
+    $height,
+    $width: null,
+    $top-margin: null
+) {
+    height: $height;
+
+    @if $width != null {
+        width: $width;
+    }
+
+    @if $top-margin != null {
+        margin-top: $top-margin;
+    }
+}

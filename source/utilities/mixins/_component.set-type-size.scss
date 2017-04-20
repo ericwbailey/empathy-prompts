@@ -1,0 +1,30 @@
+// ============================================================================
+// Component
+// Component Type Size
+// ============================================================================
+
+
+/// Resets the component's font size to control font size on a component level.
+///
+/// @group Components
+///
+/// @example scss
+///  @include component-set-type-size();
+///
+/// @link https://css-tricks.com/building-resizeable-components-relative-css-units/ CSS Tricks: Building Resizeable Components with Relative CSS Units
+/// @link https://css-tricks.com/rems-ems/ CSS Tricks: Font Size Idea: px at the Root, rem for Components, em for Text Elements
+/// @link https://www.lullabot.com/articles/scaling-css-components-with-bem-rems-ems Lulabot: Scaling CSS Components with BEM, REMs, & EMs
+
+
+@mixin component-set-type-size() {
+    font-size: 1rem;
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-component-set-type-size == true {
+    .component-set-type-size {
+        @include component-set-type-size();
+    }
+}

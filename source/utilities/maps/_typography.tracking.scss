@@ -1,0 +1,24 @@
+// ============================================================================
+// Typography
+// Tracking
+// ============================================================================
+
+
+/// Controls the spacing between letters, based off the set global type size.
+///
+/// @group Typography
+///
+/// @property {String} key - Aliases for tracking distances
+///
+/// @see {variable} global-type-size
+
+
+$tracking: (
+    tightest: -0.075em,
+    tighter:  -0.05em,
+    tight:    -0.025em,
+    slight:    0.025em,
+    loose:     0.05em,
+    looser:    0.075em,
+    loosest:   0.1em
+);

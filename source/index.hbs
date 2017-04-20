@@ -1,0 +1,43 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/Webpage" lang="$$projectLanguage">
+<head>
+
+{{>meta/description/charset-and-viewport}}
+
+<title>{{content.title.home}} | $$projectFullTitle</title>
+{{>meta/description/description}}
+{{>meta/description/author}}
+
+{{>meta/styles/main}}
+{{>vendor/modernizr/modernizr}}
+
+{{>meta/icons-and-theming/icons-and-theming}}
+{{>meta/social-media/facebook}}
+{{>meta/social-media/twitter}}
+{{>meta/social-media/google-plus}}
+
+</head>
+<body>
+
+{{>components/c-skipnav/c-skipnav}}
+
+<!-- Icon Sprite -->
+<div class="icon-sprite">
+{{>elements/icon-sprite}}
+</div>
+
+{{>objects/o-browserupgrade/o-browserupgrade}}
+
+<main
+    id="section-main"
+    aria-labelledby="title-home"
+    role="main">
+
+</main>
+
+{{>meta/scripts/main}}
+{{>meta/scripts/plugins}}
+{{>meta/analytics/google-analytics}}
+
+</body>
+</html>

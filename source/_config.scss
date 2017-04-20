@@ -1,0 +1,71 @@
+// ============================================================================
+// Project Config
+// ============================================================================
+
+
+// Used to set variables to control overall aspects of the project.
+
+
+// Grid -----------------------------------------------------------------------
+
+/// @group general
+/// @type  Measurement
+$global-grid-gutter: 0.5em !default;
+
+/// @group general
+/// @type  Measurement
+$global-grid-col-width: 5em !default;
+
+
+// Typography -----------------------------------------------------------------
+
+/// @group general
+/// @type  String
+$global-type-direction: ltr !default;
+
+/// @group general
+/// @type  Variable
+/// @require $font-family-primary
+$global-type-family: $font-family-primary !default;
+
+/// @group general
+/// @type  Number
+$global-type-line-height: 1.5 !default;
+
+/// See `_ratios.scss` for other ratio options.
+/// @group general
+/// @type  Variable
+/// @require $ratio-fourth
+$global-type-ratio: $ratio-fourth;
+
+/// @group general
+/// @type  Measurement
+$global-type-size: 20px !default;
+
+/// See `_font.weights.scss` for other weight options.
+/// @group general
+/// @type  Variable
+/// @require $font-weight-normal
+$global-type-weight: $font-weight-normal !default;
+
+/// @group general
+/// @type  Measurement
+$global-type-measure: 75ex !default;
+
+
+// Borders --------------------------------------------------------------------
+
+/// @group general
+/// @type  Measurement
+$global-border-color: currentColor !default;
+
+/// @group general
+/// @type  Function
+$global-border-radius: 0.2rem !default;
+
+
+// Shadows --------------------------------------------------------------------
+
+/// @group general
+/// @type  Measurement
+$global-shadow-color: currentColor !default;

@@ -1,0 +1,70 @@
+// ============================================================================
+// Typography
+// Smoothing
+// ============================================================================
+
+
+/// If at all possible, don't alter the subpixel rendering. Currently only works
+/// on Mac OS, options are included just in case.
+///
+/// @group Typography
+///
+/// @parameter {String} $aliasing-intent - Specifies aliasing intent. Use `none`, `light-on-dark`, or `dark-on-light`
+///
+/// @example scss
+///  @include generate-unicode-symbol($symbol-star-full);
+///
+/// @link http://usabilitypost.com/2012/11/05/stop-fixing-font-smoothing/ Usability Post Please Stop "Fixing" Font Smoothing
+/// @link http://files.christophzillgens.com/webkit-font-smoothing.html Christoph Zillgens: Webkit Font Smoothing
+
+
+@mixin typography-smoothing($aliasing-intent) {
+    text-rendering: optimizeLegibility;
+
+    // Best for typefaces with very small size considerations (Verdana, etc.) and bitmap/pixel fonts
+    @if ($aliasing-intent == "none") {
+        -webkit-font-smoothing: none;
+        font-smoothing: none;
+    }
+
+    // Best for light text on dark backgrounds and italic text
+    @else if ($aliasing-intent == "light-on-dark") {
+        -webkit-font-smoothing: subpixel-antialiased;
+        font-smoothing: subpixel-antialiased;
+    }
+
+    // Best for light text on dark backgrounds and icon fonts
+    @else if ($aliasing-intent == "dark-on-light") {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-smoothing: antialiased;
+    }
+
+    @else {
+        @error "`#{$aliasing-intent}`"
+        + $meta-invalid-argument
+        + $meta-invalid-argument-select-multiple
+         + "`none`, `light-on-dark`, or `dark-on-light`";
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-smoothing-none == true {
+    .typography-smoothing-none {
+        @include typography-smoothing(none);
+    }
+}
+
+@if $toggle-typography-smoothing-light-on-dark == true {
+    .typography-smoothing-light-on-dark {
+        @include typography-smoothing(light-on-dark);
+    }
+}
+
+@if $toggle-typography-smoothing-dark-on-light == true {
+    .typography-smoothing-dark-on-light {
+        @include typography-smoothing(dark-on-light);
+    }
+}

@@ -1,0 +1,42 @@
+// ============================================================================
+// Typography
+// Caps to Small Caps
+// ============================================================================
+
+
+/// Converts all letters, not just lowercase letters, into Small Caps.
+///
+/// @group Typography
+///
+/// @example scss
+///  @include typography-caps-to-small-caps();
+///
+/// @see {mixin} typography-case-sensitive-forms
+/// @see {mixin} typography-small-caps
+///
+/// @link http://utility-opentype.kennethormandy.com/#c2sc Utility OpenType: Caps to Small Caps
+
+
+@mixin typography-caps-to-small-caps() {
+    text-transform: uppercase;
+    font-variant-caps: all-small-caps;
+    -ms-font-feature-settings: "smcp" 0, "c2sc";
+
+    @supports (font-variant-caps: all-small-caps) or (font-feature-settings: "c2sc") {
+        text-transform: lowercase;
+    }
+
+    @supports not (font-variant-caps: all-small-caps) {
+        -webkit-font-feature-settings: "onum", "smcp" 0, "c2sc", "smcp", "c2sc";
+        font-feature-settings: "onum", "smcp" 0, "c2sc", "smcp", "c2sc";
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-caps-to-small-caps == true {
+    .typography-caps-to-small-caps {
+        @include typography-caps-to-small-caps();
+    }
+}

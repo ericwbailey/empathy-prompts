@@ -1,0 +1,39 @@
+// ============================================================================
+// Typography
+// Alternate Titling
+// ============================================================================
+
+
+/// Alternate characters for display text.
+///
+/// @group Typography
+///
+/// @example scss
+///  @include typography-alternates-titling();
+///
+/// @see {mixin} typography-alternates-contextual
+/// @see {mixin} typography-alternates-historical
+///
+/// @see {mixin} typography-swash-1
+///
+/// @link http://utility-opentype.kennethormandy.com/#titl Utility OpenType: Titling alternates
+
+
+@mixin typography-alternates-titling() {
+    -ms-font-feature-settings: "titl";
+    font-variant-caps: titling-caps;
+
+    @supports not (font-variant-caps: titling-caps) {
+        -webkit-font-feature-settings: "titl", "titl";
+        font-feature-settings: "titl", "titl";
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-alternates-titling == true {
+    .typography-alternates-titling {
+        @include typography-alternates-titling();
+    }
+}

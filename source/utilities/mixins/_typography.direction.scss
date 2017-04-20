@@ -1,0 +1,54 @@
+// ============================================================================
+// Typography
+// Direction
+// ============================================================================
+
+
+/// Aligns the type to either the start or the end of the set language
+/// direction.
+///
+/// @group Typography
+///
+/// @parameter {String} $ltr-or-rtl [rtl] - Sets the `direction` property to either `ltr` or `rtl`
+///
+/// @example scss
+///  @include typography-direction(rtl);
+///
+/// @see {mixin} component-align
+/// @see {mixin} typography-align
+/// @see {variable} global-type-direction
+///
+/// @link https://css-tricks.com/almanac/properties/d/direction/ CSS Almanac » Properties » D » direction
+
+
+@mixin typography-direction($ltr-or-rtl: rtl) {
+    @if ($ltr-or-rtl == "ltr") {
+        direction: ltr;
+    }
+
+    @else if ($ltr-or-rtl == "rtl") {
+        direction: rtl;
+    }
+
+    @else {
+        @error "`#{$ltr-or-rtl}`"
+        + $meta-invalid-argument
+        + $meta-invalid-argument-select-either
+        + "`ltr` or `rtl`";
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-direction-ltr == true {
+    .typography-direction-ltr {
+        @include typography-direction(ltr);
+    }
+}
+
+@if $toggle-typography-direction-rtl == true {
+    .typography-direction-rtl {
+        @include typography-direction(rtl);
+    }
+}

@@ -1,0 +1,7 @@
+@mixin small() {
+  font-size:smaller;
+}
+
+%small {
+    @extend %smaller; //font-size: smaller;
+}

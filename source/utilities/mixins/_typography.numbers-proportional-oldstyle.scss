@@ -1,0 +1,41 @@
+// ============================================================================
+// Typography
+// Proportional Oldstyle Numbers
+// ============================================================================
+
+
+/// Proportional numbers are designed to take up whatever width they need. Old
+/// style numbers are designed to sit alongside the lowercase letters, so they
+/// are less distracting within text.
+///
+/// @group Typography
+///
+/// @requires {mixin} typography-numbers-proportional
+/// @requires {mixin} typography-numbers-oldstyle
+///
+/// @example scss
+///  @include typography-numbers-proportional-oldstyle();
+///
+/// @link http://utility-opentype.kennethormandy.com/#pnum-onum Utility OpenType: Proportional, Oldstyle numbers
+
+
+@mixin typography-numbers-proportional-oldstyle() {
+    @include typography-numbers-proportional();
+    @include typography-numbers-oldstyle();
+
+    -ms-font-feature-settings: "lnum" 0, "onum", "pnum", "tnum" 0;
+
+    @supports not ((-webkit-font-feature-settings: "onum" inherit) or (font-feature-settings: "onum" inherit)) {
+        -webkit-font-feature-settings: "lnum" 0, "onum", "pnum", "tnum" 0;
+        font-feature-settings: "lnum" 0, "onum", "pnum", "tnum" 0;
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-numbers-proportional-oldstyle == true {
+    .typography-numbers-proportional-oldstyle {
+        @include typography-numbers-proportional-oldstyle();
+    }
+}

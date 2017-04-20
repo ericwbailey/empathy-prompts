@@ -1,0 +1,33 @@
+// ============================================================================
+// Generate
+// Pause
+// ============================================================================
+
+
+/// Inserts an invisible period after an alement to force a pause from a screen
+/// reader.
+///
+/// @group Generate
+///
+/// @example scss
+///  @include generate-pause();
+///
+/// @link http://jsbin.com/gavepu/edit?css,output JS Bin
+
+
+@mixin generate-pause() {
+    &::after {
+        @include content-hide(visually);
+
+        content: ".";
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-generate-pause == true {
+    .generate-pause {
+        @include generate-pause();
+    }
+}

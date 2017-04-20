@@ -1,0 +1,43 @@
+// ============================================================================
+// Typography
+// Small Caps
+// ============================================================================
+
+
+/// Less distracting than all capitals for longer form text settings. Renders
+/// all applicable glyphs as small caps, regardless of initial case.
+///
+/// @group Typography
+///
+/// @example scss
+///  @include typography-small-caps();
+///
+/// @see {mixin} typography-caps-to-small-caps
+/// @see {mixin} typography-case-sensitive-forms
+///
+/// @link http://utility-opentype.kennethormandy.com/#smcp Utility OpenType: Small Caps
+
+
+@mixin typography-small-caps() {
+   text-transform: uppercase;
+   font-variant-caps: all-small-caps;
+   -ms-font-feature-settings: "smcp" 0, "c2sc";
+
+   @supports (font-variant-caps: all-small-caps) or (font-feature-settings: "c2sc") {
+       text-transform: lowercase;
+   }
+
+   @supports not (font-variant-caps: all-small-caps) {
+       -webkit-font-feature-settings: "smcp" 0, "c2sc", "smcp", "c2sc";
+       font-feature-settings: "smcp" 0, "c2sc", "smcp", "c2sc";
+   }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-small-caps == true {
+    .typography-small-caps {
+        @include typography-small-caps();
+    }
+}

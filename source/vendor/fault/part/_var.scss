@@ -1,0 +1,7 @@
+@mixin var() {
+    font-style: italic;
+}
+
+%var {
+    @include var;
+}

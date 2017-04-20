@@ -1,0 +1,56 @@
+// ============================================================================
+// Content
+// Clearfix
+// ============================================================================
+
+
+/// Add or remove clearfix.
+///
+/// @group Content
+///
+/// @parameter {String} $add-or-remove - Adds or removes clearfix styling. Can be either `add` or `remove`
+///
+/// @example scss
+///  @include content-clearfix(add);
+///
+/// @link http://learnlayout.com/clearfix.html Learn CSS Layout: The clearfix hack
+
+
+@mixin content-clearfix($add-or-remove) {
+    @if ($add-or-remove == "add") {
+        &::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+
+    @else if ($add-or-remove == "remove") {
+        &::after {
+            display: initial;
+            clear: none;
+        }
+    }
+
+    @else {
+        @error "`#{$add-or-remove}`"
+        + $meta-invalid-argument
+        + $meta-invalid-argument-select-either
+        + "`add` or `remove`";
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-content-clearfix-add == true {
+    .content-clearfix-add {
+        @include content-clearfix(add);
+    }
+}
+
+@if $toggle-content-clearfix-remove == true {
+    .content-clearfix-remove {
+        @include content-clearfix(remove);
+    }
+}

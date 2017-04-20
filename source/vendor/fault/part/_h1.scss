@@ -1,0 +1,19 @@
+@mixin h1() {
+    display:block;
+    font-weight:bold;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+%h1 {
+  @extend %display-block; //display: block;
+  @extend %bold; //font-weight: bold;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+}

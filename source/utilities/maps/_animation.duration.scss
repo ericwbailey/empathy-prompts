@@ -1,0 +1,21 @@
+// ============================================================================
+// Animation
+// Duration
+// ============================================================================
+
+
+/// Animation duration names.
+///
+/// @group Animation
+///
+/// @property {Measurement} key - Aliases for specific animation durations
+
+
+$animation-duration: (
+    shortest: 100ms,
+    shorter:  200ms,
+    short:    300ms,
+    long:     500ms,
+    longer:   700ms,
+    longest:  900ms
+);

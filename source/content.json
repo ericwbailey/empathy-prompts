@@ -1,0 +1,8 @@
+{
+    "site": {
+        "title":   "$$projectFullTitle",
+        "tagline": "$$projectFullDescription"
+    },
+    "title": {
+    }
+}

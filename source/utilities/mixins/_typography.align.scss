@@ -1,0 +1,86 @@
+// ============================================================================
+// Typography
+// Align Type
+// ============================================================================
+
+
+/// Aligns text to the start or end of document, according to the parent node's
+/// language settings. Provides a LRT-based fallback, change if working with a
+/// RTL language.
+///
+/// @group Typography
+///
+/// @parameter {String} $start-end-or-center - Sets the `text-align` property to either `ltr` or `rtl` or `center`
+///
+/// @example scss
+///  @include typography-align(end);
+///
+/// @see {mixin} component-align
+/// @see {mixin} typography-direction
+///
+/// @link https://davidwalsh.name/text-align-start David Walsh Blog: text-align: start & RTL
+
+
+@mixin typography-align($start-end-or-center) {
+    @if ($global-type-direction == "ltr")
+    and ($start-end-or-center == "start") {
+        text-align: left;
+        text-align: start;
+    }
+
+    @else if ($global-type-direction == "rtl")
+    and ($start-end-or-center == "start") {
+        text-align: right;
+        text-align: start;
+    }
+
+    @else if ($global-type-direction == "ltr")
+    and ($start-end-or-center == "end") {
+        text-align: right;
+        text-align: end;
+    }
+
+    @else if ($global-type-direction == "rtl")
+    and ($start-end-or-center == "end") {
+        text-align: left;
+        text-align: end;
+    }
+
+    @else if ($start-end-or-center == "center") {
+        text-align: center;
+    }
+
+    @else {
+        @error "`#{$start-end-or-center}`"
+        + $meta-invalid-argument
+        + $meta-invalid-argument-select-either
+        + "`start` or `end`";
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-align-ltr == true {
+    .typography-align-ltr-start {
+        text-align: left;
+        text-align: start;
+    }
+
+    .typography-align-ltr-end {
+        text-align: right;
+        text-align: end;
+    }
+}
+
+@if $toggle-typography-align-rtl == true {
+    .typography-align-rtl-start {
+        text-align: right;
+        text-align: start;
+    }
+
+    .typography-align-rtl-end {
+        text-align: left;
+        text-align: end;
+    }
+}

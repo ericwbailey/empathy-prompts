@@ -1,0 +1,32 @@
+// ============================================================================
+// Units
+// Rems
+// ============================================================================
+
+
+/// Converts a pixel value into a rem, based on the document's root font size.
+///
+/// @group Units
+///
+/// @parameter {Number} $pixels                      - Pixel measurement to be converted into rems
+/// @parameter {Length} $context [$global-type-size] - The rem value that the pixel measurement gets divided by
+///
+/// @returns {Measurement}
+///
+/// @require {variable} $global-type-size
+///
+/// @example scss
+///  margin-top: rem(25);
+
+
+@function rem($pixels, $context: $global-type-size) {
+    @if (unitless($pixels)) {
+        $pixels: $pixels * 1px;
+    }
+
+    @if (unitless($context)) {
+        $context: $context * 1px;
+    }
+
+    @return $pixels / $context * 1rem;
+}

@@ -1,0 +1,37 @@
+// ============================================================================
+// Content
+// Color
+// ============================================================================
+
+
+/// Returns a predefined color value. Used to manage interface layout and
+/// components.
+///
+/// @group Components
+///
+/// @parameter {String} $color-name    - Calls a value from the `_colors.scss` map
+/// @parameter {String} $color-variant - Calls a sub-value from the `_colors.scss` map
+///
+/// @returns {Color}
+///
+/// @require {variable} $colors
+///
+/// @example scss
+///  background-color: c(button, background);
+///
+/// @see {mixin} component-theme-color
+
+
+@function c($color-name, $color-variant:null) {
+
+    // Color variant is optional
+    @if ($color-variant != null) {
+        // Return `map-get` for cleaner declaration
+        @return map-get(map-get($colors, $color-name), $color-variant);
+    }
+
+    // Color with color variant
+    @else if ($color-variant == null) {
+        @return map-get($colors, $color-name);
+    }
+}

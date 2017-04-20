@@ -1,0 +1,7 @@
+@mixin col() {
+  display: table-column;
+}
+
+%col {
+    display: table-column;
+}

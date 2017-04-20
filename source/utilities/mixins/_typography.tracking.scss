@@ -1,0 +1,81 @@
+// ============================================================================
+// Font
+// Tracking
+// ============================================================================
+
+
+/// Use these easing values to provide consistent tracking values.
+///
+/// @group Generate
+///
+/// @parameter {String} $amount - Can take one or two values: `width`, `height`
+///
+/// @example scss
+///  @include typography-tracking(loose);
+///
+/// @see {mixin} typography-caps-to-small-caps
+/// @see {mixin} typography-small-caps
+///
+/// @link http://practicaltypography.com/letterspacing.html Practical Typography: Letterspacing
+/// @link https://twitter.com/leaverou/status/485885496305127424 Twitter: @leaverou: #ProTip: When using letter-spacing != 0, disable ligatures through font-feature-settings. Otherwise this happens.
+
+
+@mixin typography-tracking($amount: slight) {
+    @include typography-disable-opentype();
+
+    @if (map-has-key($tracking, $amount)) {
+        letter-spacing: map-get($tracking, $amount);
+    }
+
+    @else {
+        @error "`#{$amount}`"
+        + $meta-invalid-argument
+        + $meta-invalid-argument-select-multiple
+        + map-keys($tracking);
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-tracking-tightest == true {
+    .typography-tracking-tightest {
+        @include typography-tracking(tightest);
+    }
+}
+
+@if $toggle-typography-tracking-tighter == true {
+    .typography-tracking-tighter {
+        @include typography-tracking(tighter);
+    }
+}
+
+@if $toggle-typography-tracking-tight == true {
+    .typography-tracking-tight {
+        @include typography-tracking(tight);
+    }
+}
+
+@if $toggle-typography-tracking-slight == true {
+    .typography-tracking-slight {
+        @include typography-tracking(slight);
+    }
+}
+
+@if $toggle-typography-tracking-loose == true {
+    .typography-tracking-loose {
+        @include typography-tracking(loose);
+    }
+}
+
+@if $toggle-typography-tracking-looser == true {
+    .typography-tracking-looser {
+        @include typography-tracking(looser);
+    }
+}
+
+@if $toggle-typography-tracking-loosest == true {
+    .typography-tracking-loosest {
+        @include typography-tracking(loosest);
+    }
+}

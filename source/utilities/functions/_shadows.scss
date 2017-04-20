@@ -1,0 +1,32 @@
+// ============================================================================
+// Shadows
+// ============================================================================
+
+
+/// Use these values to provide consistent treatment for site shadows. Declare
+/// `inset` before the function to apply to the shadow to the insize of the box.
+///
+/// @group general
+///
+/// @parameter {String} $shadow-size - Calls a value from the `_shadows.scss` map
+///
+/// @returns {String}
+///
+/// @require {variable} $shadows
+///
+/// @example scss
+///  box-shadow: shadow(large) currentColor;
+
+
+@function shadow($shadow-size) {
+    @if (map-has-key($shadows, $shadow-size)) {
+      @return map-get($shadows, $shadow-size);
+    }
+
+    @else {
+        @error "`#{$shadow-size}`"
+        + $meta-invalid-argument
+        + $meta-invalid-argument-select-multiple
+        + map-keys($shadows);
+    }
+}

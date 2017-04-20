@@ -1,0 +1,15 @@
+@mixin a() {
+  &:link, &:visited {
+      //color: (internal value);
+      text-decoration: underline;
+      cursor: auto;
+  }
+
+  &:link:active, &:visited:active {
+      //color: (internal value);
+  }
+}
+
+%a {
+  @include a;
+}

@@ -1,0 +1,7 @@
+@mixin u() {
+    text-decoration: underline;
+}
+
+%u {
+    @include u;
+}

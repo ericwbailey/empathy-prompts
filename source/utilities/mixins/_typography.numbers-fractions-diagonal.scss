@@ -1,0 +1,37 @@
+// ============================================================================
+// Typography
+// Diagonal Fractions
+// ============================================================================
+
+
+/// Turns common plaintext number lockups into properly spaced fractions (i.e.
+/// `1/4` to `¼`). Also see `_symbols.scss`.
+///
+/// @group Typography
+///
+/// @example scss
+///  @include typography-numbers-fractions-diagonal;
+///
+/// @see {mixin} typography-numbers-fractions-stacked
+///
+/// @link http://utility-opentype.kennethormandy.com/#frac Utility OpenType: Diagonal fractions
+
+
+@mixin typography-numbers-fractions-diagonal() {
+    -ms-font-feature-settings: "frac", "afrc" 0;
+    font-variant-numeric: diagonal-fractions;
+
+    @supports not (font-variant-numeric: diagonal-fractions) {
+        -webkit-font-feature-settings: "frac", "afrc" 0, "frac";
+        font-feature-settings: "frac", "afrc" 0, "frac";
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-numbers-fractions-diagonal == true {
+    .typography-numbers-fractions-diagonal {
+        @include typography-numbers-fractions-diagonal();
+    }
+}

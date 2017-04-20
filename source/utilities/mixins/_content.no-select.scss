@@ -1,0 +1,28 @@
+// ============================================================================
+// Content
+// No Select
+// ============================================================================
+
+
+/// Removes the selection highlight from an element
+///
+/// @group Content
+///
+/// @example scss
+///  @include content-no-select();
+///
+/// @see {mixin} content-remove-interaction
+
+
+@mixin content-no-select() {
+    user-select: none;
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-content-no-select == true {
+    .content-no-select {
+        @include content-no-select();
+    }
+}

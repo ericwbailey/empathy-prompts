@@ -1,0 +1,97 @@
+// ============================================================================
+// Component
+// Align Content
+// ============================================================================
+
+
+/// Aligns a component to the left, right, or center of the parent node.
+///
+/// @group Components
+///
+/// @parameter {String} $method    - Set to either `float` or `flex`
+/// @parameter {String} $direction - Set to `start`, `end`, or `center`
+///
+/// @example scss
+///  @include component-align(float, end);
+///
+/// @see {mixin} component-centerize
+/// @see {mixin} typography-align
+///
+/// @link https://css-tricks.com/snippets/css/a-guide-to-flexbox/ CSS-Tricks: A Complete Guide to Flexbox
+
+
+@mixin component-align($method, $direction) {
+    @if ($method == "float")
+    and ($direction == "start") {
+        float: left;
+    }
+
+    @else if ($method == "float")
+    and ($direction == "end") {
+        float: right;
+    }
+
+    @else if ($method == "float")
+    and ($direction == "center") {
+        margin: 0 auto;
+    }
+
+    @else if ($method == "flex")
+    and ($direction == "start") {
+        margin-right: auto;
+    }
+
+    @else if ($method == "flex")
+    and ($direction == "end") {
+        margin-left: auto;
+    }
+
+    @else if ($method == "flex")
+    and ($direction == "center") {
+        margin: 0 auto;
+    }
+
+    @else {
+        @error "Please use a `$method` argument of either `float` or `flex` "
+        + "and a `$direction` argument of either `start` or `end`.";
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-component-align-float-start == true {
+    .component-align-float-start {
+        @include component-align(float, start);
+    }
+}
+
+@if $toggle-component-align-float-end == true {
+    .component-align-float-end {
+        @include component-align(float, end);
+    }
+}
+
+@if $toggle-component-align-float-center == true {
+    .component-align-float-center {
+        @include component-align(float, center);
+    }
+}
+
+@if $toggle-component-align-flex-start == true {
+    .component-align-flex-start {
+        @include component-align(flex, start);
+    }
+}
+
+@if $toggle-component-align-flex-end == true {
+    .component-align-flex-end {
+        @include component-align(flex, end);
+    }
+}
+
+@if $toggle-component-align-flex-center == true {
+    .component-align-flex-center {
+        @include component-align(flex, center);
+    }
+}

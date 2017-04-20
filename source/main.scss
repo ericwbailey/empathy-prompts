@@ -1,0 +1,223 @@
+@charset "UTF-8";
+// ============================================================================
+// Main
+// ============================================================================
+
+
+// Order is important!
+// Loads and manages Sass partials. Be sure to use `_config.scss` and
+// `_toggles.scss` to set up configure project basics and toggle functional
+// classes.
+
+
+// Variables ------------------------------------------------------------------
+@import
+    "utilities/variables/meta",
+    "utilities/variables/paths",
+    "utilities/variables/font.families",
+    "utilities/variables/font.weights",
+    "utilities/variables/ratios",
+    "utilities/variables/supports",
+    "utilities/variables/symbols";
+
+
+// Maps -----------------------------------------------------------------------
+@import
+    "utilities/maps/animation.duration",
+    "utilities/maps/animation.ease",
+    "utilities/maps/borders",
+    "utilities/maps/breakpoints",
+    "utilities/maps/colors",
+    "utilities/maps/shadows",
+    "utilities/maps/typography.tracking",
+    "utilities/maps/units",
+    "utilities/maps/z-index";
+
+
+// Config and Toggles ---------------------------------------------------------
+// Use these partials to set global variables and generate functional classes
+// from Sass mixins.
+@import
+    "config",
+    "toggles";
+
+
+// Imports --------------------------------------------------------------------
+@import
+    "utilities/imports/typefaces";
+
+
+// Functions ------------------------------------------------------------------
+@import
+    "utilities/functions/animation.duration",
+    "utilities/functions/animation.ease",
+    "utilities/functions/borders",
+    "utilities/functions/component.z-index",
+    "utilities/functions/content.color",
+    "utilities/functions/shadows",
+    "utilities/functions/units.em",
+    "utilities/functions/units.modular-scale",
+    "utilities/functions/units.rem",
+    "utilities/functions/units.strip-unit";
+
+
+// Mixins ---------------------------------------------------------------------
+// [1] Needs to be declared after the mixins it invokes
+@import
+    "utilities/mixins/component.align",
+    "utilities/mixins/component.aspect-ratio",
+    "utilities/mixins/component.centerize",
+    "utilities/mixins/component.column-buster",
+    "utilities/mixins/component.prevent-jumping",
+    "utilities/mixins/component.remove-list-formatting",
+    "utilities/mixins/component.remove-margin-padding",
+    "utilities/mixins/component.responsify",
+    "utilities/mixins/component.set-type-size",
+    "utilities/mixins/component.size",
+    "utilities/mixins/component.style-reset",
+    "utilities/mixins/component.theme-color",
+
+    "utilities/mixins/content.clearfix",
+    "utilities/mixins/content.delobotomize",
+    "utilities/mixins/content.hide-content",
+    "utilities/mixins/content.no-select",
+    "utilities/mixins/content.remove-interaction",
+    "utilities/mixins/content.shift-click",
+    "utilities/mixins/content.show-content",
+    "utilities/mixins/content.show-interaction",
+    "utilities/mixins/content.text-truncate",
+    "utilities/mixins/content.underline",
+
+    "utilities/mixins/generate.circle",
+    "utilities/mixins/generate.pause",
+    "utilities/mixins/generate.triangle",
+    "utilities/mixins/generate.unicode-symbol",
+
+    "utilities/mixins/typography.disable-opentype", // Needs to be declared first for other mixins to use
+    "utilities/mixins/typography.align",
+    "utilities/mixins/typography.alternate-contextual",
+    "utilities/mixins/typography.alternate-historcial",
+    "utilities/mixins/typography.alternate-titling",
+    "utilities/mixins/typography.caps-to-small-caps",
+    "utilities/mixins/typography.case-sensitive-forms",
+    "utilities/mixins/typography.direction",
+    "utilities/mixins/typography.hyphenation",
+    "utilities/mixins/typography.kerning",
+    "utilities/mixins/typography.ligatures-common",
+    "utilities/mixins/typography.ligatures-discretionary",
+    "utilities/mixins/typography.measure",
+    "utilities/mixins/typography.numbers-fractions-diagonal",
+    "utilities/mixins/typography.numbers-fractions-stacked",
+    "utilities/mixins/typography.numbers-lining",
+    "utilities/mixins/typography.numbers-oldstyle",
+    "utilities/mixins/typography.numbers-proportional",
+    "utilities/mixins/typography.numbers-tabular",
+    "utilities/mixins/typography.ordinals",
+    "utilities/mixins/typography.preload-adjustments",
+    "utilities/mixins/typography.scientific-inferiors",
+    "utilities/mixins/typography.small-caps",
+    "utilities/mixins/typography.smoothing",
+    "utilities/mixins/typography.stylistic-sets",
+    "utilities/mixins/typography.subscript",
+    "utilities/mixins/typography.superscript",
+    "utilities/mixins/typography.swashes",
+    "utilities/mixins/typography.tracking",
+    "utilities/mixins/typography.numbers-proportional-lining", // [1]
+    "utilities/mixins/typography.numbers-proportional-oldstyle", // [1]
+    "utilities/mixins/typography.numbers-tabular-lining", // [1]
+    "utilities/mixins/typography.numbers-tabular-oldstyle"; // [1]
+
+
+// Vendor ---------------------------------------------------------------------
+@import
+    "../node_modules/family.scss/source/src/family",       // http://lukyvj.github.io/family.scss/
+    "vendor/fault/fault",                                  // https://github.com/jpdevries/fault
+    "../node_modules/mappy-breakpoints/mappy-breakpoints"; // https://github.com/zellwk/mappy-breakpoints
+
+
+// Modes ----------------------------------------------------------------------
+// Modes are toggled via `_config.scss` and used to audit different aspects of
+// your styling. Uncomment to enable them, comment to disable them.
+
+// http://diagnosticss.github.io/
+// @import "vendor/diagnosticss/diagnosticss";
+
+// http://pesticide.io/
+// @import "vendor/pesticide/pesticide";
+// @import "vendor/pesticide/pesticide-depth";
+
+// https://lukyvj.github.io/accecss/
+// Availably colorblindness types:
+// `protanopia`, `protanomaly`, `deuteranopia`, `deuteranomaly`,
+// `tritanopia`, `tritanomaly`, `achromatopsia`, `achromatomal
+// @import "vendor/accecss/accecss.scss";
+// @include accecss(
+//     "html body", // Element
+//     false, // CSS Zone
+//     false, // Grayscale
+//     false // Colorblindness type
+// );
+
+
+// Reset ----------------------------------------------------------------------
+// `normalize.css` fixes inconsistencies across major browsers, then
+// `base/_reset.scss` zeroes out elements and provides some extra defaults.
+@import
+    "../node_modules/normalize.css/normalize", // https://necolas.github.io/normalize.css/
+    "base/reset";
+
+
+// Base -----------------------------------------------------------------------
+@import
+    "base/root",
+    "base/html",
+    "base/body",
+    "base/global-attributes";
+
+// Elements -------------------------------------------------------------------
+@import
+    "elements/links",
+    "elements/headings",
+    "elements/icons",
+    "elements/paragraphs",
+    "elements/lists",
+    "elements/images",
+    "elements/tables",
+    "elements/forms",
+    "elements/buttons",
+    "elements/text-level",
+    "elements/quotes",
+    "elements/code",
+    "elements/hr",
+    "elements/media",
+    "elements/embeds";
+
+
+// Layout ---------------------------------------------------------------------
+@import
+    "layout/l-layout/l-layout";
+
+
+// Objects --------------------------------------------------------------------
+@import
+    "objects/o-object/o-object";
+
+
+// Components -----------------------------------------------------------------
+@import
+    "components/c-component/c-component",
+    "components/c-skipnav/c-skipnav";
+
+
+// Media ----------------------------------------------------------------------
+@import
+    "meta/media/print";
+
+
+// Shame ----------------------------------------------------------------------
+// These are styles that override other styles, and should be used very
+// sparingly. This is the only place where `!important` should be used. Strive
+// to refactor when time permits.
+// http://csswizardry.com/2013/04/shame-css/
+@import
+    "shame";

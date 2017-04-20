@@ -1,0 +1,30 @@
+// ============================================================================
+// Component
+// Remove Margin and Padding
+// ============================================================================
+
+
+/// Removes the margin and padding values on a component.
+///
+/// @group Components
+///
+/// @example scss
+///  @include component-remove-margin-padding();
+///
+/// @see {mixin} component-remove-list-formatting
+/// @see {mixin} component-style-reset
+
+
+@mixin component-remove-margin-padding() {
+    margin: 0;
+    padding: 0;
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-component-remove-margin-padding == true {
+    .component-remove-margin-padding {
+        @include component-remove-margin-padding();
+    }
+}

@@ -1,0 +1,7 @@
+@mixin style() {
+    display: none;
+}
+
+%style {
+    @extend %hidden; //display: none;
+}

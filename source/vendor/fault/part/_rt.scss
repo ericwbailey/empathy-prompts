@@ -1,0 +1,7 @@
+@mixin rt() {
+  line-height: normal;
+}
+
+%rt {
+  @include rt;
+}

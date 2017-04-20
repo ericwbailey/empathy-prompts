@@ -1,0 +1,39 @@
+// ============================================================================
+// Typography
+// Common Ligatures
+// ============================================================================
+
+
+/// Mitigate spacing issues between specific combinations of letters within a
+/// typeface.
+///
+/// @group Typography
+///
+/// @example scss
+///  @include typography-ligatures-common();
+///
+/// @see typography-ligatures-discretionary
+///
+/// @link http://practicaltypography.com/ligatures.html Practical Typography: Ligatures
+/// @link http://utility-opentype.kennethormandy.com/#liga Utility OpenType: Common ligatures
+
+
+@mixin typography-ligatures-common() {
+    -ms-font-feature-settings: "liga";
+    -webkit-font-variant-ligatures: common-ligatures;
+    font-variant-ligatures: common-ligatures;
+
+    @supports not ((-webkit-font-variant-ligatures: common-ligatures) or (font-variant-ligatures: common-ligatures)) {
+        -webkit-font-feature-settings: "liga", "liga", "clig";
+        font-feature-settings: "liga", "liga", "clig";
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-ligatures-common == true {
+    .typography-ligatures-common {
+        @include typography-ligatures-common();
+    }
+}

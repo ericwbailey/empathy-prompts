@@ -1,0 +1,55 @@
+// ============================================================================
+// Typography
+// Swashes
+// ============================================================================
+
+
+/// Adds additional flare, best applied conservatively. Manually declaring each
+/// mixin until Sass supports dynamic mixin creation via a for loop. Note:
+/// there are 3 Swash mixins, but only one is listed for the sake of brevity.
+///
+/// @group Typography
+///
+/// @example scss
+///  @include typography-swash-1();
+///
+/// @see {mixin} typography-alternates-titling
+///
+/// @link http://utility-opentype.kennethormandy.com/#swsh Utility OpenType: Swash
+
+
+@mixin typography-swash-1 {
+    -webkit-font-feature-settings: "swsh";
+    font-feature-settings: "swsh";
+}
+
+@mixin typography-swash-2 {
+    -webkit-font-feature-settings: "swsh" 2;
+    font-feature-settings: "swsh" 2;
+}
+
+@mixin typography-swash-3 {
+    -webkit-font-feature-settings: "swsh" 3;
+    font-feature-settings: "swsh" 3;
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-swash-1 == true {
+    .typography-swash-1 {
+        @include typography-swash-1();
+    }
+}
+
+@if $toggle-typography-swash-2 == true {
+    .typography-swash-2 {
+        @include typography-swash-2();
+    }
+}
+
+@if $toggle-typography-swash-3 == true {
+    .typography-swash-3 {
+        @include typography-swash-3();
+    }
+}

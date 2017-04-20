@@ -1,0 +1,8 @@
+@mixin form() {
+    display: block;
+    margin-top: 0em;
+}
+
+%form {
+  @include form;
+}

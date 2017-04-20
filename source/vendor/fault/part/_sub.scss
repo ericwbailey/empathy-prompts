@@ -1,0 +1,9 @@
+@mixin sub() {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+%sub {
+    vertical-align: sub;
+    @extend %smaller; //font-size: smaller;
+}

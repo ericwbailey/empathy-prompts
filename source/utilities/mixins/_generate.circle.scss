@@ -1,0 +1,29 @@
+// ============================================================================
+// Generate
+// Circles
+// ============================================================================
+
+
+/// Makes an element square and sets the border radius to a value that makes it
+/// appear round. Define background color and/or border in the component styles.
+///
+/// @group Generate
+///
+/// @parameter {Measurement} $diameter - Specifies the diameter of the circle
+///
+/// @example scss
+///  @include generate-circle(10rem);
+
+
+@mixin generate-circle($diameter) {
+    @if (type-of($diameter) == number)
+    and not (unitless($diameter)) {
+        height: $diameter;
+        width: $diameter;
+        border-radius: ($diameter / 2);
+    }
+    @else {
+        @error $meta-invalid-argument-provide
+        + "a unit for `$diameter`";
+    }
+}

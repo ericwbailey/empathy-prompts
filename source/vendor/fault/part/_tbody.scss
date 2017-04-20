@@ -1,0 +1,10 @@
+@mixin tbody() {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+
+%tbody {
+    @include tbody;
+}

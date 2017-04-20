@@ -1,0 +1,34 @@
+// ============================================================================
+// Typography
+// Stacked Fractions
+// ============================================================================
+
+
+/// Support for a less-common stacked presentation for fractions.
+///
+/// @group Typography
+///
+/// @example scss
+///  @include typography-numbers-fractions-diagonal;
+///
+/// @see {mixin} typography-numbers-fractions-diagonal
+
+
+@mixin typography-numbers-fractions-stacked() {
+    -ms-font-feature-settings: "frac", "afrc";
+    font-variant-numeric: stacked-fractions;
+
+    @supports not (font-variant-numeric: stacked-fractions) {
+        -webkit-font-feature-settings: "frac", "afrc", "afrc";
+        font-feature-settings: "frac", "afrc", "afrc";
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-numbers-fractions-stacked == true {
+    .typography-numbers-fractions-stacked {
+        @include typography-numbers-fractions-stacked();
+    }
+}

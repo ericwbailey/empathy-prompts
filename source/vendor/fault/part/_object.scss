@@ -1,0 +1,11 @@
+@mixin object() {
+  &:focus {
+      outline: none;
+  }
+}
+
+%object {
+  &:focus {
+      outline: none;
+  }
+}

@@ -1,0 +1,30 @@
+// ============================================================================
+// Units
+// Ems
+// ============================================================================
+
+
+/// Converts a pixel value into an em, based on the document's root font size.
+///
+/// @group Units
+///
+/// @parameter {Number} $pixels                      - Pixel value to be converted into ems
+/// @parameter {Length} $context [$global-type-size] - The em value that the pixel measurement gets divided by
+///
+/// @returns {Measurement}
+///
+/// @example scss
+///  font-size: em(18);
+
+
+@function em($pixels, $context: $global-type-size) {
+    @if (unitless($pixels)) {
+        $pixels: $pixels * 1px;
+    }
+
+    @if (unitless($context)) {
+        $context: $context * 1px;
+    }
+
+    @return $pixels / $context * 1em;
+}

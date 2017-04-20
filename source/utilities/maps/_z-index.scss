@@ -1,0 +1,37 @@
+// ============================================================================
+// Z-index
+// ============================================================================
+
+
+/// Z-index names.
+///
+/// @group general
+///
+/// @property {Number} key - Aliases for layouts, objects, components, etc.
+
+
+$z-index: (
+    // Banish things out of sight
+    basement: -999999,
+
+
+    // Layout -----------------------------------------------------------------
+    layout: 1000,
+
+
+    // Object -----------------------------------------------------------------
+    object: 2000,
+
+
+    // Component --------------------------------------------------------------
+    component: 3000,
+        subcomponent: 3010,
+
+
+    // Pop up/over UI elements ------------------------------------------------
+    modal: 4000,
+        submodal: 4010,
+
+    // Ensure things are displayed
+    ceiling: 999999
+);

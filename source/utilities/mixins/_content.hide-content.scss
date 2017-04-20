@@ -1,0 +1,84 @@
+// ============================================================================
+// Content
+// Hide Content
+// ============================================================================
+
+
+/// Hides content from the screen. Can still make visually accessible, retain
+/// computed size, or remove entirely.
+///
+/// @group Content
+///
+/// @parameter {String} $how [visually] - Sets the hiding approach. Can be `visually`, `invisible`, or `remove`
+///
+/// @example scss
+///  @include content-hide(visually);
+///
+/// @see {mixin} content-show
+///
+/// @link http://a11yproject.com/posts/how-to-hide-content/ The A11Y Project: How-to: Hide Content
+
+
+@mixin content-hide($how: visually) {
+    // Hide only visually, but have it available for screen readers:
+    // http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+    @if ($how == "visually") {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        // Allow element to be focusable when navigated to via the keyboard:
+        // https://www.drupal.org/node/897638
+        &:focus {
+            clip: auto;
+            height: auto;
+            margin: 0;
+            overflow: visible;
+            position: static;
+            width: auto;
+        }
+    }
+
+    // Hide visually and from screen readers, but maintain layout
+    @else if ($how == "invisible") {
+        visibility: hidden;
+    }
+
+    // Completely remove content
+    @else if ($how == "remove") {
+        display: none !important;
+    }
+
+    @else {
+        @error "`#{$how}`"
+        + $meta-invalid-argument
+        + $meta-invalid-argument-select-multiple
+        + "`visually`, `invisible`, or `remove`";
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-content-hide-visually == true {
+    .content-hide-visually {
+        @include content-hide(visually);
+    }
+}
+
+@if $toggle-content-hide-invisible == true {
+    .content-hide-invisible {
+        @include content-hide(invisible);
+    }
+}
+
+@if $toggle-content-hide-remove == true {
+    .content-hide-remove {
+        @include content-hide(remove);
+    }
+}

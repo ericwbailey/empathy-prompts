@@ -1,0 +1,7 @@
+@mixin strong() {
+    font-weight: bold;
+}
+
+%strong {
+    @extend %bold; //font-weight: bold;
+}

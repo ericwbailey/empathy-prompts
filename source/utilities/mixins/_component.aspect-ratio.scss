@@ -1,0 +1,36 @@
+// ============================================================================
+// Component
+// Aspect Ratio
+// ============================================================================
+
+
+/// Makes embedded content such as videos responsive. Apply to parent container.
+/// Add `padding-top` to provide additional spacing for player controls if cut
+/// off.
+///
+/// @group Components
+///
+/// @parameter {Fraction} $aspect     - Sets the desired aspect ratio (`16/9`, `4/3`, etc.)
+/// @parameter {String} $target [> *] - Sets the class name of the video object (optional)
+///
+/// @example scss
+///  @include component-aspect-ratio(16/9);
+///
+/// @see {mixin} component-responsify
+/// @see {mixin} component-column-buster
+
+
+@mixin component-aspect-ratio($aspect: 16/9, $target: "> *") {
+    $aspect-percentage: percentage(1 / ($aspect));
+    height: 0;
+    position: relative;
+    padding-bottom: $aspect-percentage;
+
+    #{$target} {
+        position: absolute;
+          top: 0;
+          left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

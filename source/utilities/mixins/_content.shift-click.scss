@@ -1,0 +1,31 @@
+// ============================================================================
+// Content
+// Shift Click
+// ============================================================================
+
+
+/// Shift body text links to make them feel more button-like.
+///
+/// @group Content
+///
+/// @example scss
+///  @include content-shift-click();
+///
+/// @link http://css-tricks.com/one-pixel-shift-buttons/ CSS-Tricks: Make All Links Feel Subtly More Button-Like
+
+
+@mixin content-shift-click() {
+    position: relative;
+      top: 1px;
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-content-shift-click == true {
+    .content-shift-click {
+        &:active {
+            @include content-shift-click();
+        }
+    }
+}

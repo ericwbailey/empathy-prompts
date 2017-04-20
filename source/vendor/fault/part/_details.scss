@@ -1,0 +1,7 @@
+@mixin details() {
+  display:block;
+}
+
+%details {
+    @extend %display-block;
+}

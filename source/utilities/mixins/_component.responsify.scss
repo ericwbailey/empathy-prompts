@@ -1,0 +1,30 @@
+// ============================================================================
+// Component
+// Responsify
+// ============================================================================
+
+
+/// Creates a basic full-width responsive component whose aspect ratio scales
+/// proportionately.
+///
+/// @group Components
+///
+/// @example scss
+///  @include component-responsify();
+///
+/// @see {mixin} component-column-buster
+
+
+@mixin component-responsify() {
+    height: auto;
+    width: 100%;
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-component-responsify == true {
+    .component-responsify {
+        @include component-responsify();
+    }
+}

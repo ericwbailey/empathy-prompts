@@ -1,0 +1,38 @@
+// ============================================================================
+// Typography
+// Discretionary Ligatures
+// ============================================================================
+
+
+/// Additional ligatures that might be considered too "attention-grabbing" or
+/// unconventional to be enabled in many situations.
+///
+/// @group Typography
+///
+/// @example scss
+///  @include typography-ligatures-discretionary();
+///
+/// @see typography-ligatures-common
+///
+/// @link http://utility-opentype.kennethormandy.com/#dlig Utility OpenType: Discretionary ligatures
+
+
+@mixin typography-ligatures-discretionary() {
+    -ms-font-feature-settings: "dlig";
+    -webkit-font-variant-ligatures: discretionary-ligatures;
+    font-variant-ligatures: discretionary-ligatures;
+
+    @supports not ((-webkit-font-variant-ligatures: discretionary-ligatures) or (font-variant-ligatures: discretionary-ligatures)) {
+        -webkit-font-feature-settings: "dlig", "dlig";
+        font-feature-settings: "dlig", "dlig";
+    }
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-typography-ligatures-discretionary == true {
+    .typography-ligatures-discretionary {
+        @include typography-ligatures-discretionary();
+    }
+}

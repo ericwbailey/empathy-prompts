@@ -1,0 +1,24 @@
+// ============================================================================
+// Units
+// ============================================================================
+
+
+/// A list of acceptable, relative CSS units.
+///
+/// @group general
+///
+/// @property {String} Key - CSS units
+///
+/// @link https://developer.mozilla.org/en-US/docs/Web/CSS/length MDN > Web Technology For Developers > CSS > <length>
+
+
+$units:
+    %,
+    em,
+    ex,
+    ch,
+    rem,
+    vh,
+    vw,
+    vmin,
+    vmax;

@@ -1,0 +1,9 @@
+@mixin address() {
+  display:block;
+  font-style:italic;
+}
+
+%address {
+    @extend %display-block;
+    @extend %oblique; //@extend %italic; //font-style: italic;
+}

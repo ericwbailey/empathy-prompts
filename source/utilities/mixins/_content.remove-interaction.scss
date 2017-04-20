@@ -1,0 +1,28 @@
+// ============================================================================
+// Content
+// Remove Interaction
+// ============================================================================
+
+
+/// Removes cursor interaction
+///
+/// @group Content
+///
+/// @example scss
+///  @include content-remove-interaction();
+///
+/// @see {mixin} content-no-select
+
+
+@mixin content-remove-interaction() {
+    pointer-events: none;
+}
+
+
+// Toggles --------------------------------------------------------------------
+// Enables functional class toggles. See `_config.scss`
+@if $toggle-content-remove-interaction == true {
+    .content-remove-interaction {
+        @include content-remove-interaction();
+    }
+}

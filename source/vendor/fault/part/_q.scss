@@ -1,0 +1,14 @@
+@mixin q() {
+    display: inline;
+    &:before {
+        content: open-quote;
+    }
+
+    &:after {
+        content: close-quote;
+    }
+}
+
+%q {
+  @include q;
+}

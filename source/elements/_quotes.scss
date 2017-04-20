@@ -1,0 +1,228 @@
+// ============================================================================
+// Quotes
+// ============================================================================
+
+
+// Let the `lang` attribute determine the generated quote. Top languages
+// are represented, as per this list:
+// http://en.wikipedia.org/wiki/List_of_languages_by_total_number_of_speakers
+
+// Four levels of quote pairs to ensure deeply nested quotations display
+// properly. If deeper than four levels, consider rewriting your sentence to
+// improve clarity:
+// http://en.wikipedia.org/wiki/International_variation_in_quotation_marks
+// http://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references
+
+
+// English --------------------------------------------------------------------
+// Quote pairs: “…” ‘…’ “…” ‘…’
+
+// General
+:lang(en) blockquote,
+:lang(en) q,
+
+// United States
+:lang(en-US) blockquote,
+:lang(en-US) q,
+
+// Great Britan
+:lang(en-GB) blockquote,
+:lang(en-GB) q {
+    quotes: "\201C" "\201D" "\2018" "\2019" "\201C" "\201D" "\2018" "\2019";
+}
+
+
+// French ---------------------------------------------------------------------
+// Quote pairs: «» “” «» “”
+@if $toggle-quotes-french == true {
+    :lang(fr) blockquote,
+    :lang(fr) q {
+        quotes: "\00AB" "\00BB" "\201C" "\201D" "\00AB" "\00BB" "\201C" "\201D";
+    }
+}
+
+
+// German -----------------------------------------------------------------
+// Quote pairs: „…“ ‚…‘ „…“ ‚…‘
+@if $toggle-quotes-german == true {
+:lang(de) blockquote,
+    :lang(de) q {
+        quotes: "\201E" "\201C" "\201A" "\2018" "\201E" "\201C" "\201A" "\2018";
+    }
+}
+
+
+// Italian --------------------------------------------------------------------
+// Quote pairs: «…» “…” «…» “…”
+@if $toggle-quotes-italian == true {
+    :lang(it) blockquote,
+    :lang(it) q {
+        quotes: "\00AB" "\00BB" "\201C" "\201D" "\00AB" "\00BB" "\201C" "\201D";
+    }
+}
+
+
+// Indonesian -----------------------------------------------------------------
+// Quote pairs: “…” ‘…’ “…” ‘…’
+@if $toggle-quotes-indonesian == true {
+    :lang(id) blockquote,
+    :lang(id) q,
+    :lang(in) blockquote,
+    :lang(in) q {
+        quotes: "\201C" "\201D" "\2018" "\2019" "\201C" "\201D" "\2018" "\2019";
+    }
+}
+
+
+// Japanese -------------------------------------------------------------------
+// Quote pairs: 「…」 『…』 「…」 『…』
+@if $toggle-quotes-japanese == true {
+    :lang(ja) blockquote,
+    :lang(ja) q {
+        quotes: "\300C" "\300D" "\300E" "\300F" "\300C" "\300D" "\300E" "\300F";
+    }
+}
+
+
+// Korean ---------------------------------------------------------------------
+// Quote pairs: 「…」 『…』 「…」 『…』
+@if $toggle-quotes-korean == true {
+    :lang(ko) blockquote,
+    :lang(ko) q {
+        quotes: "\300C" "\300D" "\300E" "\300F" "\300C" "\300D" "\300E" "\300F";
+    }
+}
+
+
+// Mandarin Chinese -----------------------------------------------------------
+// Quote pairs: 「…」 『…』 「…」 『…』
+@if $toggle-quotes-chinese == true {
+    // General
+    :lang(zh) blockquote,
+    :lang(zh) q,
+
+    // Simplified
+    :lang(zh-Hans) blockquote,
+    :lang(zh-Hans) q,
+
+    // Traditional
+    :lang(zh-Hant) blockquote,
+    :lang(zh-Hant) q {
+        quotes: "\300C" "\300D" "\300E" "\300F" "\300C" "\300D" "\300E" "\300F";
+    }
+}
+
+
+// Portuguese -----------------------------------------------------------------
+// Quote pairs: “…” ‘…’ “…” ‘…’
+@if $toggle-quotes-portuguese == true {
+    :lang(pt) blockquote,
+    :lang(pt) q {
+        quotes: "\201C" "\201D" "\2018" "\2019" "\201C" "\201D" "\2018" "\2019";
+    }
+}
+
+
+// Russian --------------------------------------------------------------------
+// Quote pairs: «…» „…“ «…» „…“
+@if $toggle-quotes-russian == true {
+    :lang(ru) blockquote,
+    :lang(ru) q {
+        quotes: "\00AB" "\00BB" "\201E" "\201C" "\00AB" "\00BB" "\201E" "\201C";
+    }
+}
+
+
+// Spanish --------------------------------------------------------------------
+// Quote pairs: «…» “…” «…» “…”
+@if $toggle-quotes-spanish == true {
+    :lang(es) blockquote,
+    :lang(es) q {
+        quotes: "\00AB" "\00BB" "\201C" "\201D" "\00AB" "\00BB" "\201C" "\201D";
+    }
+}
+
+
+// Turkish --------------------------------------------------------------------
+// Quote pairs: “…” ‘…’ “…” ‘…’
+@if $toggle-quotes-turkish == true {
+    :lang(tr) blockquote,
+    :lang(tr) q {
+        quotes: "\201C" "\201D" "\2018" "\2019" "\201C" "\201D" "\2018" "\2019";
+    }
+}
+
+
+// Vietnamese -----------------------------------------------------------------
+// Quote pairs: “…” “…” “…” “…”
+@if $toggle-quotes-vietnamese == true {
+    :lang(vi) blockquote,
+    :lang(vi) q {
+        quotes: "\201C" "\201D" "\201C" "\201D" "\201C" "\201D" "\201C" "\201D";
+    }
+}
+
+
+// Quotation ------------------------------------------------------------------
+q {
+    &::before {
+        content: open-quote;
+    }
+
+    &::after {
+        content: close-quote;
+    }
+}
+
+// http://practicaltypography.com/block-quotations.html
+// [1] Re­duce the point size and line spac­ing slightly.
+// [2] In­dent the text block be­neonate half an inch and a full inch on the left
+// side, and op­tion­ally the same on the right. Or on the web, about 2–5 ems.
+blockquote {
+    margin: ms(1.5, em) ms(1, em); // [1]
+
+    font-size: ms(1, em); // [1]
+
+    &::before {
+        display: inline;
+        position: absolute;
+          left: em(10);
+        content: open-quote;
+    }
+
+    p:last-of-type,
+    q:last-of-type {
+        &::after {
+            content: close-quote;
+        }
+    }
+
+    // http://html5doctor.com/cite-and-blockquote-reloaded/
+    cite {
+        display: block;
+
+        font-size: ms(0.6, em);
+        text-indent: 0;
+
+        &::before {
+            content: $symbol-dash-quotation;
+        }
+    }
+}
+
+
+// Quoted emphasis
+q em,
+q i,
+cite em,
+cite i ,
+
+
+// Quoted strong
+q strong,
+q b,
+cite strong,
+cite b {
+    font-style: normal;
+    font-weight: $font-weight-normal;
+}

@@ -1,0 +1,62 @@
+// ============================================================================
+// Typography
+// Preload Adjustments
+// ============================================================================
+
+
+/// Size and stretch the preloaded font to help mitigate FOUT.
+///
+/// @group Typography
+///
+/// @parameter {Measurement} $font-size        [null] - Sets the `font-size` property, if applicable
+/// @parameter {Number}      $font-size-adjust [null] - Sets the `font-size-adjust` property, if applicable
+/// @parameter {String}      $font-stretch     [null] - Sets the `font-stretch` property, if applicable
+/// @parameter {Number}      $font-weight      [null] - Sets the `font-weight` property, if applicable
+/// @parameter {Measurement} $letter-spacing   [null] - Sets the `letter-spacing` property, if applicable
+/// @parameter {Number}      $line-height      [null] - Sets the `line-height` property, if applicable
+///
+/// @example scss
+///  @include typography-preload-adjustments(1.25em, semi-expanded, 1px);
+///
+/// @see {function} em
+/// @see {function} ms
+/// @see {function} rem
+/// @see {mixin} typography-tracking
+///
+/// @link https://css-tricks.com/almanac/properties/f/font-size-adjust/ CSS Almanac » Properties » F » font-size-adjust
+/// @link https://css-tricks.com/almanac/properties/f/font-stretch/ CSS Almanac » Properties » F » font-stretch
+/// @link http://codepen.io/ericwbailey/pen/KgEdqr?editors=1100 CodePen: Fallback font tweaks
+
+@mixin typography-preload-adjustments(
+    $font-size: null,
+    $font-size-adjust: null,
+    $font-stretch: null,
+    $font-weight: null,
+    $letter-spacing: null,
+    $line-height: null
+) {
+
+    @if $font-size != null {
+        font-size: $font-size;
+    }
+
+    @if $font-size-adjust != null {
+        font-size: $font-size-adjust;
+    }
+
+    @if $font-stretch != null {
+        font-stretch: $font-stretch;
+    }
+
+    @if $font-weight != null {
+        font-weight: $font-weight;
+    }
+
+    @if $letter-spacing != null {
+        letter-spacing: $letter-spacing;
+    }
+
+    @if $line-height != null {
+        line-height: $line-height;
+    }
+}
