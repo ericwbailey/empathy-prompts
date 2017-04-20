@@ -20,10 +20,10 @@ Following these guidelines helps to communicate that you respect the time of the
 ## Before you get started
 
 ### Code of Conduct
-This project adheres to the [Contributor Covenant code of conduct](http://contributor-covenant.org/version/1/4/). By participating, you are expected to uphold this code. Please report unacceptable behavior to [the project authors](https://github.com/$$githubAuthor/$$githubTitle/blob/master/AUTHORS).
+This project adheres to the [Contributor Covenant code of conduct](http://contributor-covenant.org/version/1/4/). By participating, you are expected to uphold this code. Please report unacceptable behavior to [the project authors](https://github.com/ericwbailey/global-accessibility-awareness-day/blob/master/AUTHORS).
 
 ### Terms of Use
-By submitting code or a feature request, you agree to allow the project owners to license your work under the terms of the [project license](https://github.com/$$githubAuthor/$$githubTitle/blob/master/LICENSE).
+By submitting code or a feature request, you agree to allow the project owners to license your work under the terms of the [project license](https://github.com/ericwbailey/global-accessibility-awareness-day/blob/master/LICENSE).
 
 ### Labeling
 This project uses labels to help organize and prioritize contributions. The labels are broken into three main types: **Type**, **Status**, and **Priority**.
@@ -36,13 +36,13 @@ Labels will be updated throughout the submission process to reflect the submissi
 This project uses templates for Issue and Pull Requests. Following the provided template helps the project maintainers have all the right details up front, which makes addressing feedback easier.
 
 ### GitMagic
-This repo uses [GitMagic](https://gitmagic.io/) to help ensure that contributions are consistently formatted in a way that's easy to work with. The rules can be seen [here](https://github.com/$$githubAuthor/$$githubTitle/blob/master/contributing.json).
+This repo uses [GitMagic](https://gitmagic.io/) to help ensure that contributions are consistently formatted in a way that's easy to work with. The rules can be seen [here](https://github.com/ericwbailey/global-accessibility-awareness-day/blob/master/contributing.json).
 
 
 ## Submitting Issues
 *An Issue is a demonstrable problem that is caused by the code in the repository.*
 
-First, use the [GitHub Issue search](https://github.com/$$githubAuthor/$$githubTitle/issues) to check if the issue has already been reported—then, check if the issue has been fixed. Try to reproduce it using the latest [master branch](https://github.com/$$githubAuthor/$$githubTitle) in the repository. Next, isolate the problem—ideally [create a reduced test case](https://css-tricks.com/reduced-test-cases/) and a live example.
+First, use the [GitHub Issue search](https://github.com/ericwbailey/global-accessibility-awareness-day/issues) to check if the issue has already been reported—then, check if the issue has been fixed. Try to reproduce it using the latest [master branch](https://github.com/ericwbailey/global-accessibility-awareness-day) in the repository. Next, isolate the problem—ideally [create a reduced test case](https://css-tricks.com/reduced-test-cases/) and a live example.
 
 A good Issue report shouldn't leave others needing to chase you up for more information. Please try to be as detailed as possible in your report. What is your environment? What steps will reproduce the issue? What browser(s) and OS versions experience the problem? What would you expect to be the outcome? Any guesses to a possible solution? All these details will help people to fix any potential bugs.
 
@@ -53,7 +53,7 @@ A good Issue report shouldn't leave others needing to chase you up for more info
 
 Good Pull Requests, patches, improvements, new features, etc. are a fantastic help. They should remain focused in scope and avoid containing unrelated commits.
 
-When submitting a Pull Request, first use the [GitHub Pull Request search](https://github.com/$$githubAuthor/$$githubTitle/pulls) to check if the request has already been submitted.
+When submitting a Pull Request, first use the [GitHub Pull Request search](https://github.com/ericwbailey/global-accessibility-awareness-day/pulls) to check if the request has already been submitted.
 
 If it hasn't, please ask first before embarking on any significant Pull Request (e.g. implementing features, refactoring code, porting to a different language), otherwise you risk spending a lot of time working on something that the project's developers might not want to merge into the project.
 
@@ -67,4 +67,4 @@ Feature Requests are welcome. It's up to you to make a strong case to convince t
 
 Before submitting, take a moment to find out whether your idea fits with the scope and aims of the project. Use the GitHub Issue and Pull Request searches to see if there is something similar to your propose feature being worked on already.
 
-Use the [GitHub Issues page](https://github.com/$$githubAuthor/$$githubTitle/issues) to submit your Feature Request. Please provide as much detail and context in your request as possible.
+Use the [GitHub Issues page](https://github.com/ericwbailey/global-accessibility-awareness-day/issues) to submit your Feature Request. Please provide as much detail and context in your request as possible.

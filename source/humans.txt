@@ -2,8 +2,8 @@ The Humans Responsible & Colophon
 humanstxt.org
 
 
-$$projectFullTitle
-$$projectURL
+Global Accessibility Awareness Day
+updateme
 
 
 ## Team

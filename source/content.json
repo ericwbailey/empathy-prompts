@@ -1,7 +1,7 @@
 {
     "site": {
-        "title":   "$$projectFullTitle",
-        "tagline": "$$projectFullDescription"
+        "title":   "Global Accessibility Awareness Day",
+        "tagline": "This is the project full description, remember to update."
     },
     "title": {
     }

@@ -1,14 +1,9 @@
 {
-  "name": "$$projectFullTitle",
-  "description": "$$projectFullDescription",
-  "homepage": "$$projectURL",
+  "name": "gaad",
+  "description": "This is the project full description, remember to update.",
   "version": "0.0.1",
-  "license": "$$projectLicense",
-  "author": "$$projectAuthorName <$$projectAuthorEmail> ($$projectAuthorURL)",
-  "contributors": [
-    "$$projectContributorName <$$projectContributorEmail> ($$projectContributorURL)",
-    "$$projectContributorName <$$projectContributorEmail> ($$projectContributorURL)"
-  ],
+  "license": "MIT",
+  "author": "Eric Bailey <eric.w.bailey@gmail.com> (http​s:​//ericwbailey​.​design)",
   "keywords": [
     "comma",
     "separated",
@@ -16,11 +11,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/$$githubAuthor/$$githubTitle.git"
+    "url": "git://github.com/ericwbailey/global-accessibility-awareness-day.git"
   },
   "bugs": {
-    "url": "https://github.com/$$githubAuthor/$$githubTitle/issues",
-    "email": "$$projectAuthorEmail"
+    "url": "https://github.com/ericwbailey/global-accessibility-awareness-day/issues",
+    "email": "eric.w.bailey@gmail.com"
   },
   "dependencies": {
     "browser-sync": "^2.12.3",

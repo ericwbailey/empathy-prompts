@@ -1,8 +1,8 @@
 {
-    "short_name": "$$projectFullTitle",
-    "name": "$$projectShortTitle",
-    "theme_color": "$$projectThemeColor",
-    "background_color": "$$projectBackgroundColor",
+    "short_name": "Global Accessibility Awareness Day",
+    "name": "GAAD",
+    "theme_color": "#F300C0",
+    "background_color": "#7BDBFF",
 	"icons": [
 		{
 			"src": "static/favicons/android/android-chrome-36x36.png",
