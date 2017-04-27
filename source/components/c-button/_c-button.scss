@@ -1,6 +1,6 @@
 // ============================================================================
 // Component
-// Skipnav
+// Card
 // ============================================================================
 
 
@@ -9,19 +9,14 @@
 
 
 // Component Styling ----------------------------------------------------------
-.c-skipnav {
-        @include content-hide(visually);
+.c-button {
+    @include component-button()
 
-    &__link {
-        opacity: 0;
+    &__icon {
+        top: rem(7);
+    }
 
-        transition: opacity animation-duration(short) animation-ease(dialogue);
-
-        // States
-        &:hover,
-        &:focus,
-        &:active {
-            // Style when focused
-        }
+    &--share {
+        margin-right: ms(5, rem);
     }
 }

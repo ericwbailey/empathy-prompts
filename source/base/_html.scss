@@ -24,15 +24,12 @@ html {
 
     color: c(base, type);
     direction: $global-type-direction;
-    font-family: $font-family-primary-preload; // See Type Loading section below
+    // font-family: $font-family-primary-preload; // See Type Loading section below
+    font-family: $font-family-primary;
     font-size: $global-type-size;
     font-weight: $global-type-weight;
     line-height: $global-type-line-height;
     text-size-adjust: 100%; // [3]
-
-    &:lang(en-US) {
-         @include typography-hyphenation(); // [4]
-    }
 }
 
 

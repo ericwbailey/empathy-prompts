@@ -1,0 +1,47 @@
+// ============================================================================
+// Component
+// Card
+// ============================================================================
+
+
+// Component Logic ------------------------------------------------------------
+
+
+
+// Component Styling ----------------------------------------------------------
+.c-card {
+    @include component-size(100vh, 100vw, 0);
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    &__content {
+        margin-top: ms(1, rem);
+        max-width: $global-type-measure;
+        min-height: 60vh;
+    }
+
+    &__title {
+        font-size: ms(2, em);
+        line-height: 1;
+    }
+
+    &__directions {
+        margin-top: ms(0.75, em);
+
+        font-size: ms(1, em);
+    }
+
+    &__example {
+        margin-top: ms(2.5, em);
+        margin-right: ms(4, rem);
+
+        font-size: ms(0.75, em);
+        font-weight: $font-weight-medium;
+    }
+
+    &__link {
+        @include content-underline(#111111);
+    }
+}

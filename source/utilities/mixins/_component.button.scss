@@ -1,0 +1,23 @@
+// ============================================================================
+// Component
+// Button
+// ============================================================================
+
+
+@mixin component-button() {
+    @include content-show-interaction(link);
+
+    background: transparent;
+    border: none;
+
+    font-size: ms(0.7, em);
+    font-weight: $font-weight-medium;
+    text-decoration: none;
+
+    &__icon {
+        @include component-size(ms(0.85, rem), ms(0.85, rem), null);
+
+        margin-left: rem(5);
+        position: relative;
+    }
+}

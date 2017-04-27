@@ -30,17 +30,17 @@ $global-type-family: $font-family-primary !default;
 
 /// @group general
 /// @type  Number
-$global-type-line-height: 1.5 !default;
+$global-type-line-height: 1.4 !default;
 
 /// See `_ratios.scss` for other ratio options.
 /// @group general
 /// @type  Variable
-/// @require $ratio-fourth
-$global-type-ratio: $ratio-fourth;
+/// @require $ratio-minor-third
+$global-type-ratio: $ratio-minor-third;
 
 /// @group general
 /// @type  Measurement
-$global-type-size: 20px !default;
+$global-type-size: 26px !default;
 
 /// See `_font.weights.scss` for other weight options.
 /// @group general
@@ -50,7 +50,7 @@ $global-type-weight: $font-weight-normal !default;
 
 /// @group general
 /// @type  Measurement
-$global-type-measure: 75ex !default;
+$global-type-measure: 60ex !default;
 
 
 // Borders --------------------------------------------------------------------

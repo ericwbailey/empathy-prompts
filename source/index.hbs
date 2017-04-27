@@ -4,39 +4,93 @@
 
 {{>meta/description/charset-and-viewport}}
 
-<title>{{content.title.home}} | Global Accessibility Awareness Day</title>
+<title>Global Accessibility Awareness Day</title>
 {{>meta/description/description}}
 {{>meta/description/author}}
 
 {{>meta/styles/main}}
-{{>vendor/modernizr/modernizr}}
 
 {{>meta/icons-and-theming/icons-and-theming}}
 {{>meta/social-media/facebook}}
 {{>meta/social-media/twitter}}
 {{>meta/social-media/google-plus}}
 
+<link href="https://fonts.googleapis.com/css?family=Heebo:400,500,700" rel="stylesheet">
+
 </head>
 <body>
-
-{{>components/c-skipnav/c-skipnav}}
 
 <!-- Icon Sprite -->
 <div class="icon-sprite">
 {{>elements/icon-sprite}}
 </div>
 
-{{>objects/o-browserupgrade/o-browserupgrade}}
-
 <main
-    id="section-main"
+    id="main"
+    class="l-main"
     aria-labelledby="title-home"
     role="main">
 
+    <h1
+        id="title-home"
+        class="content-hide-visually">
+        Empathy Prompts
+    </h1>
+
+    {{>components/c-card/c-card-unplug-mouse}}
+
+
 </main>
 
+<aside
+    id="aside"
+    class="l-aside"
+    aria-labelledby="title-additional-info"
+    role="complementary">
+    <h2
+        id="title-additional-info"
+        class="content-hide-visually">
+        Additional info
+    </h2>
+
+    <a
+        class="c-more-info"
+        href="">
+        What is this?
+        <svg height="32" width="32" aria-hidden="true" viewBox="0 0 100 100" class="icon c-more-info__icon">
+            <use xlink:href="#icon-info"></use>
+        </svg>
+    </a>
+</aside>
+
+<nav
+    id="nav"
+    class="l-nav"
+    aria-labelledby="show-me-another"
+    role="navigation">
+
+    <button
+        id="share"
+        class="c-button c-button--share"
+        name="share"
+        type="button">
+        Share
+    </button>
+
+    <button
+        id="show-me-another"
+        class="c-button c-button--random"
+        name="show-me-another"
+        type="button">
+        Show me another
+        <svg height="32" width="32" aria-hidden="true" viewBox="0 0 100 100" class="icon c-button__icon">
+            <use xlink:href="#icon-random"></use>
+        </svg>
+    </button>
+</nav>
+
+
 {{>meta/scripts/main}}
-{{>meta/scripts/plugins}}
 {{>meta/analytics/google-analytics}}
 
 </body>

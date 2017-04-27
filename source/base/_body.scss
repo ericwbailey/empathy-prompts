@@ -10,9 +10,3 @@ body {
 
     font-size: 1em;
 }
-
-// Lobotomized Owl selector provides default vertical spacing:
-// http://alistapart.com/article/axiomatic-css-and-lobotomized-owls
-body * + * {
-    margin-top: ms(1, rem);
-}

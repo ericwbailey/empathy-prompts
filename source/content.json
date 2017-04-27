@@ -1,8 +1,14 @@
 {
     "site": {
-        "title":   "Global Accessibility Awareness Day",
-        "tagline": "This is the project full description, remember to update."
+        "title":   "Global Accessibility Awareness Day"
     },
-    "title": {
+    "unplug-mouse": {
+        "title":      "Unplug your mouse",
+        "directions": "Navigate your computer using the keyboard. Using the trackpad is cheating!"
+    },
+    "zoom-out": {
+        "title":      "Zoom out",
+        "directions": "Use the text resize controls on your browser to make the text very small.",
+        "example":    "This exercise helps you understand what it’s like to have a visual disability condition like Farsightedness."
     }
 }
