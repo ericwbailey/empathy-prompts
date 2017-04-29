@@ -6,13 +6,6 @@
 
 @mixin content-underline($underline-color) {
     background-image: linear-gradient(to bottom, transparent 75%, transparentize($underline-color, 0.5) 75%);
-    background-size: rem(30) rem(30);
-    background-origin: padding-box;
-    background-position: 0 45%;
-    background-repeat: repeat-x;
-
-    color: currentColor;
-    text-decoration: none;
 
     // States
     &:hover {

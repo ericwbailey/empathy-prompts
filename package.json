@@ -1,5 +1,5 @@
 {
-  "name": "gaad",
+  "name": "empathy-prompts",
   "description": "This is the project full description, remember to update.",
   "version": "0.0.1",
   "license": "MIT",
@@ -11,10 +11,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/ericwbailey/global-accessibility-awareness-day.git"
+    "url": "git://github.com/ericwbailey/empathy-prompts.git"
   },
   "bugs": {
-    "url": "https://github.com/ericwbailey/global-accessibility-awareness-day/issues",
+    "url": "https://github.com/ericwbailey/empathy-prompts/issues",
     "email": "eric.w.bailey@gmail.com"
   },
   "dependencies": {

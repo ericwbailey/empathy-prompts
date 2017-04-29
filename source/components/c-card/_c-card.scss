@@ -42,6 +42,12 @@
     }
 
     &__link {
-        @include content-underline(#111111);
+        background-size: rem(30) rem(30);
+        background-origin: padding-box;
+        background-position: 0 45%;
+        background-repeat: repeat-x;
+
+        color: currentColor;
+        text-decoration: none;
     }
 }

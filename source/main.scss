@@ -127,7 +127,7 @@
     "utilities/mixins/typography.numbers-tabular-lining", // [1]
     "utilities/mixins/typography.numbers-tabular-oldstyle", // [1]
 
-    "utilities/mixins/component.button";
+    "utilities/mixins/component.action";
 
 // Vendor ---------------------------------------------------------------------
 @import
@@ -207,9 +207,8 @@
 
 // Components -----------------------------------------------------------------
 @import
-    "components/c-button/c-button",
-    "components/c-card/c-card",
-    "components/c-more-info/c-more-info";
+    "components/c-action/c-action",
+    "components/c-card/c-card";
 
 
 // Themes ---------------------------------------------------------------------

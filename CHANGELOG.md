@@ -8,11 +8,11 @@ This project adheres to [Semantic Versioning](http://semver.org/) and tries to f
 
 - What you have planned
 
-## [v0.3.0](https://github.com/ericwbailey/global-accessibility-awareness-day/compare/v0.1.0...v0.2.0) - Unreleased
+## [v0.3.0](https://github.com/ericwbailey/empathy-prompts/compare/v0.1.0...v0.2.0) - Unreleased
 
 - What you're working on
 
-## [v0.2.0](https://github.com/ericwbailey/global-accessibility-awareness-day/compare/v0.1.0...v0.2.0) - yyyy-mm-dd
+## [v0.2.0](https://github.com/ericwbailey/empathy-prompts/compare/v0.1.0...v0.2.0) - yyyy-mm-dd
 
 - Update 1
 - Update 2

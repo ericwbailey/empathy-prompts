@@ -1,6 +1,6 @@
 // ============================================================================
 // Component
-// Card
+// Action
 // ============================================================================
 
 
@@ -9,14 +9,22 @@
 
 
 // Component Styling ----------------------------------------------------------
-.c-button {
-    @include component-button()
+.c-action {
+    @include component-action()
 
-    &__icon {
-        top: rem(7);
+    &--random {
+        .icon {
+            top: rem(6);
+        }
     }
 
     &--share {
         margin-right: ms(5, rem);
+    }
+
+    &--what-is-this {
+        .icon {
+            top: rem(4);
+        }
     }
 }

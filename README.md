@@ -1,4 +1,4 @@
-# Global Accessibility Awareness Day
+# Empathy Prompts
 
 This is the project full description, remember to update.
 
@@ -21,8 +21,8 @@ Provide code examples and explanations of how to get the project.
 
 Let people know how they can dive into the project, include important links to things like issue trackers, IRC, Twitter accounts, etc. if applicable.
 
-Link to [`CONTRIBUTING.md`](https://github.com/ericwbailey/global-accessibility-awareness-day/blob/master/CONTRIBUTING.md), [`AUTHORS`](https://github.com/ericwbailey/global-accessibility-awareness-day/blob/master/AUTHORS), and update the contributors section in [`package.json`](https://github.com/ericwbailey/global-accessibility-awareness-day/blob/master/package.json).
+Link to [`CONTRIBUTING.md`](https://github.com/ericwbailey/empathy-prompts/blob/master/CONTRIBUTING.md), [`AUTHORS`](https://github.com/ericwbailey/empathy-prompts/blob/master/AUTHORS), and update the contributors section in [`package.json`](https://github.com/ericwbailey/empathy-prompts/blob/master/package.json).
 
 ## License
 
-[MIT License](https://raw.githubusercontent.com/ericwbailey/global-accessibility-awareness-day/master/LICENSE).
+[MIT License](https://raw.githubusercontent.com/ericwbailey/empathy-prompts/master/LICENSE).

@@ -1,10 +1,10 @@
 // ============================================================================
 // Component
-// Button
+// Action
 // ============================================================================
 
 
-@mixin component-button() {
+@mixin component-action() {
     @include content-show-interaction(link);
 
     background: transparent;
@@ -14,7 +14,7 @@
     font-weight: $font-weight-medium;
     text-decoration: none;
 
-    &__icon {
+    .icon {
         @include component-size(ms(0.85, rem), ms(0.85, rem), null);
 
         margin-left: rem(5);
