@@ -1,9 +1,12 @@
-# Issue title
+# Submit a prompt
 
-## Expected behavior
+## Prompt Title
+
+Example:
 
 
-## Actual behavior
+## Prompt directions
 
 
-## Steps to reproduce behavior
+
+## Prompt description

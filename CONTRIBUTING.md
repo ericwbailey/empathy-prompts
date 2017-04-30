@@ -10,11 +10,11 @@ Following these guidelines helps to communicate that you respect the time of the
     - [Terms of Use](#terms-of-use)
     - [Labeling](#labeling)
     - [Templates](#templates)
-    - [GitMagic](#gitmagic)
 - [Submitting Issues](#submitting-issues)
 - [Pull and Feature Requests](#pull-and-feature-requests)
     1. [Submitting Pull Requests](#submitting-pull-requests)
     - [Submitting Feature Requests](#submitting-feature-requests)
+    - [Submitting Prompts](#submitting-prompts)
 
 
 ## Before you get started
@@ -34,9 +34,6 @@ Labels will be updated throughout the submission process to reflect the submissi
 
 ### Templates
 This project uses templates for Issue and Pull Requests. Following the provided template helps the project maintainers have all the right details up front, which makes addressing feedback easier.
-
-### GitMagic
-This repo uses [GitMagic](https://gitmagic.io/) to help ensure that contributions are consistently formatted in a way that's easy to work with. The rules can be seen [here](https://github.com/ericwbailey/empathy-prompts/blob/master/contributing.json).
 
 
 ## Submitting Issues
@@ -68,3 +65,8 @@ Feature Requests are welcome. It's up to you to make a strong case to convince t
 Before submitting, take a moment to find out whether your idea fits with the scope and aims of the project. Use the GitHub Issue and Pull Request searches to see if there is something similar to your propose feature being worked on already.
 
 Use the [GitHub Issues page](https://github.com/ericwbailey/empathy-prompts/issues) to submit your Feature Request. Please provide as much detail and context in your request as possible.
+
+
+### Submitting Prompts
+
+A prompt is an idea for the site to use to help facilitate Inclusive Design thinking. The site's [Issue Request Template](https://github.com/ericwbailey/empathy-prompts/blob/master/ISSUE_TEMPLATE.md) and  [README](https://github.com/ericwbailey/empathy-prompts/blob/master/README.md)'s [Contributing Guidelines]() have more info on what the project author considers in line with the project's overall direction. 

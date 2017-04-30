@@ -1,14 +1,110 @@
 {
-    "site": {
-        "title":   "Empathy Prompts"
+    "borrow-glasses": {
+        "title":      "Borrow a pair of glasses",
+        "directions": "A",
+        "example":    "B",
+        "type":       "Visual"
+    },
+    "brightness": {
+        "title":      "Adjust your screen's brightness",
+        "directions": "A",
+        "example":    "B",
+        "type":       "Visual"
+    },
+    "dyslexia": {
+        "title":      "Install a bookmarklet",
+        "directions": "Turn it on before browsing the web.",
+        "example":    "This prompt helps you understand what it’s like to have a a <a rel='external noopener' class='c-prompt__link' href=''>cognitive disability</a> condition like <a rel='external noopener' class='c-prompt__link' href=''>Dyslexia</a>.",
+        "type":       "Cognitive"
+    },
+    "dominant-hand": {
+        "title":      "Sit on your dominant hand",
+        "directions": "You'll have to rely on your non-dominant hand.",
+        "example":    "This prompt helps you understand what it’s like to have a a <a rel='external noopener' class='c-prompt__link' href=''>cognitive disability</a> condition like <a rel='external noopener' class='c-prompt__link' href=''>Dyslexia</a>.",
+        "type":       "Motor"
+    },
+    "exercise-strenuously": {
+        "title":      "Exercise strenuously",
+        "directions": "A.",
+        "example":    "B.",
+        "type":       "Motor"
+    },
+    "high-contrast": {
+        "title":      "Enable high contrast mode",
+        "directions": "A.",
+        "example":    "B.",
+        "type":       "Visual"
+    },
+    "loud-coffee-shop": {
+        "title":      "Go to a loud coffee shop",
+        "directions": "A",
+        "example":    "B",
+        "type":       "C"
+    },
+    "magnifier": {
+        "title":      "Use a screen magnifier",
+        "directions": "A",
+        "example":    "B",
+        "type":       "Visual"
+    },
+    "mute-speaker": {
+        "title":      "Mute your speakers",
+        "directions": "A",
+        "example":    "B",
+        "type":       "C"
+    },
+    "no-coffee": {
+        "title":      "Use NoCoffee",
+        "directions": "A",
+        "example":    "B",
+        "type":       "Visual"
+    },
+    "play-static": {
+        "title":      "Play static",
+        "directions": "A",
+        "example":    "B",
+        "type":       "C"
+    },
+    "pig-latin": {
+        "title":      "Speak in Pig Latin",
+        "directions": "A",
+        "example":    "B",
+        "type":       "C"
+    },
+    "screen-reader": {
+        "title":      "Close your eyes and use a screen reader",
+        "directions": "A.",
+        "example":    "B.",
+        "type":       "C"
+    },
+    "translate": {
+        "title":      "Translate",
+        "directions": "A",
+        "example":    "B",
+        "type":       "C"
     },
     "unplug-mouse": {
         "title":      "Unplug your mouse",
-        "directions": "Navigate your computer using the keyboard. Using the trackpad is cheating!"
+        "directions": "Navigate your computer using the keyboard. Using the trackpad is cheating!",
+        "example":    "This prompt helps you understand what it’s like to have a a <a rel='external noopener' class='c-prompt__link' href=''>motor disability</a> condition like <a rel='external noopener' class='c-prompt__link' href=''>Parkinson’s</a>.",
+        "type":       "C"
+    },
+    "wake-up-early": {
+        "title":      "Wake up early",
+        "directions": "Set an alarm for 3:10&#8239;AM and immediately try to book a flight for that vacation you've been dreaming about.",
+        "example":    "B",
+        "type":       "C"
+    },
+    "wear-mittens": {
+        "title":      "Wear mittens",
+        "directions": "Use your computer while wearing cozy winter gear.",
+        "example":    "B",
+        "type":       "C"
     },
     "zoom-out": {
         "title":      "Zoom out",
         "directions": "Use the text resize controls on your browser to make the text very small.",
-        "example":    "This exercise helps you understand what it’s like to have a visual disability condition like Farsightedness."
+        "example":    "This prompt helps you understand what it’s like to have a a <a rel='external noopener' class='c-prompt__link' href=''>motor disability</a> condition like <a rel='external noopener' class='c-prompt__link' href=''>Parkinson’s</a>.",
+        "type":       "C"
     }
 }

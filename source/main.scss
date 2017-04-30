@@ -127,7 +127,8 @@
     "utilities/mixins/typography.numbers-tabular-lining", // [1]
     "utilities/mixins/typography.numbers-tabular-oldstyle", // [1]
 
-    "utilities/mixins/component.action";
+    "utilities/mixins/component.action",
+    "utilities/mixins/generate.theme";
 
 // Vendor ---------------------------------------------------------------------
 @import
@@ -186,7 +187,7 @@
     // "elements/tables",
     // "elements/forms",
     // "elements/buttons",
-    // "elements/text-level",
+    "elements/text-level",
     // "elements/quotes",
     // "elements/code",
     // "elements/hr",
@@ -208,12 +209,12 @@
 // Components -----------------------------------------------------------------
 @import
     "components/c-action/c-action",
-    "components/c-card/c-card";
+    "components/c-prompt/c-prompt";
 
 
 // Themes ---------------------------------------------------------------------
 @import
-    "themes/theme.unplug-mouse";
+    "themes/themes";
 
 
 // Media ----------------------------------------------------------------------

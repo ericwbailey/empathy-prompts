@@ -13,26 +13,6 @@
 
 $colors: (
 
-    // Basics -----------------------------------------------------------------
-    // http://clrs.cc/
-    aqua:    #7fdbff,
-    black:   #111111,
-    blue:    #0074d9,
-    fuchsia: #f012be,
-    gray:    #aaaaaa,
-    green:   #2ecc40,
-    lime:    #01ff70,
-    maroon:  #85144b,
-    navy:    #001f3f,
-    olive:   #3d9970,
-    orange:  #ff851b,
-    purple:  #b10dc9,
-    red:     #ff4136,
-    silver:  #dddddd,
-    teal:    #39cccc,
-    yellow:  #ffdc00,
-
-
     // Base -------------------------------------------------------------------
     base: (
         type:       #111111,
@@ -51,38 +31,47 @@ $colors: (
     ),
 
 
-    // Headings ---------------------------------------------------------------
-    heading: (
-        base: #111111,
-        odd:  #9b9b9b,
-        even: #4a4a4a
+    // Themes -----------------------------------------------------------------
+    // http://clrs.cc/a11y/
+    t-background: (
+        about:                #111111,
+        borrow-glasses:       #f300c0,
+        brightness:           #00ff68,
+        dyslexia:             #ffffff,
+        dominant-hand:        #dddddd,
+        exercise-strenuously: #ffde00,
+        high-contrast:        #b300cc,
+        loud-coffee-shop:     #ff8500,
+        magnifier:            #ff3f2c,
+        mute-speaker:         #0071dc,
+        no-coffee:            #001e40,
+        play-static:          #2dcccd,
+        pig-latin:            #00ff68,
+        screen-reader:        #389a6f,
+        translate:            #1fce35,
+        unplug-mouse:         #7bdbff,
+        wake-up-early:        #ffde00,
+        wear-mittens:         #ff8500
     ),
 
-
-    // Buttons ----------------------------------------------------------------
-    button: (
-        type:   #ffffff,
-        base:   #0074d9,
-        hover:  #7fdbff,
-        focus:  #ff851b,
-        active: #ff4136,
-        busy:   #dddddd
-    ),
-
-
-    // Forms ------------------------------------------------------------------
-    form: (
-        base:   #0074d9,
-        hover:  #7fdbff,
-        focus:  #ff851b,
-        active: #ff4136,
-        busy:   #dddddd
+    t-text: (
+        about:                #dddddd,
+        borrow-glasses:       #ffffff,
+        brightness:           #870f4b,
+        dyslexia:             #870f4b,
+        dominant-hand:        #0071dc,
+        exercise-strenuously: #b300cc,
+        high-contrast:        #ffde00,
+        loud-coffee-shop:     #001e40,
+        magnifier:            #001e40,
+        mute-speaker:         #ffffff,
+        no-coffee:            #ff3f2c,
+        play-static:          #870f4b,
+        pig-latin:            #870f4b,
+        screen-reader:        #ffffff,
+        translate:            #001e40,
+        unplug-mouse:         #111111,
+        wake-up-early:        #001e40,
+        wear-mittens:         #870f4b
     )
-
-
-    // Component --------------------------------------------------------------
-//    c-component: (
-//        subcomponent: value,
-//        subcomponent: value
-//    )
 );

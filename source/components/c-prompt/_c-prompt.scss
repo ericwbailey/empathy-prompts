@@ -9,7 +9,8 @@
 
 
 // Component Styling ----------------------------------------------------------
-.c-card {
+.c-prompt {
+border-bottom: 1px solid black;
     @include component-size(100vh, 100vw, 0);
 
     align-items: center;
@@ -20,6 +21,11 @@
         margin-top: ms(1, rem);
         max-width: $global-type-measure;
         min-height: 60vh;
+
+        // Contexts
+        [aria-labelledby="title-about"] & {
+            margin-top: 0;
+        }
     }
 
     &__title {
@@ -31,6 +37,11 @@
         margin-top: ms(0.75, em);
 
         font-size: ms(1, em);
+
+        // Contexts
+        [aria-labelledby="title-about"] & {
+            font-weight: $font-weight-medium;
+        }
     }
 
     &__example {
@@ -49,5 +60,22 @@
 
         color: currentColor;
         text-decoration: none;
+    }
+
+    &__about {
+        margin-top: ms(1.25, rem);
+
+        font-size: ms(0.75, em);
+
+        p {
+            margin-top: ms(1, em);
+        }
+
+        a {
+            // States
+            &:hover {
+                text-decoration: none;
+            }
+        }
     }
 }

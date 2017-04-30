@@ -37,58 +37,29 @@
         Empathy Prompts
     </h1>
 
-    {{>components/c-card/c-card-unplug-mouse}}
-
+    {{>components/c-prompt/c-prompt-borrow-glasses}}
+    {{>components/c-prompt/c-prompt-brightness}}
+    {{>components/c-prompt/c-prompt-dyslexia}}
+    {{>components/c-prompt/c-prompt-dominant-hand}}
+    {{>components/c-prompt/c-prompt-exercise-strenuously}}
+    {{>components/c-prompt/c-prompt-high-contrast}}
+    {{>components/c-prompt/c-prompt-loud-coffee-shop}}
+    {{>components/c-prompt/c-prompt-magnifier}}
+    {{>components/c-prompt/c-prompt-mute-speaker}}
+    {{>components/c-prompt/c-prompt-no-coffee}}
+    {{>components/c-prompt/c-prompt-play-static}}
+    {{>components/c-prompt/c-prompt-pig-latin}}
+    {{>components/c-prompt/c-prompt-screen-reader}}
+    {{>components/c-prompt/c-prompt-unplug-mouse}}
+    {{>components/c-prompt/c-prompt-wake-up-early}}
+    {{>components/c-prompt/c-prompt-wear-mittens}}
+    {{>components/c-prompt/c-prompt-zoom-out}}
+    {{>components/c-prompt/c-prompt-about}}
 
 </main>
 
-<aside
-    id="aside"
-    class="l-aside"
-    aria-labelledby="title-additional-info"
-    role="complementary">
-    <h2
-        id="title-additional-info"
-        class="content-hide-visually">
-        Additional info
-    </h2>
-
-    <a
-        class="c-action c-action--what-is-this"
-        href="">
-        What is this?
-        <svg height="32" width="32" aria-hidden="true" viewBox="0 0 100 100" class="icon">
-            <use xlink:href="#icon-info"></use>
-        </svg>
-    </a>
-</aside>
-
-<nav
-    id="nav"
-    class="l-nav"
-    aria-labelledby="show-me-another"
-    role="navigation">
-
-    <button
-        id="share"
-        class="c-action c-action--share"
-        name="share"
-        type="button">
-        Share
-    </button>
-
-    <button
-        id="show-me-another"
-        class="c-action c-action--random"
-        name="show-me-another"
-        type="button">
-        Show me another
-        <svg height="32" width="32" aria-hidden="true" viewBox="0 0 100 100" class="icon">
-            <use xlink:href="#icon-random"></use>
-        </svg>
-    </button>
-</nav>
-
+{{>layout/l-aside/l-aside}}
+{{>layout/l-nav/l-nav}}
 
 {{>meta/scripts/main}}
 {{>meta/analytics/google-analytics}}

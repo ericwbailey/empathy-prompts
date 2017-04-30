@@ -1,0 +1,34 @@
+// ============================================================================
+// Themes
+// ============================================================================
+
+
+// Theme Logic ----------------------------------------------------------------
+// Contains all the prompt names
+$theme-list:
+    "about",
+    "borrow-glasses",
+    "brightness",
+    "dominant-hand",
+    "dyslexia",
+    "exercise-strenuously",
+    "high-contrast",
+    "loud-coffee-shop",
+    "magnifier",
+    "mute-speaker",
+    "no-coffee",
+    "pig-latin",
+    "play-static",
+    "screen-reader",
+    "translate",
+    "unplug-mouse",
+    "wake-up-early",
+    "wear-mittens";
+
+
+// Iterates through each prompt name to generate a theme for it
+@each $theme in $theme-list {
+  .t-#{$theme} {
+    @include generate-theme(c(t-background, #{$theme}), c(t-text, #{$theme}));
+  }
+}
