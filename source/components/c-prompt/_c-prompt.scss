@@ -17,6 +17,11 @@ border-bottom: 1px solid black;
     display: flex;
     justify-content: center;
 
+    // States
+    // &:not([data-prompt="visible"]) {
+    //     @include content-hide(remove);
+    // }
+
     &__content {
         margin-top: ms(1, rem);
         max-width: $global-type-measure;
@@ -40,6 +45,8 @@ border-bottom: 1px solid black;
 
         // Contexts
         [aria-labelledby="title-about"] & {
+            margin-top: 0;
+
             font-weight: $font-weight-bold;
         }
     }
@@ -60,6 +67,15 @@ border-bottom: 1px solid black;
 
         color: currentColor;
         text-decoration: none;
+    }
+
+    &__undo {
+        @include typography-tracking(slight);
+
+        font-size: 65%;
+        font-weight: $font-weight-bold;
+        text-decoration: none;
+        text-transform: uppercase;
     }
 
     &__about {
