@@ -1,6 +1,6 @@
 {
     "aphasia": {
-        "title":      "Try this simulation",
+        "title":      "Try a simulation",
         "directions": "These exercises replicate the different forms of aphasia.",
         "example":    "This prompt helps you understand what it’s like to have a clinical <a rel='external noopener' class='c-prompt__link' href=''>cognitive condition</a> like <a rel='external noopener' class='c-prompt__link' href=''>brain damage</a>.",
         "type":       "Cognitive"
