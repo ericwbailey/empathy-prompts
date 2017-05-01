@@ -28,7 +28,23 @@ $theme-list:
 
 // Iterates through each prompt name to generate a theme for it
 @each $theme in $theme-list {
-  .t-#{$theme} {
-    @include generate-theme(c(t-background, #{$theme}), c(t-text, #{$theme}));
-  }
+    .t-#{$theme} {
+        background-color: c(t-background, #{$theme});
+
+        color: c(t-text, #{$theme});
+        fill: c(t-text, #{$theme});
+
+        a,
+        button {
+            color: c(t-text, #{$theme});
+        }
+
+        .c-prompt__link {
+            @include content-underline(c(t-text, #{$theme}));
+        }
+
+        .icon {
+            fill: c(t-text, #{$theme});
+        }
+    }
 }
