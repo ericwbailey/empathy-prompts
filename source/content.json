@@ -1,110 +1,122 @@
 {
+    "aphasia": {
+        "title":      "Try this simulation",
+        "directions": "These exercises replicate the different forms of aphasia.",
+        "example":    "This prompt helps you understand what it’s like to have a clinical <a rel='external noopener' class='c-prompt__link' href=''>cognitive condition</a> like <a rel='external noopener' class='c-prompt__link' href=''>brain damage</a>.",
+        "type":       "Cognitive"
+    },
     "borrow-glasses": {
         "title":      "Borrow a pair of glasses",
-        "directions": "A",
-        "example":    "B",
+        "directions": "The prescription strength doesn’t matter. If you wear glasses already, take them off.",
+        "example":    "This prompt helps you understand what it’s like to have a <a rel='external noopener' class='c-prompt__link' href='http://webaim.org/articles/visual/'>visual condition</a> like Nearsightedness or Farsightedness.",
         "type":       "Visual"
     },
     "brightness": {
         "title":      "Adjust your screen's brightness",
-        "directions": "A",
-        "example":    "B",
+        "directions": "Use either your monitor's settings, or do this through your operating system (Mac or Windows).",
+        "example":    "This prompt helps you understand what it’s like to have a <a rel='external noopener' class='c-prompt__link' href='http://webaim.org/articles/visual/'>visual condition</a> like glare or contrast loss.",
         "type":       "Visual"
     },
     "dyslexia": {
         "title":      "Install a bookmarklet",
-        "directions": "Turn it on before browsing the web.",
-        "example":    "This prompt helps you understand what it’s like to have a a <a rel='external noopener' class='c-prompt__link' href=''>cognitive disability</a> condition like <a rel='external noopener' class='c-prompt__link' href=''>Dyslexia</a>.",
+        "directions": "Add this Dyslexia simulator bookmarklet to your web browser. Turn it on before using the web.",
+        "example":    "This prompt helps you understand what it’s like to have a clinical <a rel='external noopener' class='c-prompt__link' href=''>cognitive condition</a> like <a rel='external noopener' class='c-prompt__link' href=''>Dyslexia</a>.",
         "type":       "Cognitive"
     },
     "dominant-hand": {
         "title":      "Sit on your dominant hand",
         "directions": "You'll have to rely on your non-dominant hand.",
-        "example":    "This prompt helps you understand what it’s like to have a a <a rel='external noopener' class='c-prompt__link' href=''>cognitive disability</a> condition like <a rel='external noopener' class='c-prompt__link' href=''>Dyslexia</a>.",
+        "example":    "This prompt helps you understand what it’s like to have a <a rel='external noopener' class='c-prompt__link' href=''>motor condition</a> like <a rel='external noopener' class='c-prompt__link' href=''>limb loss</a>.",
         "type":       "Motor"
     },
     "exercise-strenuously": {
         "title":      "Exercise strenuously",
-        "directions": "A.",
-        "example":    "B.",
+        "directions": "Try a total body workout, then try and prepare dinner from scratch. Remember to stretch and hydrate!",
+        "example":    "This prompt helps you understand what it’s like to have a <a rel='external noopener' class='c-prompt__link' href=''>motor condition</a> like <a rel='external noopener' class='c-prompt__link' href=''>Multiple Sclerosis</a>.",
+        "type":       "Motor"
+    },
+    "head-wand": {
+        "title":      "Hold a pencil with your mouth",
+        "directions": "Then keep your hands behind your back and try to use your computer with the head wand.",
+        "example":    "This prompt helps you understand what it’s like to have a <a rel='external noopener' class='c-prompt__link' href=''>motor condition</a> like quadriplegia.",
         "type":       "Motor"
     },
     "high-contrast": {
         "title":      "Enable high contrast mode",
-        "directions": "A.",
-        "example":    "B.",
+        "directions": "Use this operating system setting on Mac or Windows to enable a special theme.",
+        "example":    "This prompt helps you understand what it’s like to have a <a rel='external noopener' class='c-prompt__link' href='http://webaim.org/articles/visual/'>visual condition</a> like cataracts.",
         "type":       "Visual"
     },
     "loud-coffee-shop": {
         "title":      "Go to a loud coffee shop",
-        "directions": "A",
-        "example":    "B",
-        "type":       "C"
+        "directions": "Try and have a quiet conversation with a friend. A bar could also suffice.",
+        "example":    "This prompt helps you understand what it’s like to have an <a rel='external noopener' class='c-prompt__link' href=''>auditory condition</a> like hearing loss.",
+        "type":       "Auditory"
     },
     "magnifier": {
         "title":      "Use a screen magnifier",
-        "directions": "A",
-        "example":    "B",
+        "directions": "Use this program on Mac or Windows to enable a special window that zooms in on what your mouse is hovering over.",
+        "example":    "This prompt helps you understand what it’s like to have a <a rel='external noopener' class='c-prompt__link' href='http://webaim.org/articles/visual/'>visual condition</a> like Glaucoma.",
         "type":       "Visual"
     },
     "mute-speaker": {
         "title":      "Mute your speakers",
-        "directions": "A",
-        "example":    "B",
-        "type":       "C"
+        "directions": "Then try and watch a documentary on YouTube",
+        "example":    "This prompt helps you understand what it’s like to have an <a rel='external noopener' class='c-prompt__link' href=''>auditory condition</a> like deafness via neural hearing loss.",
+        "type":       "Auditory"
     },
     "no-coffee": {
         "title":      "Use NoCoffee",
-        "directions": "A",
-        "example":    "B",
+        "directions": "Add this low vision simulator extension to Google Chrome. Turn it on before using the web.",
+        "example":    "This prompt helps you understand what it’s like to have a <a rel='external noopener' class='c-prompt__link' href='http://webaim.org/articles/visual/'>visual condition</a> like color blindness or a blocked visual field.",
         "type":       "Visual"
     },
     "play-static": {
-        "title":      "Play static",
-        "directions": "A",
-        "example":    "B",
-        "type":       "C"
+        "title":      "Listen to this video",
+        "directions": "Put on some earbuds and <a rel='external noopener' href='https://www.youtube.com/watch?v=0HIfqyHbKgY'>play this video</a>. Then try and have a conversation with a coworker.",
+        "example":    "This prompt helps you understand what it’s like to have an <a rel='external noopener' class='c-prompt__link' href=''>auditory condition</a> like Tinnitus.",
+        "type":       "Auditory"
     },
     "pig-latin": {
         "title":      "Speak in Pig Latin",
-        "directions": "A",
-        "example":    "B",
-        "type":       "C"
+        "directions": "Familiarize yourself with <a rel='external noopener' href='https://en.m.wikipedia.org/wiki/Pig_Latin#Rules'>the rules</a> and then exclusively use it to communicate.",
+        "example":    "This prompt helps you understand what it’s like to have a functional <a rel='external noopener' class='c-prompt__link' href=''>cognitive condition</a> like an oral learning disability.",
+        "type":       "Cognitive"
     },
     "screen-reader": {
         "title":      "Close your eyes and use a screen reader",
-        "directions": "A.",
-        "example":    "B.",
-        "type":       "C"
+        "directions": "Use either <abbr title='Job Access With Speech'>JAWS</abbr> on Windows or VoiceOver on Mac to operate your computer.",
+        "example":    "This prompt helps you understand what it’s like to have a <a rel='external noopener' class='c-prompt__link' href='http://webaim.org/articles/visual/'>visual condition</a> like blindness.",
+        "type":       "Visual"
     },
     "translate": {
-        "title":      "Translate",
-        "directions": "A",
-        "example":    "B",
-        "type":       "C"
+        "title":      "Run your documents through a translator",
+        "directions": "Google offers a service to help with this. The lack of accuracy is the point!",
+        "example":    "This prompt helps you understand what it’s like to have a functional <a rel='external noopener' class='c-prompt__link' href=''>cognitive condition</a> like English as a second language.",
+        "type":       "Cognitive"
     },
     "unplug-mouse": {
         "title":      "Unplug your mouse",
         "directions": "Navigate your computer using the keyboard. Using the trackpad is cheating!",
-        "example":    "This prompt helps you understand what it’s like to have a a <a rel='external noopener' class='c-prompt__link' href=''>motor disability</a> condition like <a rel='external noopener' class='c-prompt__link' href=''>Parkinson’s</a>.",
-        "type":       "C"
+        "example":    "This prompt helps you understand what it’s like to have a <a rel='external noopener' class='c-prompt__link' href=''>motor condition</a> like <a rel='external noopener' class='c-prompt__link' href=''>foo</a>.",
+        "type":       "Motor"
     },
     "wake-up-early": {
         "title":      "Wake up early",
-        "directions": "Set an alarm for 3:10&#8239;AM and immediately try to book a flight for that vacation you've been dreaming about.",
-        "example":    "B",
-        "type":       "C"
+        "directions": "Set an alarm for 2:45&#8239;AM and immediately try to book a flight for that vacation you've been dreaming about.",
+        "example":    "This prompt helps you understand what it’s like to have a functional <a rel='external noopener' class='c-prompt__link' href=''>cognitive condition</a> like diminished problem-solving skills.",
+        "type":       "Cognitive"
     },
     "wear-mittens": {
         "title":      "Wear mittens",
-        "directions": "Use your computer while wearing cozy winter gear.",
+        "directions": "Dig out that cozy winter gear and try.",
         "example":    "B",
-        "type":       "C"
+        "type":       "Motor"
     },
     "zoom-out": {
         "title":      "Zoom out",
         "directions": "Use the text resize controls on your browser to make the text very small.",
-        "example":    "This prompt helps you understand what it’s like to have a a <a rel='external noopener' class='c-prompt__link' href=''>motor disability</a> condition like <a rel='external noopener' class='c-prompt__link' href=''>Parkinson’s</a>.",
-        "type":       "C"
+        "example":    "This prompt helps you understand what it’s like to have a <a rel='external noopener' class='c-prompt__link' href='http://webaim.org/articles/visual/'>visual condition</a> like <a rel='external noopener' class='c-prompt__link' href=''>Nearsightedness</a>.",
+        "type":       "Visual"
     }
 }
