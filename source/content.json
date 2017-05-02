@@ -2,19 +2,19 @@
     "blindness": {
         "type":      "visual",
         "prompt":    "Close your eyes and use a screen reader",
-        "details":   "Use either <abbr title='Job Access With Speech'>JAWS</abbr> on Windows or VoiceOver on Mac to operate your computer.",
+        "details":   "Use either <a rel='external noopener' href='https://www.nvaccess.org/'><abbr title='NonVisual Desktop Access'>NVDA</abbr></a> for Windows or <a rel='external noopener' href='https://www.apple.com/accessibility/mac/vision/'>VoiceOver</a> for Mac to operate your computer.",
         "condition": "blindness"
     },
     "cataracts": {
         "type":      "visual",
         "prompt":    "Enable high contrast mode",
-        "details":   "Use this operating system setting on Mac or Windows to enable a special theme.",
+        "details":   "Use this operating system setting on <a rel='external noopener' href='https://www.techwalla.com/articles/how-to-change-the-contrast-on-a-macbook'>Mac</a> or <a rel='external noopener' href='https://support.microsoft.com/en-us/help/13862/windows-use-high-contrast-mode'>Windows</a> to enable a special theme.",
         "condition": "cataracts"
     },
     "color-blindness-blocked-visual-field": {
         "type":      "visual",
         "prompt":    "Use NoCoffee",
-        "details":   "Add this low vision simulator extension to Google Chrome. Turn it on before using the web.",
+        "details":   "Add this <a rel='external noopener' href='https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl?hl=en-US'>low vision simulator extension</a> to Google Chrome. Turn it on before using the web.",
         "condition": "color blindness or a blocked visual field"
     },
     "diminished-problem-solving-skills": {
@@ -26,25 +26,25 @@
     "dyslexia": {
         "type":      "cognitive",
         "prompt":    "Install a bookmarklet",
-        "details":   "Add this Dyslexia simulator bookmarklet to your web browser. Turn it on before using the web.",
+        "details":   "Add this <a rel='external noopener' href='http://data.qz.com/2016/dyslexia/'>Dyslexia simulator bookmarklet</a> to your web browser. Turn it on before using the web.",
         "condition": "Dyslexia"
     },
     "english-as-a-second-language": {
         "type":      "cognitive",
         "prompt":    "Run your documents through a translator",
-        "details":   "Google offers a service to help with this. The lack of accuracy is the point!",
+        "details":   "<a rel='external noopener' href='https://translate.google.com/'>Google offers a service</a> to help with this. The lack of accuracy is the point!",
         "condition": "English as a second language"
     },
     "glare-contrast-loss": {
         "type":      "visual",
-        "prompt":    "Adjust your screen's brightnes",
-        "details":   "Use either your monitor's settings, or do this through your operating system (Mac or Windows).",
+        "prompt":    "Adjust your screen's brightness",
+        "details":   "Use either your monitor's settings, or do this through your operating system (<a rel='external noopener' href='https://support.apple.com/kb/PH25444?locale=en_US'>Mac</a> or <a rel='external noopener' href='https://support.microsoft.com/en-us/instantanswers/dd4fa9d7-56bb-4cd4-a109-221bd8a32fca/change-screen-brightness'>Windows</a>).",
         "condition": "glare or contrast loss"
     },
     "glaucoma": {
         "type":      "visual",
         "prompt":    "Use a screen magnifier",
-        "details":   "Use a program on Mac or Windows to enable a special window that zooms in on what your mouse is hovering over.",
+        "details":   "Use <a rel='external noopener' href='https://support.apple.com/kb/PH25741?locale=en_US&viewlocale=en_US'>an operating system setting on Mac</a> or <a rel='external noopener' href='https://support.microsoft.com/en-us/help/11542/windows-use-magnifier'>a program on Windows</a> to show a magnified version of your screen.",
         "condition": "Glaucoma"
     },
     "hearing-loss": {
@@ -62,13 +62,13 @@
     "multiple-sclerosis": {
         "type":      "motor",
         "prompt":    "Exercise strenuously",
-        "details":   "Try a total body workout, then try and prepare dinner from scratch. Remember to stretch and hydrate!",
+        "details":   "Try <a rel='external noopener' href='http://www.self.com/story/total-body-workout-for-beginners'>a full body workout</a>, then try and prepare dinner from scratch. Remember to stretch and hydrate!",
         "condition": "Multiple Sclerosis"
     },
     "nearsightedness": {
         "type":      "motor",
         "prompt":    "Zoom out",
-        "details":   "Use the text resize controls on your browser to make the text very small.",
+        "details":   "Resize the text on your browser to make the text very small. Type <kbd><kbd><abbr title='Control'>Ctrl</abbr></kbd>&#8239;<kbd><span role='definition' aria-label='Minus'>−</span></kbd></kbd> on Windows or <kbd><kbd><abbr title='Command'>Cmd</abbr></kbd>&#8239;<kbd><span role='definition' aria-label='Minus'>−</span></kbd></kbd> on Mac until the text stops shrinking.",
         "condition": "Nearsightedness"
     },
     "nearsightedness-farsightedness": {
@@ -80,7 +80,7 @@
     "neural-hearing-loss": {
         "type":      "auditory",
         "prompt":    "Mute your speakers",
-        "details":   "Then try and watch a documentary on YouTube.",
+        "details":   "Then try and <a rel='external noopener' href='http://topdocumentaryfilms.com/'>watch a documentary</a>.",
         "condition": "neural hearing loss"
     },
     "oral-learning-disability": {
@@ -92,7 +92,7 @@
     "quadriplegia": {
         "type":      "motor",
         "prompt":    "Hold a pencil with your mouth",
-        "details":   "Then keep your hands behind your back and try to use your computer with the head wand.",
+        "details":   "Then keep your hands behind your back and try to use your computer with the <a rel='external noopener' href='http://webaim.org/articles/motor/assistive#mouthstick'>mouth stick</a>.",
         "condition": "quadriplegia"
     },
     "tinnitus": {
@@ -104,7 +104,7 @@
     "traumatic-brain-injury": {
         "type":      "cognitive",
         "prompt":    "Try a simulation",
-        "details":   "These series of exercises demonstrate the different ways aphasia can manifest.",
+        "details":   "These <a rel='external noopener' href='http://aphasiacorner.com/aphasia-simulations/listening-impairments-simulation-1.html'>series of exercises</a> demonstrate the different ways aphasia can manifest.",
         "condition": "traumatic brain injury"
     },
     "foo": {

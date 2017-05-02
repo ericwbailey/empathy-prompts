@@ -188,7 +188,7 @@
     // "elements/buttons",
     "elements/text-level",
     // "elements/quotes",
-    // "elements/code",
+    "elements/code",
     // "elements/hr",
     // "elements/media",
     "elements/embeds";
@@ -196,6 +196,7 @@
 
 // Layout ---------------------------------------------------------------------
 @import
+    "layout/l-about/l-about",
     "layout/l-aside/l-aside",
     "layout/l-nav/l-nav";
 
@@ -228,3 +229,12 @@
 // http://csswizardry.com/2013/04/shame-css/
 @import
     "shame";
+
+
+[data-prompt] {
+    display: none;
+}
+
+[data-prompt="is-visible"] {
+    display: flex;
+}

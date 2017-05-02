@@ -14,45 +14,67 @@
 
 // Grouped Styles -------------------------------------------------------------
 // [1] Ensures hyphenation won't interfere with code
-code,
-kbd,
-pre,
-samp,
-var {
-    @include typography-tracking(slight);
-
-    overflow: auto; // [1]
-
-    font-family: $font-family-code;
-    line-height: $global-type-line-height;
-    white-space: pre; // [1]
-    white-space: pre-wrap; // [1]
-    word-break: break-all; // [1]
-    word-wrap: break-word; // [1]
-}
+// code,
+// kbd,
+// pre,
+// samp,
+// var {
+//     @include typography-tracking(slight);
+//
+//     overflow: auto; // [1]
+//
+//     font-family: $font-family-code;
+//     line-height: $global-type-line-height;
+//     white-space: pre; // [1]
+//     white-space: pre-wrap; // [1]
+//     word-break: break-all; // [1]
+//     word-wrap: break-word; // [1]
+// }
 
 
 // Individual Styles ----------------------------------------------------------
-code {
-    @include code-inline-spacing();
-}
+// code {
+//     @include code-inline-spacing();
+// }
 
 
 kbd {
-    @include code-inline-spacing();
+    @include typography-tracking(slight);
+
+    margin-right: ms(0.15, em);
+    margin-left: ms(0.15, em);
+    padding-right: ms(0.25, em);
+    padding-left: ms(0.25, em);
+    position: relative;
+      bottom: em(2);
+
+    border: border(thinner) solid currentColor;
+    border-radius: ms(0.25, em);
+
+    font-family: $font-family-primary;
+    font-size: 75%;
+    text-transform: uppercase;
+
+    // [1] Removes formatting for individual key presses in a key command
+    kbd {
+        margin-right: 0;
+        margin-left: 0;
+
+        border: none;
+    }
 }
 
 
-pre {
-    line-height: 1.8;
-}
+// pre {
+//     line-height: 1.8;
+// }
 
 
-samp {
-    @include code-inline-spacing();
-}
+// samp {
+//     @include code-inline-spacing();
+// }
 
 
-var {
-    @include code-inline-spacing();
-}
+// var {
+//     @include code-inline-spacing();
+// }
