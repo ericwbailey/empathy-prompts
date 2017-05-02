@@ -9,4 +9,11 @@ body {
     overflow-x: hidden;
 
     font-size: 1em;
+
+    // Handles theme transitions
+    transition:
+      background-color animation-duration(short) animation-ease(character),
+      background-image animation-duration(short) animation-ease(character),
+      color animation-duration(short) animation-ease(character),
+      fill animation-duration(short) animation-ease(character);
 }

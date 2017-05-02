@@ -37,12 +37,6 @@ $theme-list:
         color: c(t-text, #{$theme});
         fill: c(t-text, #{$theme});
 
-        transition:
-          background-color animation-duration(short) animation-ease(character),
-          background-image animation-duration(short) animation-ease(character),
-          color animation-duration(short) animation-ease(character),
-          fill animation-duration(short) animation-ease(character);
-
         // Media Queries
         // @media (prefers-reduced-motion) {
         //     .t-#{$theme} {
