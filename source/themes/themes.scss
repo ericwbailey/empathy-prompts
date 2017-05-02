@@ -42,8 +42,10 @@ $theme-list:
             color: c(t-text, #{$theme});
         }
 
-        .c-prompt__link {
-            @include content-underline(c(t-text, #{$theme}));
+        .c-prompt__example {
+            a {
+                @include content-underline(c(t-text, #{$theme}));
+            }
         }
 
         .icon {

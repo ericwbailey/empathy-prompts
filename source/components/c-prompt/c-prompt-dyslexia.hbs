@@ -1,21 +1,21 @@
 <section
-    id="dyslexia"
+    id="{{content.dyslexia.condition}}"
     class="c-prompt"
     data-prompt
-    aria-labelledby="title-dyslexia"
+    aria-labelledby="title-{{content.dyslexia.condition}}"
     role="region">
 
     <div class="c-prompt__content">
         <h2
             id="title-dyslexia"
             class="c-prompt__title">
-            {{content.dyslexia.title}}
+            {{{content.dyslexia.prompt}}}
         </h2>
         <p class="c-prompt__directions">
-            {{{content.dyslexia.directions}}} <a rel="external noopener" class="c-prompt__undo" href="">How to undo</a>
+            {{{content.dyslexia.details}}}
         </p>
         <p class="c-prompt__example">
-            {{{content.dyslexia.example}}}
+            This prompt helps you understand what it’s like to have a <a rel="external noopener" href="">{{content.dyslexia.type}} condition</a> like <a rel="external noopener" href="">{{content.dyslexia.condition}}</a>.
         </p>
     </div>
 </section>

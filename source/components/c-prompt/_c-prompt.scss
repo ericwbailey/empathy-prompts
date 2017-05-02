@@ -22,6 +22,11 @@ border-bottom: 1px solid black;
     //     @include content-hide(remove);
     // }
 
+    // Contexts
+    // &[aria-labelledby="title-about"] {
+    //     height: auto;
+    // }
+
     &__content {
         margin-top: ms(1, rem);
         max-width: $global-type-measure;
@@ -57,16 +62,16 @@ border-bottom: 1px solid black;
 
         font-size: ms(0.75, em);
         font-weight: $font-weight-medium;
-    }
 
-    &__link {
-        background-size: rem(30) rem(30);
-        background-origin: padding-box;
-        background-position: 0 45%;
-        background-repeat: repeat-x;
+        a {
+            background-size: rem(30) rem(30);
+            background-origin: padding-box;
+            background-position: 0 45%;
+            background-repeat: repeat-x;
 
-        color: currentColor;
-        text-decoration: none;
+            color: currentColor;
+            text-decoration: none;
+        }
     }
 
     &__undo {

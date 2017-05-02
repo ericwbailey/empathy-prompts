@@ -3,7 +3,7 @@
         "type":      "cognitive",
         "prompt":    "Try a simulation",
         "details":   "These exercises replicate the different forms of aphasia.",
-        "condition": "brain damage"
+        "condition": "aphasia"
     },
     "blindness": {
         "type":      "visual",
