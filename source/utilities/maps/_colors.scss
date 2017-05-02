@@ -35,7 +35,6 @@ $colors: (
     // http://clrs.cc/a11y/
     t-background: (
         about:                                #111111,
-        aphasia:                              #001e40,
         blindness:                            #f300c0,
         cataracts:                            #00ff68,
         color-blindness-blocked-visual-field: #ffffff,
@@ -53,13 +52,13 @@ $colors: (
         oral-learning-disability:             #7bdbff,
         quadriplegia:                         #ffde00,
         tinnitus:                             #ff8500,
+        traumatic-brain-injury:               #001e40,
         foo:                                  #ffffff,
         bar:                                  #ffffff
     ),
 
     t-text: (
         about:                                #dddddd,
-        aphasia:                              #f300c0,
         blindness:                            #ffffff,
         cataracts:                            #870f4b,
         color-blindness-blocked-visual-field: #870f4b,
@@ -77,6 +76,7 @@ $colors: (
         oral-learning-disability:             #111111,
         quadriplegia:                         #001e40,
         tinnitus:                             #870f4b,
+        traumatic-brain-injury:               #f300c0,
         foo:                                  #111111,
         bar:                                  #111111
     )

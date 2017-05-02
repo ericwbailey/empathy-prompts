@@ -1,10 +1,4 @@
 {
-    "aphasia": {
-        "type":      "cognitive",
-        "prompt":    "Try a simulation",
-        "details":   "These exercises replicate the different forms of aphasia.",
-        "condition": "aphasia"
-    },
     "blindness": {
         "type":      "visual",
         "prompt":    "Close your eyes and use a screen reader",
@@ -106,6 +100,12 @@
         "prompt":    "Listen to this video",
         "details":   "Put on some earbuds and <a rel='external noopener' href='https://www.youtube.com/watch?v=0HIfqyHbKgY'>play this video</a>. Then try and have a conversation with a coworker.",
         "condition": "Tinnitus"
+    },
+    "traumatic-brain-injury": {
+        "type":      "cognitive",
+        "prompt":    "Try a simulation",
+        "details":   "These series of exercises demonstrate the different ways aphasia can manifest.",
+        "condition": "traumatic brain injury"
     },
     "foo": {
         "type":      "motor",
