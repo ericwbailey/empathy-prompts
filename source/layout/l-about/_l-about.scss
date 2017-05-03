@@ -10,20 +10,6 @@
 
 // Layout Styling -------------------------------------------------------------
 .l-about {
-    @include component-size(100vh, 100vw, 0);
-
-    align-items: center;
     display: flex;
     justify-content: center;
-
-    p {
-        margin-top: ms(1.25, em);
-    }
-
-    address {
-        margin-top: ms(2, em);
-
-        font-style: normal;
-        line-height: 1.1;
-    }
 }

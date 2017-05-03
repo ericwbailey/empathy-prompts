@@ -10,9 +10,28 @@
 
 // Component Styling ----------------------------------------------------------
 .c-about {
-    @include component-page();
+    margin-top: ms(4, rem);
+    max-width: $global-type-measure;
 
     &__title {
         line-height: 1.1;
     }
+
+    p {
+        margin-top: ms(1.25, em);
+    }
+
+    // &__content {
+    //     p {
+    //         margin-top: ms(1.25, em);
+    //     }
+    //
+    //     address {
+    //         margin-top: ms(2, em);
+    //
+    //         font-size: 90%;
+    //         font-style: normal;
+    //         line-height: 1.1;
+    //     }
+    // }
 }

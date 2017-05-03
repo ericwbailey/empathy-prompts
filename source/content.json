@@ -20,7 +20,7 @@
     "diminished-problem-solving-skills": {
         "type":      "cognitive",
         "prompt":    "Wake up early",
-        "details":   "Set an alarm for 2:45&#8239;AM and immediately try to book a flight for that vacation you've been dreaming about.",
+        "details":   "Set an alarm for 2:45&#8239;AM and immediately try to book a flight for that vacation you’ve been dreaming about.",
         "condition": "diminished problem-solving skills"
     },
     "dyslexia": {
@@ -38,7 +38,7 @@
     "glare-contrast-loss": {
         "type":      "visual",
         "prompt":    "Adjust your screen's brightness",
-        "details":   "Use either your monitor's settings, or do this through your operating system (<a rel='external noopener' href='https://support.apple.com/kb/PH25444?locale=en_US'>Mac</a> or <a rel='external noopener' href='https://support.microsoft.com/en-us/instantanswers/dd4fa9d7-56bb-4cd4-a109-221bd8a32fca/change-screen-brightness'>Windows</a>).",
+        "details":   "Use either your monitor’s settings, or do this through your operating system (<a rel='external noopener' href='https://support.apple.com/kb/PH25444?locale=en_US'>Mac</a> or <a rel='external noopener' href='https://support.microsoft.com/en-us/instantanswers/dd4fa9d7-56bb-4cd4-a109-221bd8a32fca/change-screen-brightness'>Windows</a>).",
         "condition": "glare or contrast loss"
     },
     "glaucoma": {
@@ -50,7 +50,7 @@
     "hearing-loss": {
         "type":      "auditory",
         "prompt":    "Go to a loud coffee shop",
-        "details":   "Try and have a quiet conversation with a friend. A bar could also suffice.",
+        "details":   "Try and have a quiet conversation with a friend. A popular bar could also suffice.",
         "condition": "hearing loss"
     },
     "limb-loss": {
@@ -66,7 +66,7 @@
         "condition": "Multiple Sclerosis"
     },
     "nearsightedness": {
-        "type":      "motor",
+        "type":      "visual",
         "prompt":    "Zoom out",
         "details":   "Resize the text on your browser to make the text very small. Type <kbd><kbd><abbr title='Control'>Ctrl</abbr></kbd><kbd><span role='definition' aria-label='Minus'>−</span></kbd></kbd> on Windows or <kbd><kbd><abbr title='Command'>Cmd</abbr></kbd><kbd><span role='definition' aria-label='Minus'>−</span></kbd></kbd> on Mac until the text stops shrinking.",
         "condition": "Nearsightedness"
@@ -86,14 +86,26 @@
     "oral-learning-disability": {
         "type":      "cognitive",
         "prompt":    "Speak in Pig Latin",
-        "details":   "Familiarize yourself with <a rel='external noopener' href='https://en.m.wikipedia.org/wiki/Pig_Latin#Rules'>the rules</a> and then exclusively use it to communicate.",
+        "details":   "Familiarize yourself with <a rel='external noopener' href='https://en.m.wikipedia.org/wiki/Pig_Latin#Rules'>the rules</a>, then exclusively use it to communicate.",
         "condition": "oral learning disability"
+    },
+    "parkinsons-disease": {
+        "type":      "motor",
+        "prompt":    "Unplug your mouse",
+        "details":   "Navigate your computer using the keyboard. Using the trackpad is cheating!",
+        "condition": "Parkinson’s disease"
     },
     "quadriplegia": {
         "type":      "motor",
         "prompt":    "Hold a pencil with your mouth",
-        "details":   "Then keep your hands behind your back and try to use your computer with the <a rel='external noopener' href='http://webaim.org/articles/motor/assistive#mouthstick'>mouth stick</a>.",
+        "details":   "Keep your hands behind your back and try to use your computer with the <a rel='external noopener' href='http://webaim.org/articles/motor/assistive#mouthstick'>mouth stick</a>.",
         "condition": "quadriplegia"
+    },
+    "radial-dysplasia": {
+        "type":      "motor",
+        "prompt":    "Wear mittens",
+        "details":   "Dig out that cozy winter hand gear and try playing a board game.",
+        "condition": "Radial dysplasia"
     },
     "tinnitus": {
         "type":      "auditory",
@@ -106,17 +118,5 @@
         "prompt":    "Try a simulation",
         "details":   "These <a rel='external noopener' href='http://aphasiacorner.com/aphasia-simulations/listening-impairments-simulation-1.html'>series of exercises</a> demonstrate the different ways aphasia can manifest.",
         "condition": "traumatic brain injury"
-    },
-    "foo": {
-        "type":      "motor",
-        "prompt":    "Unplug your mouse",
-        "details":   "Navigate your computer using the keyboard. Using the trackpad is cheating!",
-        "condition": "foo"
-    },
-    "bar": {
-        "type":      "motor",
-        "prompt":    "Wear mittens",
-        "details":   "Dig out that cozy winter gear and try.",
-        "condition": "foo"
     }
 }

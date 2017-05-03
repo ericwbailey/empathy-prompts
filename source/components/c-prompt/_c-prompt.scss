@@ -10,7 +10,11 @@
 
 // Component Styling ----------------------------------------------------------
 .c-prompt {
-    @include component-page();
+    @include component-size(100vh, 100vw, 0);
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
 
     // States
     &[data-prompt] {
@@ -21,8 +25,11 @@
         display: flex;
     }
 
+    // Elements
     &__content {
-        margin-top: ms(1, rem);
+        margin-top: ms(0.5, rem);
+        max-width: $global-type-measure;
+        min-height: 60vh;
     }
 
     &__title {

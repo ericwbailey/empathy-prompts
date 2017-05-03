@@ -46,7 +46,9 @@ $.get('./content.json').then(function (response) {
     // modify the attributes
     $('#' + hash).attr('data-prompt', 'is-visible');
     $('body').removeClass().addClass('t-' + hash);
-    $('title').text('Empathy Prompts: ' + hash);
+    $('#title-' + hash).attr('tabindex', '0');
+    $('#title-' + hash).focus();
+    //$('title').text('Empathy Prompts: ' + hash); TOOD: use condition in content.json
   }
 });
 

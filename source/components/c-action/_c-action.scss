@@ -10,19 +10,34 @@
 
 // Component Styling ----------------------------------------------------------
 .c-action {
-    @include component-action()
+    @include content-show-interaction(link);
+
+    background: transparent;
+    border: none;
+
+    font-size: ms(0.7, em);
+    font-weight: $font-weight-medium;
+    text-decoration: none;
 
     // States
     &:hover {
         .icon {
-            position: relative;
-              left: em(4);
+            left: em(4);
         }
+    }
+
+    .icon {
+        @include component-size(ms(0.85, rem), ms(0.85, rem), null);
+
+        margin-left: rem(5);
+        position: relative;
+          left: 0; // Initial position to transition
+        transition: left animation-duration(shorter) animation-ease(character);
     }
 
     &--random {
         .icon {
-            top: rem(4);
+            top: rem(7);
         }
     }
 
