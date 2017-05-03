@@ -7,12 +7,12 @@ These prompts are intended to help build empathy, not describe any one person's 
 ## Table of Contents
 
 1. [About this page](#about-this-page)
-- [Contributing](#contributing)
+2. [Contributing](#contributing)
     1. [Suggest a prompt](#suggest-a-prompt)
-    - [Language and terminology concerns](#language-and-terminology-concerns)
-    - [Issues and Pull Requests](#issues-and-pull-requests)
-- [Resetting technology](#resetting-technology)
-- [License](#license)
+    2. [Language and terminology concerns](#language-and-terminology-concerns)
+    3. [Issues and Pull Requests](#issues-and-pull-requests)
+3. [Resetting technology](#resetting-technology)
+4. [License](#license)
 
 ## About this page
 
