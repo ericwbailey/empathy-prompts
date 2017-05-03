@@ -68,7 +68,7 @@
     "nearsightedness": {
         "type":      "motor",
         "prompt":    "Zoom out",
-        "details":   "Resize the text on your browser to make the text very small. Type <kbd><kbd><abbr title='Control'>Ctrl</abbr></kbd>&#8239;<kbd><span role='definition' aria-label='Minus'>−</span></kbd></kbd> on Windows or <kbd><kbd><abbr title='Command'>Cmd</abbr></kbd>&#8239;<kbd><span role='definition' aria-label='Minus'>−</span></kbd></kbd> on Mac until the text stops shrinking.",
+        "details":   "Resize the text on your browser to make the text very small. Type <kbd><kbd><abbr title='Control'>Ctrl</abbr></kbd><kbd><span role='definition' aria-label='Minus'>−</span></kbd></kbd> on Windows or <kbd><kbd><abbr title='Command'>Cmd</abbr></kbd><kbd><span role='definition' aria-label='Minus'>−</span></kbd></kbd> on Mac until the text stops shrinking.",
         "condition": "Nearsightedness"
     },
     "nearsightedness-farsightedness": {

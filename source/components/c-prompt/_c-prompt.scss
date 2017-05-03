@@ -1,6 +1,6 @@
 // ============================================================================
 // Component
-// Card
+// Prompt
 // ============================================================================
 
 
@@ -10,32 +10,19 @@
 
 // Component Styling ----------------------------------------------------------
 .c-prompt {
-border-bottom: 1px solid black;
-    @include component-size(100vh, 100vw, 0);
-
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    @include component-page();
 
     // States
-    // &:not([data-prompt="visible"]) {
-    //     @include content-hide(remove);
-    // }
+    &[data-prompt] {
+        @include content-hide(remove);
+    }
 
-    // Contexts
-    // &[aria-labelledby="title-about"] {
-    //     height: auto;
-    // }
+    &[data-prompt="is-visible"] {
+        display: flex;
+    }
 
     &__content {
         margin-top: ms(1, rem);
-        max-width: $global-type-measure;
-        min-height: 60vh;
-
-        // Contexts
-        [aria-labelledby="title-about"] & {
-            margin-top: 0;
-        }
     }
 
     &__title {
@@ -47,13 +34,6 @@ border-bottom: 1px solid black;
         margin-top: ms(0.75, em);
 
         font-size: ms(1, em);
-
-        // Contexts
-        [aria-labelledby="title-about"] & {
-            margin-top: 0;
-
-            font-weight: $font-weight-bold;
-        }
     }
 
     &__example {
@@ -81,22 +61,5 @@ border-bottom: 1px solid black;
         font-weight: $font-weight-bold;
         text-decoration: none;
         text-transform: uppercase;
-    }
-
-    &__about {
-        margin-top: ms(1.25, rem);
-
-        font-size: ms(0.75, em);
-
-        p {
-            margin-top: ms(1, em);
-        }
-
-        a {
-            // States
-            &:hover {
-                text-decoration: none;
-            }
-        }
     }
 }

@@ -39,28 +39,25 @@
 
 
 kbd {
-    @include typography-tracking(slight);
-
     margin-right: ms(0.15, em);
     margin-left: ms(0.15, em);
-    padding-right: ms(0.25, em);
-    padding-left: ms(0.25, em);
-    position: relative;
-      bottom: em(2);
-
-    border: border(thinner) solid currentColor;
-    border-radius: ms(0.25, em);
-
-    font-family: $font-family-primary;
-    font-size: 75%;
-    text-transform: uppercase;
 
     // [1] Removes formatting for individual key presses in a key command
     kbd {
-        margin-right: 0;
-        margin-left: 0;
+        @include content-show-interaction(input);
+        @include typography-tracking(slight);
 
-        border: none;
+        padding-right: ms(0.35, em);
+        padding-left: ms(0.35, em);
+        position: relative;
+          bottom: em(2);
+
+        border: border(thinner) solid currentColor;
+        border-radius: ms(0.25, em);
+
+        font-family: $font-family-primary;
+        font-size: 70%;
+        text-transform: uppercase;
     }
 }
 

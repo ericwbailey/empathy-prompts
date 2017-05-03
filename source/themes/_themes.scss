@@ -35,18 +35,15 @@ $theme-list:
         background-color: c(t-background, #{$theme});
 
         color: c(t-text, #{$theme});
-        fill: c(t-text, #{$theme});
 
-        // Media Queries
-        // @media (prefers-reduced-motion) {
-        //     .t-#{$theme} {
-        //         transition: none;
-        //     }
-        // }
-
-        a,
-        button {
-            color: c(t-text, #{$theme});
+        .l-aside,
+        .l-main,
+        .l-nav {
+            a,
+            button {
+                color: c(t-text, #{$theme});
+                fill: c(t-text, #{$theme});
+            }
         }
 
         .c-prompt__example {
@@ -57,6 +54,17 @@ $theme-list:
 
         .icon {
             fill: c(t-text, #{$theme});
+        }
+
+        .l-about {
+            background-color: c(t-text, #{$theme});
+
+            color: c(t-background, #{$theme});
+            fill: c(t-background, #{$theme});
+
+            a {
+                color: c(t-background, #{$theme});
+            }
         }
     }
 }

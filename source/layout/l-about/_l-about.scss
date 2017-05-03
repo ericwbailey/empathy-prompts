@@ -15,4 +15,15 @@
     align-items: center;
     display: flex;
     justify-content: center;
+
+    p {
+        margin-top: ms(1.25, em);
+    }
+
+    address {
+        margin-top: ms(2, em);
+
+        font-style: normal;
+        line-height: 1.1;
+    }
 }

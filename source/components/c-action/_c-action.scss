@@ -12,9 +12,17 @@
 .c-action {
     @include component-action()
 
+    // States
+    &:hover {
+        .icon {
+            position: relative;
+              left: em(4);
+        }
+    }
+
     &--random {
         .icon {
-            top: rem(6);
+            top: rem(4);
         }
     }
 

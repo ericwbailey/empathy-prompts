@@ -51,7 +51,7 @@
 
     // Completely remove content
     @else if ($how == "remove") {
-        display: none !important;
+        display: none;
     }
 
     @else {

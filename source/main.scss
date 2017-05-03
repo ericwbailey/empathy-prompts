@@ -127,7 +127,8 @@
     "utilities/mixins/typography.numbers-tabular-lining", // [1]
     "utilities/mixins/typography.numbers-tabular-oldstyle", // [1]
 
-    "utilities/mixins/component.action";
+    "utilities/mixins/component.action",
+    "utilities/mixins/component.page";
 
 // Vendor ---------------------------------------------------------------------
 @import
@@ -208,6 +209,7 @@
 
 // Components -----------------------------------------------------------------
 @import
+    "components/c-about/c-about",
     "components/c-action/c-action",
     "components/c-prompt/c-prompt";
 
@@ -229,12 +231,3 @@
 // http://csswizardry.com/2013/04/shame-css/
 @import
     "shame";
-
-
-[data-prompt] {
-    display: none;
-}
-
-[data-prompt="is-visible"] {
-    display: flex;
-}
