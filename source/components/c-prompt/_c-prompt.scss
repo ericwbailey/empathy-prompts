@@ -35,6 +35,11 @@
     &__title {
         font-size: ms(2, em);
         line-height: 1;
+
+        // States
+        &:focus {
+            outline: none; // NOTE: Tabindex is assigned to the title by js when another prompt is requested
+        }
     }
 
     &__directions {
