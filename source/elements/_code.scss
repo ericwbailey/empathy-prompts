@@ -53,6 +53,7 @@ kbd {
           bottom: em(2);
 
         border: border(thinner) solid currentColor;
+        border-bottom: border(thin) solid currentColor;
         border-radius: ms(0.25, em);
 
         font-family: $font-family-primary;

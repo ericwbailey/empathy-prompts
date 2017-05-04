@@ -105,7 +105,7 @@
         "type":      "motor",
         "prompt":    "Wear mittens",
         "details":   "Dig out that cozy winter hand gear and try playing a board game.",
-        "condition": "Radial dysplasia"
+        "condition": "Radial Dysplasia"
     },
     "tinnitus": {
         "type":      "auditory",

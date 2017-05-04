@@ -12,42 +12,84 @@
 .c-action {
     @include content-show-interaction(link);
 
+    display: block;
+    margin-bottom: ms(0.75, rem);
+
     background: transparent;
+
     border: none;
 
-    font-size: ms(0.7, em);
     font-weight: $font-weight-medium;
+    text-align: left;
     text-decoration: none;
 
     // States
+    &:focus,
     &:hover {
         .icon {
-            left: em(4);
+            left: em(6);
         }
     }
 
+    // Breakpoints
+    @include mappy-bp(palm-medium) {
+        display: inline-block;
+        margin-bottom: 0;
+
+        font-size: ms(0.7, em);
+    }
+
     .icon {
-        @include component-size(ms(0.85, rem), ms(0.85, rem), null);
+        @include component-size(ms(0.75, rem), ms(0.75, rem), null);
 
         margin-left: rem(5);
         position: relative;
           left: 0; // Initial position to transition
         transition: left animation-duration(shorter) animation-ease(character);
+
+        // Breakpoints
+        @include mappy-bp(palm-medium) {
+            @include component-size(ms(0.85, rem), ms(0.85, rem), null);
+        }
     }
 
     &--random {
+        font-size: ms(1, em);
+
+        // Breakpoints
+        @include mappy-bp(palm-medium) {
+            font-size: ms(0.7, em);
+        }
+
         .icon {
-            top: rem(7);
+            top: rem(5);
+
+            // Breakpoints
+            @include mappy-bp(palm-medium) {
+                top: rem(7);
+            }
         }
     }
 
     &--share {
         margin-right: ms(5, rem);
+
+        font-size: ms(1, em);
+
+        // Breakpoints
+        @include mappy-bp(palm-medium) {
+            font-size: ms(0.7, em);
+        }
     }
 
     &--what-is-this {
         .icon {
-            top: rem(5);
+            top: rem(4);
+
+            // Breakpoints
+            @include mappy-bp(palm-medium) {
+                top: rem(5);
+            }
         }
     }
 }

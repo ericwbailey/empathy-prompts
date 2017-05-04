@@ -53,7 +53,7 @@ $.get('./content.json').then(function (response) {
 });
 
 $('#share').on('click', function (e) {
-  window.prompt('Share this URL', window.location);
+  window.prompt('Copy this URL and paste it into the sharing site of your choice:', window.location);
 });
 
 function getHash () {

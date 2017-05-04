@@ -11,7 +11,23 @@
 // Layout Styling -------------------------------------------------------------
 // SEE: `_l-aside.scss`
 .l-nav {
-    position: absolute;
-      bottom: ms(1, rem);
-      right: ms(2, rem);
+// outline: 1px solid lime;
+
+    margin: ms(2, rem) ms(0.75, rem) ms(1, rem) ms(0.75, rem);
+
+
+
+    // position: absolute;
+    //   bottom: ms(0.5, rem);
+    //   right: ms(0.5, rem);
+
+
+
+    // Breakpoints
+    @include mappy-bp(palm-medium) {
+        margin: 0;
+        position: absolute;
+          bottom: ms(1, rem);
+          right: ms(2, rem);
+    }
 }

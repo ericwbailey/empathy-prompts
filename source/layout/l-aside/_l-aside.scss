@@ -12,6 +12,12 @@
 // SEE: // SEE: `_l-nav.scss`
 .l-aside {
     position: absolute;
-      top: ms(1, rem);
-      right: ms(2, rem);
+      top: ms(0.5, rem);
+      right: ms(0.75, rem);
+
+    // Breakpoints
+    @include mappy-bp(palm-medium) {
+        top: ms(1, rem);
+        right: ms(2, rem);
+    }
 }

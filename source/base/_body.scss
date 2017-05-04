@@ -5,15 +5,22 @@
 
 // [1] Ensure the page always fills at least the entire height of the viewport
 body {
+    height: 100vh;
     min-height: 100%; // [1]
     overflow-x: hidden;
 
-    font-size: 1em;
+    font-size: 0.65em;
 
     // Handles theme transitions
     transition:
       background-color animation-duration(short) animation-ease(character),
       background-image animation-duration(short) animation-ease(character),
       color animation-duration(short) animation-ease(character),
-      fill animation-duration(short) animation-ease(character);
+      fill animation-duration(short) animation-ease(character),
+      font-size animation-duration(shorter) animation-ease(character);
+
+      // Breakpoints
+      @include mappy-bp(palm-medium) {
+          font-size: 1em;
+      }
 }
