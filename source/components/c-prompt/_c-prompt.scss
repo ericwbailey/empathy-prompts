@@ -69,6 +69,16 @@
         margin-top: ms(0.75, em);
 
         font-size: ms(1, em);
+
+        a {
+            background-size: rem(24) rem(24);
+            background-origin: padding-box;
+            background-position: 0 45%;
+            background-repeat: repeat-x;
+
+            color: currentColor;
+            text-decoration: none;
+        }
     }
 
     &__example {
@@ -79,7 +89,7 @@
 
         // Breakpoints
         @include mappy-bp(palm-medium) {
-            margin-top: ms(2.5, em);
+            margin-top: ms(2, em);
             margin-right: ms(4, rem);
 
             font-size: ms(0.75, em);
@@ -100,14 +110,5 @@
                 background-size: rem(30) rem(30);
             }
         }
-    }
-
-    &__undo {
-        @include typography-tracking(slight);
-
-        font-size: 65%;
-        font-weight: $font-weight-bold;
-        text-decoration: none;
-        text-transform: uppercase;
     }
 }

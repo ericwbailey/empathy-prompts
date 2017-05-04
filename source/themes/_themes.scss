@@ -46,7 +46,8 @@ $theme-list:
             }
         }
 
-        .c-prompt__example {
+        .c-prompt__example,
+        .c-prompt__directions {
             a {
                 @include content-underline(c(t-text, #{$theme}));
             }
@@ -54,17 +55,6 @@ $theme-list:
 
         .icon {
             fill: c(t-text, #{$theme});
-        }
-
-        .l-about {
-            background-color: c(t-text, #{$theme});
-
-            color: c(t-background, #{$theme});
-            fill: c(t-background, #{$theme});
-
-            a {
-                color: c(t-background, #{$theme});
-            }
         }
     }
 }

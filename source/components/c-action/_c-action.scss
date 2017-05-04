@@ -45,6 +45,7 @@
         margin-left: rem(5);
         position: relative;
           left: 0; // Initial position to transition
+
         transition: left animation-duration(shorter) animation-ease(character);
 
         // Breakpoints
