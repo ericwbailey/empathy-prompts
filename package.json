@@ -1,13 +1,14 @@
 {
   "name": "empathy-prompts",
   "description": "This is the project full description, remember to update.",
+  "homepage": "http://empathyprompts.net",
   "version": "0.0.1",
   "license": "MIT",
   "author": "Eric Bailey <eric.w.bailey@gmail.com> (http​s:​//ericwbailey​.​design)",
   "keywords": [
-    "comma",
-    "separated",
-    "keywords"
+    "accessibility",
+    "a11y",
+    "inclusive-design"
   ],
   "repository": {
     "type": "git",
