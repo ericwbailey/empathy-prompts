@@ -4,8 +4,8 @@ Prompts to consider when making things for others to use.
 
 This project is geared towards anyone involved with making digital products. It is my hope that this reaches both:
 
-- People who are not necessarily involved in the day-to-day part of the process, but who help shape things like budget, timeline, and scope.
-- People who work every day to help to give these products shape and form.
+- People who are not necessarily involved in the day-to-day part of the process, but who help shape things like budget, timeline, and scope, and
+- People who work every day to help to give these products shape and form
 
 These prompts are intended to help build empathy, not describe any one person's experience. These prompts are <em>not</em> intended to tokenize the experience of the individuals experiencing these conditions.
 
@@ -60,7 +60,7 @@ Prompts will be considered and added on a case-by-case basis. Questions and feed
 
 ### Language and terminology concerns
 
-I'm striving to be as respectful as possible. If you feel the words or tone for one of the prompts isn't using the proper terminology, or isn't representative of the condition, please let me know, either [publicly](https://github.com/ericwbailey/empathy-prompts/labels/%5BType%5D%20Terminology) or [privately](https://github.com/ericwbailey/empathy-prompts/blob/master/AUTHORS).
+I'm striving to be as respectful as possible. If you feel the words or tone for one of the prompts isn't using the proper terminology, or isn't representative of the condition, please let me know either [publicly](https://github.com/ericwbailey/empathy-prompts/labels/%5BType%5D%20Terminology) or [privately](https://github.com/ericwbailey/empathy-prompts/blob/master/AUTHORS).
 
 ### Issues and Pull Requests
 
