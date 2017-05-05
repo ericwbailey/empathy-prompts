@@ -18,6 +18,10 @@
     // Breakpoints
     @include mappy-bp(palm-medium) {
         top: ms(1, rem);
+        right: ms(1, rem);
+    }
+
+    @include mappy-bp(palm-large) {
         right: ms(2, rem);
     }
 }

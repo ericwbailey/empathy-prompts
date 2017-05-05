@@ -18,6 +18,10 @@
         margin: 0;
         position: absolute;
           bottom: ms(1, rem);
+          right: ms(1, rem);
+    }
+
+    @include mappy-bp(palm-large) {
           right: ms(2, rem);
     }
 }
