@@ -42,16 +42,16 @@ gulp.task('test-pages', help.pages.test, function() {
     return gulp.src(paths.pages.test.source)
         // https://github.com/addyosmani/critical#gulp
         // Inline style minification handled by htmlmin
-        .pipe(critical.stream({
-            inline: true,
-            base: paths.pages.build,
-            width: 720,
-            height: 3646,
-            ignore: [
-                '@font-face', // REVIEW: Audit generated styles to see what can be safely ignored
-                /url\(/
-            ],
-        }))
+        // .pipe(critical.stream({
+        //     inline: true,
+        //     base: paths.pages.build,
+        //     width: 720,
+        //     height: 3646,
+        //     ignore: [
+        //         '@font-face', // REVIEW: Audit generated styles to see what can be safely ignored
+        //         /url\(/
+        //     ],
+        // }))
         .pipe(htmlmin({
             collapseBooleanAttributes: true,
             collapseWhitespace: true,
