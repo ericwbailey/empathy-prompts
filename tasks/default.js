@@ -24,7 +24,6 @@ gulp.task('default', ['build'], function() {
 gulp.task('build', help.default.build, function() {
     runSequence(
         'clean-build',
-        'vendor',
         'build-errata',
         'build-pages',
         'build-styles',
@@ -43,7 +42,6 @@ gulp.task('build', help.default.build, function() {
 gulp.task('test', help.default.test, function() {
     runSequence(
         'clean-test',
-        'vendor',
         'test-errata',
         'test-pages',
         'test-styles',

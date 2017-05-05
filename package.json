@@ -60,7 +60,6 @@
     "sassdoc-theme-flippant": "^0.1.0"
   },
   "devDependencies": {
-    "accessible-html-content-patterns": "^0.1.0",
     "family.scss": "^1.0.8",
     "jquery": "^3.1.0",
     "mappy-breakpoints": "^0.2.3",

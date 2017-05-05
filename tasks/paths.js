@@ -184,11 +184,5 @@ module.exports = {
             source: TEST_DIR + '/main.css',
             dest: DEPLOY_DIR
         }
-    },
-    vendor: {
-        accessiblehtml: {
-            source: VENDOR_DIR + '/accessible-html-content-patterns/docs/index.html',
-            dest: SOURCE_DIR
-        }
     }
 };
