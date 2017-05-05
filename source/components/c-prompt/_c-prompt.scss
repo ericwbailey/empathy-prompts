@@ -78,6 +78,11 @@
 
             color: currentColor;
             text-decoration: none;
+
+            // Breakpoints
+            @include mappy-bp(palm-medium) {
+                background-position: 0 70%;
+            }
         }
     }
 
@@ -107,6 +112,7 @@
 
             // Breakpoints
             @include mappy-bp(palm-medium) {
+                background-position: 0 50%;
                 background-size: rem(30) rem(30);
             }
         }
