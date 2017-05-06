@@ -6,16 +6,9 @@ This project adheres to [Semantic Versioning](http://semver.org/) and tries to f
 
 ## vNext - Unreleased
 
-- What you have planned
-
-## [v0.3.0](https://github.com/ericwbailey/empathy-prompts/compare/v0.1.0...v0.2.0) - Unreleased
-
-- What you're working on
-
-## [v0.2.0](https://github.com/ericwbailey/empathy-prompts/compare/v0.1.0...v0.2.0) - yyyy-mm-dd
-
-- Update 1
-- Update 2
+- Better sharing experience
+- Converting into a Progressive Web App
+- Performance tweaks
 
 ## v0.1.0 - yyyy-mm-dd
 
