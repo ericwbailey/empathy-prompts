@@ -75,6 +75,9 @@ The best way to submit Issues (problems with the project) and Pull Requests (add
 ### Links
 - [Microsoft's Inclusive Design Principles and Resources](https://www.microsoft.com/en-us/design/inclusive)
 - [Conscious Styleguide](http://consciousstyleguide.com/)
+- [Designing inclusively](https://medium.com/simple-human/designing-inclusively-5442ca2850ba)
+- [Empathy Maker](http://maya-benari.com/empathy-maker/)
+- [Writing Accessible Content](https://foxland.fi/writing-accessible-content/)
 
 
 ## Resetting technology
