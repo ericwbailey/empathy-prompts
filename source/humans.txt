@@ -3,29 +3,62 @@ humanstxt.org
 
 
 Empathy Prompts
-updateme
+http://empathyprompts.net/
 
 
 ## Team
-- Name
-	- Title
-	- Location
-	- Email
-	- Twitter
+- Eric Bailey
+  - Designer
+  - Somerville, MA
+  - eric.w.bailey@gmail.com
+  - @ericwbailey
 
 
 ## Thanks
-- Name
-	- URL or contact info
+- Wayne Elgin, for his patience and JavaScript help
+- My friends, family, and coworkers
 
 
 ## Site
 - Standards
-	- HTML5
-	- CSS3
-	- etc.
+  - HTML (https://www.w3.org/TR/html5/)
+  - CSS (https://www.w3.org/TR/2001/WD-css3-roadmap-20010523/)
+  - JavaScript (https://www.javascript.com/)
+  - Markdown (https://daringfireball.net/projects/markdown/)
+  - SVG (https://www.w3.org/TR/SVG/)
+
 - Components
-	- jQuery
-	- etc.
-- Software
-	- Software used for the development
+  - enchilada (https://github.com/ericwbailey/enchilada)
+  - Git (https://git-scm.com/)
+  - GitHub (https://github.com/)
+  - Gulp (http://gulpjs.com/)
+  - Sass (http://sass-lang.com/)
+  - Node.js (https://nodejs.org/en/)
+
+- Libraries
+  - Google Fonts (https://fonts.google.com/)
+  - jQuery (https://jquery.com/)
+  - Lodash (https://lodash.com/)
+  - loadCSS (https://github.com/filamentgroup/loadCSS)
+  - Mappy Breakpoints (https://github.com/zellwk/mappy-breakpoints)
+  - Noun Project (http://thenounproject.com/)
+
+- Browsers
+  - Chrome (https://www.google.com/chrome/)
+  - Edge (https://www.microsoft.com/en-us/windows/microsoft-edge)
+  - Firefox (https://www.mozilla.org/en-US/firefox/new/)
+  - Safari (http://www.apple.com/safari/)
+  - Opera (http://www.opera.com/)
+  - Vivaldi (https://vivaldi.com/)
+
+- Software and Services
+  - Atom (http://atom.io/)
+  - Cloudflare (https://www.cloudflare.com/)
+  - LightPaper (http://lightpaper.42squares.in/)
+  - MacOS (http://www.apple.com/macos/sierra/)
+  - NVDA (http://www.nvaccess.org/)
+  - Sketch (https://www.sketchapp.com/)
+  - SVGOMG (https://jakearchibald.github.io/svgomg/)
+  - Tower (https://www.git-tower.com/)
+  - VirtualBox (https://www.virtualbox.org/wiki/Downloads)
+  - Windows 10 (https://www.microsoft.com/en-us/windows)
