@@ -68,4 +68,9 @@
     h3 {
         page-break-after: avoid;
     }
+
+    .l-aside,
+    .l-nav {
+        @include content-hide(remove);
+    }
 }
