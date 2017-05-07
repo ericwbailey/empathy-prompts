@@ -59,6 +59,12 @@
         "details":   "You'll have to rely on your non-dominant hand.",
         "condition": "limb loss"
     },
+    "low-bandwidth": {
+        "type":      "visual",
+        "prompt":    "Slow down your connection",
+        "details":   "Use the Network tab in Google Chrome’s Developer Tools to <a rel='external noopener' href='https://css-tricks.com/throttling-the-network/'>throttle your network connection</a>.",
+        "condition": "low bandwidth"
+    },
     "multiple-sclerosis": {
         "type":      "motor",
         "prompt":    "Exercise strenuously",
@@ -104,7 +110,7 @@
     "radial-dysplasia": {
         "type":      "motor",
         "prompt":    "Wear mittens",
-        "details":   "Dig out that cozy winter hand gear and try playing a board game.",
+        "details":   "Put on that cozy winter gear and try playing a board game.",
         "condition": "Radial Dysplasia"
     },
     "tinnitus": {
