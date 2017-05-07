@@ -43,6 +43,43 @@ $theme-list:
             button {
                 color: c(t-text, #{$theme});
                 fill: c(t-text, #{$theme});
+
+                // States
+                &:focus {
+                    outline: border(thick) solid c(t-text, #{$theme});
+
+                    background-color: c(t-text, #{$theme});
+
+                    color: c(t-background, #{$theme});
+
+                    .icon {
+                        fill: c(t-background, #{$theme});
+                    }
+                }
+
+                &:hover {
+                    &:active,
+                    &:focus {
+                        outline: none;
+
+                        background-color: transparent;
+
+                        color: c(t-text, #{$theme});
+                    }
+                }
+            }
+        }
+
+        .l-aside,
+        .l-nav {
+            // States
+            &:hover {
+                &:active,
+                &:focus {
+                    .icon {
+                        fill: c(t-text, #{$theme});
+                    }
+                }
             }
         }
 

@@ -5,10 +5,14 @@
 
 
 @mixin content-underline($underline-color) {
-    background-image: linear-gradient(to bottom, transparent 75%, transparentize($underline-color, 0.5) 75%);
+    background-image: linear-gradient(to bottom, transparent 75%, transparentize($underline-color, 0.25) 25%);
 
     // States
     &:hover {
-        background-image: linear-gradient(to bottom, transparent 75%, transparentize($underline-color, 0.25) 25%);
+        background-image: linear-gradient(to bottom, transparent 75%, transparentize($underline-color, 0.75) 75%);
+    }
+
+    &:active {
+        background-image: linear-gradient(to bottom, transparent 75%, $underline-color 75%);
     }
 }
