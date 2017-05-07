@@ -16,7 +16,7 @@ gulp.task('build-sitemap', help.sitemap.build, function() {
         read: false
     })
     .pipe(sitemap({
-        siteUrl: 'https://updateme.com'
+        siteUrl: 'https://empathyprompts.net.com'
     }))
     .pipe(gulp.dest(paths.sitemap.build.dest));
 });
