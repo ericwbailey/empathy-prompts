@@ -26,7 +26,7 @@
     "dyslexia": {
         "type":      "cognitive",
         "prompt":    "Install a bookmarklet",
-        "details":   "Add this <a rel='external noopener' href='http://data.qz.com/2016/dyslexia/'>Dyslexia simulator bookmarklet</a> to your web browser. Turn it on before using the web.",
+        "details":   "Add this <a rel='external noopener' href='http://data.qz.com/2016/dyslexia/'>Dyslexia simulator bookmarklet</a> to your web browser. Turn it on before reading a news article.",
         "condition": "Dyslexia"
     },
     "english-as-a-second-language": {
@@ -37,7 +37,7 @@
     },
     "glare-contrast-loss": {
         "type":      "visual",
-        "prompt":    "Adjust your screen's brightness",
+        "prompt":    "Lower your screen's brightness",
         "details":   "Use either your monitor’s settings, or do this through your operating system (<a rel='external noopener' href='https://support.apple.com/kb/PH25444?locale=en_US'>Mac</a> or <a rel='external noopener' href='https://support.microsoft.com/en-us/instantanswers/dd4fa9d7-56bb-4cd4-a109-221bd8a32fca/change-screen-brightness'>Windows</a>).",
         "condition": "glare or contrast loss"
     },
