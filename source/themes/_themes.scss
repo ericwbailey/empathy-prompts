@@ -56,6 +56,12 @@ $theme-list:
                     .icon {
                         fill: c(t-background, #{$theme});
                     }
+
+                    &:hover {
+                        .icon {
+                            fill: c(t-text, #{$theme});
+                        }
+                    }
                 }
 
                 &:hover {
