@@ -1,37 +1,37 @@
 'use strict';
 
-var requestedPageId = getHash();
-// when we load
 
+// Capture page hash name
+var requestedPageId = getHash();
 
 
 $.get('./content.json').then(function (response) {
-  //generate the list of random cards
+  // Generates the list of random prompts from JSON response
   var pages = _.shuffle(_.keys(response));
 
-  //check for an existing hash?
+  // Checks to see if the hash already exists
   var requestedPageIndex = pages.indexOf(requestedPageId);
 
   window.addEventListener('hashchange', applyHash);
   window.addEventListener('load', applyHash);
 
-  // if hash is specified and in list
+  // If hash is specified and in list
   if (requestedPageId && requestedPageIndex >= 0) {
-    // move this hash to first array position
+    // Move this hash to first array position
     pages = _.union(_.pullAt(pages, requestedPageIndex), pages);
-    //load specified hash and apply stuff
+  // Load specified hash and apply stuff
   } else if (requestedPageId !== 'about') {
-    //load random hash
-    console.log('oops no hashes')
+    // Loads a random hash
+    // console.log('oops no hashes')
     window.location.href = '#' + pages[0];
   }
 
-  // eventListener
+  // Listens for "Show me another" button press and generates a new hash
   $('#show-me-another').on('click', function (e) {
     var currentPageId = getHash();
-    // jump to next card in list
+    // Jump to next prompt in list
     var currentPageIndex = pages.indexOf(currentPageId);
-    // if at end of list, jump to beginning
+    // If at end of list, jump to beginning
     window.location.href = '#' + _.get(pages, currentPageIndex + 1, pages[0]);
   });
 
@@ -39,12 +39,10 @@ $.get('./content.json').then(function (response) {
     var hash = getHash();
 
     _.each(pages, function (pageId) {
-      $('#' + pageId).attr('data-prompt', '');
+      $('#' + pageId).prop('hidden', true);
     });
-    //get the current page hash
-    //select the current page card
-    // modify the attributes
-    $('#' + hash).attr('data-prompt', 'is-visible');
+    // Gets the current page hash, selects the current page prompt, then modieifes its attributes
+    $('#' + hash).prop('hidden', false);
     $('body').removeClass().addClass('t-' + hash);
     $('#title-' + hash).attr('tabindex', '0');
     $('#title-' + hash).focus();
@@ -52,10 +50,14 @@ $.get('./content.json').then(function (response) {
   }
 });
 
+
+// Super basic sharing
 $('#share').on('click', function (e) {
   window.prompt('Copy this URL and paste it into the sharing site of your choice:', window.location);
 });
 
+
+// Grabs the current page hash from the URL, then removes `#`
 function getHash () {
   return window.location.hash.replace(/^\#/, '');
 }

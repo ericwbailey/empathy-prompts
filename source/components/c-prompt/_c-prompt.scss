@@ -10,15 +10,12 @@
 
 // Component Styling ----------------------------------------------------------
 .c-prompt {
+    display: block;
     margin-top: ms(3, rem);
 
     // States
-    &[data-prompt] {
+    &[hidden] {
         @include content-hide(remove);
-    }
-
-    &[data-prompt="is-visible"] {
-        display: block;
     }
 
     // Breakpoints
@@ -26,13 +23,9 @@
         @include component-size(100vh, 100vw, 0);
 
         align-items: center;
+        display: flex;
         justify-content: center;
         margin-top: 0;
-
-        // States
-        &[data-prompt="is-visible"] {
-            display: flex;
-        }
     }
 
     // Elements
@@ -113,7 +106,7 @@
             // Breakpoints
             @include mappy-bp(palm-medium) {
                 background-position: 0 50%;
-                background-size: rem(30) rem(30);
+                background-size: rem(29) rem(29);
             }
         }
     }
