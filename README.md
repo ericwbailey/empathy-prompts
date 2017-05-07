@@ -70,7 +70,7 @@ The best way to submit Issues (problems with the project) and Pull Requests (add
 ## Additional resources
 
 ### Prompt formats
-
+- [JSON](https://github.com/ericwbailey/empathy-prompts/blob/master/source/content.json)
 
 ### Links
 - [Microsoft's Inclusive Design Principles and Resources](https://www.microsoft.com/en-us/design/inclusive)
