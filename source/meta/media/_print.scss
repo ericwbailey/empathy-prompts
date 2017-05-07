@@ -69,8 +69,35 @@
         page-break-after: avoid;
     }
 
+    body {
+        height: auto;
+        min-height: unset;
+    }
+
     .l-aside,
     .l-nav {
         @include content-hide(remove);
+    }
+
+    .c-prompt {
+        @include component-size(auto, auto, ms(2, rem));
+        display: block;
+
+        &:not(:last-of-type) {
+            border-bottom: border(thinner) dotted #000;
+        }
+
+        // States
+        &[hidden] {
+            display: block;
+        }
+
+        &__content {
+            max-width: 100%;
+        }
+
+        &__example {
+            margin-bottom: ms(2, rem);
+        }
     }
 }
