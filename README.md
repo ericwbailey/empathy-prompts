@@ -108,6 +108,10 @@ Instructions on how to reset any of the technology a prompt makes you install:
 
 - Use the `Left ALT` + `Left Shift` + `Print Screen` keyboard shortcut
 
+### Low Bandwidth
+
+- Close the Chrome Developer Tools
+
 ### NoCoffee Chrome Extension
 
 - To disable:
