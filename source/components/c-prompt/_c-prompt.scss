@@ -64,9 +64,9 @@
         font-size: ms(1, em);
 
         a {
-            background-size: rem(20) rem(20);
+            background-size: rem(40) rem(40);
             background-origin: padding-box;
-            background-position: 0 68%;
+            background-position: 0 85%;
             background-repeat: repeat-x;
 
             color: currentColor;
@@ -74,7 +74,7 @@
 
             // Breakpoints
             @include mappy-bp(palm-medium) {
-                background-position: 0 70%;
+                background-position: 0 60%;
             }
         }
     }
@@ -95,9 +95,9 @@
         }
 
         a {
-            background-size: rem(24) rem(24);
+            background-size: rem(18) rem(18);
             background-origin: padding-box;
-            background-position: 0 45%;
+            background-position: 0 64%;
             background-repeat: repeat-x;
 
             color: currentColor;
@@ -105,8 +105,8 @@
 
             // Breakpoints
             @include mappy-bp(palm-medium) {
-                background-position: 0 50%;
-                background-size: rem(29) rem(29);
+                background-position: 0 61%;
+                background-size: rem(26) rem(26);
             }
         }
     }
