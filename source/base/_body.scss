@@ -28,4 +28,8 @@ body {
       @include mappy-bp(palm-medium) {
           font-size: 1em;
       }
+
+      @include mappy-bp(lap-large) {
+          font-size: 1.25em;
+      }
 }
