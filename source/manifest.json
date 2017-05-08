@@ -1,8 +1,8 @@
 {
     "short_name": "Empathy Prompts",
     "name": "Empathy Prompts",
-    "theme_color": "#F300C0",
-    "background_color": "#7BDBFF",
+    "theme_color": "#b500cf",
+    "background_color": "#ffe000",
 	"icons": [
 		{
 			"src": "static/favicons/android/android-chrome-36x36.png",
