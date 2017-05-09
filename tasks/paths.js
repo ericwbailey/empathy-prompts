@@ -144,7 +144,8 @@ module.exports = {
     },
     scripts: {
         vendor: {
-            shoestring: VENDOR_DIR + '/shoestring/dist/shoestring.js'
+            shoestring: VENDOR_DIR + '/shoestring/dist/shoestring.js',
+            konami: VENDOR_DIR + '/konami-code.js/konami.js'
         },
         source: SOURCE_DIR + '/**/*.js',
         watch: SOURCE_DIR + '/**/*.js',

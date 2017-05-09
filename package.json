@@ -61,6 +61,7 @@
     "htmlmin": "0.0.6",
     "jshint": "^2.9.2",
     "jshint-stylish": "^2.1.0",
+    "konami-code.js": "^1.4.7",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.2.2",
     "sassdoc": "^2.1.20",

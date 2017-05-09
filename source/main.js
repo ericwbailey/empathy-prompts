@@ -62,3 +62,9 @@ $('#share').on('click', function (e) {
 function getHash () {
   return window.location.hash.replace(/^\#/, '');
 }
+
+
+Konami(function disableDecoration () {
+  $('[hidden]').removeAttr('hidden');
+  $('body').attr('class', '');
+});
