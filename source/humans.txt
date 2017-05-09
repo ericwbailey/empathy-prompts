@@ -37,11 +37,11 @@ http://empathyprompts.net/
 
 - Libraries
   - Google Fonts (https://fonts.google.com/)
-  - jQuery (https://jquery.com/)
   - Lodash (https://lodash.com/)
   - loadCSS (https://github.com/filamentgroup/loadCSS)
   - Mappy Breakpoints (https://github.com/zellwk/mappy-breakpoints)
   - Noun Project (http://thenounproject.com/)
+  - Shoestring (https://github.com/filamentgroup/shoestring)
 
 - Browsers
   - Chrome (https://www.google.com/chrome/)
@@ -56,6 +56,7 @@ http://empathyprompts.net/
   - Cloudflare (https://www.cloudflare.com/)
   - LightPaper (http://lightpaper.42squares.in/)
   - MacOS (http://www.apple.com/macos/sierra/)
+  - NPM (http://npmjs.com/)
   - NVDA (http://www.nvaccess.org/)
   - Sketch (https://www.sketchapp.com/)
   - SVGOMG (https://jakearchibald.github.io/svgomg/)
