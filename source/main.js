@@ -5,7 +5,8 @@
 var requestedPageId = getHash();
 
 
-$.get('./content.json').then(function (response) {
+$.get('./content.json', function (response) {
+  response = JSON.parse(response);
   // Generates the list of random prompts from JSON response
   var pages = _.shuffle(_.keys(response));
 
@@ -43,10 +44,10 @@ $.get('./content.json').then(function (response) {
     });
     // Gets the current page hash, selects the current page prompt, then modieifes its attributes
     $('#' + hash).prop('hidden', false);
-    $('body').removeClass().addClass('t-' + hash);
+    $('body').attr('class', 't-' + hash);
     $('#title-' + hash).attr('tabindex', '0');
-    $('#title-' + hash).focus();
-    //$('title').text('Empathy Prompts: ' + hash); TOOD: use condition in content.json
+    $('#title-' + hash).triggerHandler('focus');
+    $('title').html('Empathy Prompts: ' + _.get(response, hash + '.condition', ''));
   }
 });
 
