@@ -35,7 +35,7 @@ These prompts are intended to help build empathy, not describe any one person's 
 
 You're on [GitHub](https://github.com/), a service that helps people build digital things. Projects are called "repositories", or "repos" for short. Repositories are collections of files managed by [Git](https://git-scm.com/), software that helps people code and collaborate.
 
-One file in this repo is called a Readme, which helps helps describe what the project is, why it was made, and how you can help out with it. GitHub takes the Readme for every repo and displays it on the project's homepage for easier discovery.
+One file in this repo is called a Readme, which helps helps describe what the project is, why it was made, and how you can help out with it. GitHub takes the Readme for every repo and displays it on the repo's homepage for easier discovery.
 
 To return to the prompt you were viewing, use your browser's back button.
 
@@ -73,6 +73,7 @@ The best way to submit Issues (problems with the project) and Pull Requests (add
 - [JSON](https://github.com/ericwbailey/empathy-prompts/blob/master/source/content.json)
 
 ### Links
+- [30 Days of Accessibility Testing](https://dojo.ministryoftesting.com/lessons/30-days-of-accessibility-testing)
 - [Microsoft's Inclusive Design Principles and Resources](https://www.microsoft.com/en-us/design/inclusive)
 - [Conscious Styleguide](http://consciousstyleguide.com/)
 - [Designing inclusively](https://medium.com/simple-human/designing-inclusively-5442ca2850ba)
