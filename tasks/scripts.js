@@ -18,7 +18,7 @@ var gulp        = require('gulp-help')(require('gulp')), // http://gulpjs.com/
 // Build
 gulp.task('build-scripts', help.scripts.build, function () {
     return gulp.src([
-        paths.scripts.vendor.jquery,
+        paths.scripts.vendor.shoestring,
         paths.scripts.source
     ])
         .pipe(changed(paths.scripts.build))

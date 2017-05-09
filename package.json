@@ -19,6 +19,13 @@
     "email": "eric.w.bailey@gmail.com"
   },
   "dependencies": {
+    "family.scss": "^1.0.8",
+    "jquery": "^3.1.0",
+    "mappy-breakpoints": "^0.2.3",
+    "normalize.css": "^4.2.0",
+    "shoestring": "^2.0.0"
+  },
+  "devDependencies": {
     "browser-sync": "^2.12.3",
     "critical": "^0.8.1",
     "del": "^2.2.0",
@@ -58,12 +65,6 @@
     "run-sequence": "^1.2.2",
     "sassdoc": "^2.1.20",
     "sassdoc-theme-flippant": "^0.1.0"
-  },
-  "devDependencies": {
-    "family.scss": "^1.0.8",
-    "jquery": "^3.1.0",
-    "mappy-breakpoints": "^0.2.3",
-    "normalize.css": "^4.2.0"
   },
   "scripts": {
     "help": "gulp help",

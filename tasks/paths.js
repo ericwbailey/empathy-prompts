@@ -144,7 +144,7 @@ module.exports = {
     },
     scripts: {
         vendor: {
-            jquery: VENDOR_DIR + '/jquery/dist/jquery.min.js'
+            shoestring: VENDOR_DIR + '/shoestring/dist/shoestring.js'
         },
         source: SOURCE_DIR + '/**/*.js',
         watch: SOURCE_DIR + '/**/*.js',
