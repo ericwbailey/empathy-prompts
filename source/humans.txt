@@ -16,6 +16,7 @@ http://empathyprompts.net/
 
 ## Thanks
 - Wayne Elgin, for his patience and JavaScript help
+- Scott Doxey, for Progressive Web App help
 - My friends, family, and coworkers
 
 
@@ -41,6 +42,7 @@ http://empathyprompts.net/
   - loadCSS (https://github.com/filamentgroup/loadCSS)
   - Mappy Breakpoints (https://github.com/zellwk/mappy-breakpoints)
   - Noun Project (http://thenounproject.com/)
+  - pwa-starter-kit (https://github.com/neogeek/pwa-starter-kit)
   - Shoestring (https://github.com/filamentgroup/shoestring)
 
 - Browsers

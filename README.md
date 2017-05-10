@@ -47,7 +47,7 @@ If you do not have a GitHub account, you can [contact me via email](https://gith
 
 ### Suggest a prompt
 
-To suggest a prompt, please [submit a GitHub Issue](https://github.com/ericwbailey/empathy-prompts/issues) and follow the Issue template's instructions. 
+To suggest a prompt, please [submit a GitHub Issue](https://github.com/ericwbailey/empathy-prompts/issues) and follow the Issue template's instructions.
 
 Please remember to:
 
@@ -162,4 +162,6 @@ Instructions on how to reset any of the technology a prompt makes you install:
 
 ---
 
-Special thanks to [Wayne Elgin](https://github.com/esjay) for JavaScript help! 🎉
+Thanks
+- [Wayne Elgin](https://github.com/esjay) for JavaScript help 🎉
+- [Scott Doxey](https://github.com/neogeek/) for Progressive Web App help! 🍟
