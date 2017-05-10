@@ -62,7 +62,8 @@ module.exports = {
             SOURCE_DIR + '/crossdomain.xml',
             SOURCE_DIR + '/humans.txt',
             SOURCE_DIR + '/manifest.json',
-            SOURCE_DIR + '/robots.txt'
+            SOURCE_DIR + '/robots.txt',
+            SOURCE_DIR + '/serviceWorker.js'
         ],
         build: BUILD_DIR,
         test: TEST_DIR,
