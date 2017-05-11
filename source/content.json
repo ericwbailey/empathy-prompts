@@ -53,6 +53,12 @@
         "details":   "Try and have a quiet conversation with a friend. A popular bar could also suffice.",
         "condition": "hearing loss"
     },
+    "injured-hands": {
+        "type":      "motor",
+        "prompt":    "Wear mittens",
+        "details":   "Put on that cozy winter gear and try playing <a rel='external noopener' href='http://www.kongregate.com/'>a browser-based game</a>.",
+        "condition": "injured hands"
+    },
     "limb-loss": {
         "type":      "motor",
         "prompt":    "Sit on your dominant hand",
@@ -106,12 +112,6 @@
         "prompt":    "Hold a pencil with your mouth",
         "details":   "Keep your hands behind your back and try to use your computer with the <a rel='external noopener' href='http://webaim.org/articles/motor/assistive#mouthstick'>mouth stick</a>.",
         "condition": "quadriplegia"
-    },
-    "radial-dysplasia": {
-        "type":      "motor",
-        "prompt":    "Wear mittens",
-        "details":   "Put on that cozy winter gear and try playing a board game.",
-        "condition": "Radial Dysplasia"
     },
     "tinnitus": {
         "type":      "auditory",
