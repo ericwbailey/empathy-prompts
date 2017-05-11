@@ -66,6 +66,6 @@ function getHash () {
 
 Konami(function disableDecoration () {
   $('[hidden]').removeAttr('hidden');
-  $('body').attr('class', '');
+  $('body').addClass('t-konami');
   $('#nav').remove();
 });
