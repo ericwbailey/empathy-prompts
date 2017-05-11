@@ -1,4 +1,10 @@
 {
+    "arthritis": {
+        "type":      "motor",
+        "prompt":    "Wear mittens",
+        "details":   "Put on that cozy winter gear and try playing <a rel='external noopener' href='http://www.kongregate.com/'>a browser-based game</a>.",
+        "condition": "Arthritis"
+    },
     "blindness": {
         "type":      "visual",
         "prompt":    "Close your eyes and use a screen reader",
@@ -52,12 +58,6 @@
         "prompt":    "Go to a loud coffee shop",
         "details":   "Try and have a quiet conversation with a friend. A popular bar could also suffice.",
         "condition": "hearing loss"
-    },
-    "injured-hands": {
-        "type":      "motor",
-        "prompt":    "Wear mittens",
-        "details":   "Put on that cozy winter gear and try playing <a rel='external noopener' href='http://www.kongregate.com/'>a browser-based game</a>.",
-        "condition": "injured hands"
     },
     "limb-loss": {
         "type":      "motor",
