@@ -8,7 +8,7 @@
     "blindness": {
         "type":      "visual",
         "prompt":    "Close your eyes and use a screen reader",
-        "details":   "Use either <a rel='external noopener' href='https://www.nvaccess.org/'><abbr title='NonVisual Desktop Access'>NVDA</abbr></a> for Windows or <a rel='external noopener' href='https://www.apple.com/accessibility/mac/vision/'>VoiceOver</a> for Mac to operate your computer.",
+        "details":   "Use either <a rel='external noopener' href='https://www.nvaccess.org/'><abbr title='NonVisual Desktop Access'>NVDA</abbr></a> for Windows or <a rel='external noopener' href='https://help.apple.com/voiceover/info/guide/10.12/'>VoiceOver</a> for Mac to operate your computer.",
         "condition": "blindness"
     },
     "cataracts": {
@@ -80,7 +80,7 @@
     "nearsightedness": {
         "type":      "visual",
         "prompt":    "Zoom out",
-        "details":   "Resize the text on your browser to make the text very small. Type <kbd><kbd><abbr title='Control'>Ctrl</abbr></kbd><kbd><span role='definition' aria-label='Minus'>−</span></kbd></kbd> on Windows or <kbd><kbd><abbr title='Command'>Cmd</abbr></kbd><kbd><span role='definition' aria-label='Minus'>−</span></kbd></kbd> on Mac until the text stops shrinking.",
+        "details":   "Resize the text on your browser to make it very small. Type <kbd><kbd><abbr title='Control'>Ctrl</abbr></kbd><kbd><span role='definition' aria-label='Minus'>−</span></kbd></kbd> on Windows or <kbd><kbd><abbr title='Command'>Cmd</abbr></kbd><kbd><span role='definition' aria-label='Minus'>−</span></kbd></kbd> on Mac until the text stops shrinking.",
         "condition": "Nearsightedness"
     },
     "nearsightedness-farsightedness": {
