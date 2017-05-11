@@ -50,7 +50,7 @@
     "glaucoma": {
         "type":      "visual",
         "prompt":    "Use a screen magnifier",
-        "details":   "Use <a rel='external noopener' href='https://support.apple.com/kb/PH25741?locale=en_US&viewlocale=en_US'>an operating system setting on Mac</a> or <a rel='external noopener' href='https://support.microsoft.com/en-us/help/11542/windows-use-magnifier'>a program on Windows</a> to show a magnified version of your screen.",
+        "details":   "Use <a rel='external noopener' href='https://support.apple.com/kb/PH25741'>an operating system setting on Mac</a> or <a rel='external noopener' href='https://support.microsoft.com/en-us/help/11542/windows-use-magnifier'>a program on Windows</a> to show a magnified version of your screen.",
         "condition": "Glaucoma"
     },
     "hearing-loss": {
