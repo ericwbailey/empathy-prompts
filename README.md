@@ -72,6 +72,7 @@ The best way to submit Issues (problems with the project) and Pull Requests (add
 
 ### Prompt formats
 - [JSON](https://github.com/ericwbailey/empathy-prompts/blob/master/source/content.json)
+- [PDF](http://empathyprompts.net/static/downloads/empathy-prompt-cards.pdf)
 
 ### Links
 - [30 Days of Accessibility Testing](https://dojo.ministryoftesting.com/lessons/30-days-of-accessibility-testing)
