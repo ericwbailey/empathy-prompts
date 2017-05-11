@@ -28,6 +28,7 @@ These prompts are intended to help build empathy, not describe any one person's 
     1. [Screen magnifiers](#screen-magnifiers)
     1. [Screen readers](#screen-readers)
     1. [Zoomed Browser](#zoomed-browser)
+1. [Thanks](#thanks)
 1. [License](#license)
 
 
@@ -74,10 +75,11 @@ The best way to submit Issues (problems with the project) and Pull Requests (add
 
 ### Links
 - [30 Days of Accessibility Testing](https://dojo.ministryoftesting.com/lessons/30-days-of-accessibility-testing)
-- [Microsoft's Inclusive Design Principles and Resources](https://www.microsoft.com/en-us/design/inclusive)
 - [Conscious Styleguide](http://consciousstyleguide.com/)
 - [Designing inclusively](https://medium.com/simple-human/designing-inclusively-5442ca2850ba)
 - [Empathy Maker](http://maya-benari.com/empathy-maker/)
+- [Highlights from Drop-in Time & Local Tech Interactions](https://storify.com/jessamyn/highlights-from-drop-in-time)
+- [Microsoft's Inclusive Design Principles and Resources](https://www.microsoft.com/en-us/design/inclusive)
 - [Writing Accessible Content](https://foxland.fi/writing-accessible-content/)
 
 
@@ -156,12 +158,12 @@ Instructions on how to reset any of the technology a prompt makes you install:
 - Use the `CTRL` + `0` keyboard shortcut to restore zoom to 100%
 
 
+## Thanks
+
+- [Wayne Elgin](https://github.com/esjay) and [Dan McLaughlin](https://github.com/danielsmc) for JavaScript help 🎉
+- [Scott Doxey](https://github.com/neogeek/) for Progressive Web App help! 🍟
+
+
 ## License
 
 [MIT License](https://raw.githubusercontent.com/ericwbailey/empathy-prompts/master/LICENSE).
-
----
-
-Thanks
-- [Wayne Elgin](https://github.com/esjay) for JavaScript help 🎉
-- [Scott Doxey](https://github.com/neogeek/) for Progressive Web App help! 🍟
