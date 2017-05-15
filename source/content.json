@@ -130,5 +130,11 @@
         "prompt":    "Try a simulation",
         "details":   "These <a rel='external noopener' href='http://aphasiacorner.com/aphasia-simulations/listening-impairments-simulation-1.html'>series of exercises</a> demonstrate the different ways aphasia can manifest.",
         "condition": "traumatic brain injury"
+    },
+    "vertigo": {
+        "type":      "motor",
+        "prompt":    "Spin around",
+        "details":   "Once you’ve gotten dizzy, try solving a crossword puzzle on your smartphone.",
+        "condition": "vertigo"
     }
 }
