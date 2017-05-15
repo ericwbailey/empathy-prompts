@@ -23,6 +23,12 @@
         "details":   "Add this <a rel='external noopener' href='https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl?hl=en-US'>low vision simulator extension</a> to Google Chrome. Turn it on before using the web.",
         "condition": "color blindness or a blocked visual field"
     },
+    "contrast-loss": {
+        "type":      "visual",
+        "prompt":    "Use a projector",
+        "details":   "See how your company’s website looks on a cheap projector.",
+        "condition": "contrast loss"
+    },
     "diminished-problem-solving-skills": {
         "type":      "cognitive",
         "prompt":    "Wake up early",
@@ -41,11 +47,11 @@
         "details":   "<a rel='external noopener' href='https://translate.google.com/'>Google offers a service</a> to help with this. The lack of accuracy is the point!",
         "condition": "English as a second language"
     },
-    "glare-contrast-loss": {
+    "glare": {
         "type":      "visual",
         "prompt":    "Lower your screen's brightness",
         "details":   "Use either your monitor’s settings, or do this through your operating system (<a rel='external noopener' href='https://support.apple.com/kb/PH25444?locale=en_US'>Mac</a> or <a rel='external noopener' href='https://support.microsoft.com/en-us/instantanswers/dd4fa9d7-56bb-4cd4-a109-221bd8a32fca/change-screen-brightness'>Windows</a>).",
-        "condition": "glare or contrast loss"
+        "condition": "glare"
     },
     "glaucoma": {
         "type":      "visual",
