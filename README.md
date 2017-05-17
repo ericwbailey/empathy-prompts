@@ -100,7 +100,9 @@ Instructions on how to reset any of the technology a prompt makes you install:
 - Select `Start` > `Settings` > `System` > `Display`, then drag the brightness slider to a level you find comfortable
 
 ### Dyslexia simulator bookmarklet
-- Right click on the bookmarklet on your browser's bookmarks bar and choose the `Delete` option.
+
+- Right click on the bookmarklet on your browser's bookmarks bar and choose the `Delete` option
+- You may also have to refresh the page 
 
 ### High Contrast Mode
 
@@ -115,16 +117,19 @@ Instructions on how to reset any of the technology a prompt makes you install:
 ### Low Bandwidth
 
 - Close the Chrome Developer Tools
+- You may also have to refresh the page 
 
 ### NoCoffee Chrome Extension
 
 - To disable:
     1. Click on the extension's icon
     1. Choose the `Reset all` button
+    1. You may also have to refresh the page 
 - To remove:
     1. Open Chrome's Preferences
     1. On the sidebar, select `Extensions`
     1. Find the NoCoffee extension and either uncheck `Enabled` to disable the extension, or select the trash can icon to delete it
+    1. You may also have to refresh the page 
 
 ### Screen magnifiers
 
