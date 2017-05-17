@@ -1,0 +1,140 @@
+{
+    "arthritis": {
+        "type":      "motor",
+        "prompt":    "Wear mittens",
+        "details":   "Put on that cozy winter gear and try playing <a rel='external noopener' href='http://www.kongregate.com/'>a browser-based game</a>.",
+        "condition": "Arthritis"
+    },
+    "blindness": {
+        "type":      "visual",
+        "prompt":    "Close your eyes and use a screen reader",
+        "details":   "Use either <a rel='external noopener' href='https://www.nvaccess.org/'><abbr title='NonVisual Desktop Access'>NVDA</abbr></a> for Windows or <a rel='external noopener' href='https://help.apple.com/voiceover/info/guide/10.12/'>VoiceOver</a> for Mac to operate your computer.",
+        "condition": "blindness"
+    },
+    "cataracts": {
+        "type":      "visual",
+        "prompt":    "Enable high contrast mode",
+        "details":   "Use this operating system setting on <a rel='external noopener' href='https://www.techwalla.com/articles/how-to-change-the-contrast-on-a-macbook'>Mac</a> or <a rel='external noopener' href='https://support.microsoft.com/en-us/help/13862/windows-use-high-contrast-mode'>Windows</a> to enable a special theme.",
+        "condition": "cataracts"
+    },
+    "color-blindness-blocked-visual-field": {
+        "type":      "visual",
+        "prompt":    "Use NoCoffee",
+        "details":   "Add this <a rel='external noopener' href='https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl?hl=en-US'>low vision simulator extension</a> to Google Chrome. Turn it on before using the web.",
+        "condition": "color blindness or a blocked visual field"
+    },
+    "contrast-loss": {
+        "type":      "visual",
+        "prompt":    "Use a projector",
+        "details":   "See how your company’s website looks on a cheap projector.",
+        "condition": "contrast loss"
+    },
+    "diminished-problem-solving-skills": {
+        "type":      "cognitive",
+        "prompt":    "Wake up early",
+        "details":   "Set an alarm for 2:45&#8239;AM and immediately try to book a flight for that vacation you’ve been dreaming about.",
+        "condition": "diminished problem-solving skills"
+    },
+    "dyslexia": {
+        "type":      "cognitive",
+        "prompt":    "Install a bookmarklet",
+        "details":   "Add this <a rel='external noopener' href='http://data.qz.com/2016/dyslexia/'>Dyslexia simulator bookmarklet</a> to your web browser. Turn it on before reading a news article.",
+        "condition": "Dyslexia"
+    },
+    "english-as-a-second-language": {
+        "type":      "cognitive",
+        "prompt":    "Run your documents through a translator",
+        "details":   "<a rel='external noopener' href='https://translate.google.com/'>Google offers a service</a> to help with this. The lack of accuracy is the point!",
+        "condition": "English as a second language"
+    },
+    "glare": {
+        "type":      "visual",
+        "prompt":    "Lower your screen's brightness",
+        "details":   "Use either your monitor’s settings, or do this through your operating system (<a rel='external noopener' href='https://support.apple.com/kb/PH25444?locale=en_US'>Mac</a> or <a rel='external noopener' href='https://support.microsoft.com/en-us/instantanswers/dd4fa9d7-56bb-4cd4-a109-221bd8a32fca/change-screen-brightness'>Windows</a>).",
+        "condition": "glare"
+    },
+    "glaucoma": {
+        "type":      "visual",
+        "prompt":    "Use a screen magnifier",
+        "details":   "Use <a rel='external noopener' href='https://support.apple.com/kb/PH25741'>an operating system setting on Mac</a> or <a rel='external noopener' href='https://support.microsoft.com/en-us/help/11542/windows-use-magnifier'>a program on Windows</a> to show a magnified version of your screen.",
+        "condition": "Glaucoma"
+    },
+    "hearing-loss": {
+        "type":      "auditory",
+        "prompt":    "Go to a loud coffee shop",
+        "details":   "Try and have a quiet conversation with a friend. A popular bar could also suffice.",
+        "condition": "hearing loss"
+    },
+    "limb-loss": {
+        "type":      "motor",
+        "prompt":    "Sit on your dominant hand",
+        "details":   "You'll have to rely on your non-dominant hand.",
+        "condition": "limb loss"
+    },
+    "low-bandwidth": {
+        "type":      "visual",
+        "prompt":    "Slow down your connection",
+        "details":   "Use the Network tab in Google Chrome’s Developer Tools to <a rel='external noopener' href='https://css-tricks.com/throttling-the-network/'>throttle your network connection</a>.",
+        "condition": "low bandwidth"
+    },
+    "multiple-sclerosis": {
+        "type":      "motor",
+        "prompt":    "Exercise strenuously",
+        "details":   "Try <a rel='external noopener' href='http://www.self.com/story/total-body-workout-for-beginners'>a full body workout</a>, then try and prepare dinner from scratch. Remember to stretch and hydrate!",
+        "condition": "Multiple Sclerosis"
+    },
+    "nearsightedness": {
+        "type":      "visual",
+        "prompt":    "Zoom out",
+        "details":   "Resize the text on your browser to make it very small. Type <kbd><kbd><abbr title='Control'>Ctrl</abbr></kbd><kbd><span role='definition' aria-label='Minus'>−</span></kbd></kbd> on Windows or <kbd><kbd><abbr title='Command'>Cmd</abbr></kbd><kbd><span role='definition' aria-label='Minus'>−</span></kbd></kbd> on Mac until the text stops shrinking.",
+        "condition": "Nearsightedness"
+    },
+    "nearsightedness-farsightedness": {
+        "type":      "visual",
+        "prompt":    "Borrow a pair of glasses",
+        "details":   "The prescription strength doesn’t matter. If you wear glasses already, take them off.",
+        "condition": "near or farsightedness"
+    },
+    "neural-hearing-loss": {
+        "type":      "auditory",
+        "prompt":    "Mute your speakers",
+        "details":   "Then try and <a rel='external noopener' href='http://topdocumentaryfilms.com/'>watch a documentary</a>.",
+        "condition": "neural hearing loss"
+    },
+    "oral-learning-disability": {
+        "type":      "cognitive",
+        "prompt":    "Speak in Pig Latin",
+        "details":   "Familiarize yourself with <a rel='external noopener' href='https://en.m.wikipedia.org/wiki/Pig_Latin#Rules'>the rules</a>, then exclusively use it to communicate.",
+        "condition": "oral learning disability"
+    },
+    "parkinsons-disease": {
+        "type":      "motor",
+        "prompt":    "Unplug your mouse",
+        "details":   "Navigate your computer using the keyboard. Using the trackpad is cheating!",
+        "condition": "Parkinson’s disease"
+    },
+    "quadriplegia": {
+        "type":      "motor",
+        "prompt":    "Hold a pencil with your mouth",
+        "details":   "Keep your hands behind your back and try to use your computer with the <a rel='external noopener' href='http://webaim.org/articles/motor/assistive#mouthstick'>mouth stick</a>.",
+        "condition": "quadriplegia"
+    },
+    "tinnitus": {
+        "type":      "auditory",
+        "prompt":    "Listen to this video",
+        "details":   "Put on some earbuds and <a rel='external noopener' href='https://www.youtube.com/watch?v=0HIfqyHbKgY'>play this video</a>. Then try and have a conversation with a coworker.",
+        "condition": "Tinnitus"
+    },
+    "traumatic-brain-injury": {
+        "type":      "cognitive",
+        "prompt":    "Try a simulation",
+        "details":   "These <a rel='external noopener' href='http://aphasiacorner.com/aphasia-simulations/listening-impairments-simulation-1.html'>series of exercises</a> demonstrate the different ways aphasia can manifest.",
+        "condition": "traumatic brain injury"
+    },
+    "vertigo": {
+        "type":      "motor",
+        "prompt":    "Spin around",
+        "details":   "Once you’ve gotten dizzy, try solving a crossword puzzle on your smartphone.",
+        "condition": "vertigo"
+    }
+}
