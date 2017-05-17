@@ -27,8 +27,8 @@ $.get('./content.json', function (response) {
     window.location.href = '#' + pages[0];
   }
 
-  // Listens for "Show me another" button press and generates a new hash
-  $('#show-me-another').on('click', function (e) {
+  // Listens for "Show another" button press and generates a new hash
+  $('#show-another').on('click', function (e) {
     var currentPageId = getHash();
     // Jump to next prompt in list
     var currentPageIndex = pages.indexOf(currentPageId);
