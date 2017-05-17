@@ -11,7 +11,7 @@
 // Layout Styling -------------------------------------------------------------
 // SEE: `_l-aside.scss`
 .l-nav {
-    margin: ms(2, rem) ms(0.75, rem) ms(1, rem) ms(0.75, rem);
+    margin: 0 ms(0.75, rem) ms(1, rem) ms(0.75, rem);
 
     // Breakpoints
     @include mappy-bp(palm-medium) {

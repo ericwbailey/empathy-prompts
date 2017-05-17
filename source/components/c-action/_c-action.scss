@@ -20,6 +20,7 @@
     border: none;
 
     font-weight: $font-weight-medium;
+    font-size: ms(1, em);
     text-align: left;
     text-decoration: none;
 
@@ -54,13 +55,6 @@
     }
 
     &--random {
-        font-size: ms(1, em);
-
-        // Breakpoints
-        @include mappy-bp(palm-medium) {
-            font-size: ms(0.7, em);
-        }
-
         .icon {
             top: rem(5);
 
@@ -72,14 +66,7 @@
     }
 
     &--share {
-        margin-right: ms(5, rem);
-
-        font-size: ms(1, em);
-
-        // Breakpoints
-        @include mappy-bp(palm-medium) {
-            font-size: ms(0.7, em);
-        }
+        margin-right: ms(4, rem);
 
         .icon {
             top: rem(4);

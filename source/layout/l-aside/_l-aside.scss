@@ -11,14 +11,15 @@
 // Layout Styling -------------------------------------------------------------
 // SEE: // SEE: `_l-nav.scss`
 .l-aside {
-    position: absolute;
-      top: ms(0.5, rem);
-      right: ms(0.75, rem);
+    margin: ms(2, rem) ms(0.75, rem) ms(0.75, rem) ms(0.75, rem);
 
     // Breakpoints
     @include mappy-bp(palm-medium) {
-        top: ms(1, rem);
-        right: ms(1, rem);
+        margin: 0;
+
+        position: absolute;
+          top: ms(1, rem);
+          right: ms(1, rem);
     }
 
     @include mappy-bp(palm-large) {
