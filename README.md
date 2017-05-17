@@ -1,4 +1,4 @@
-# [Empathy Prompts](http://empathyprompts.net/)
+# [Empathy Prompts](https://empathyprompts.net/)
 
 Prompts to consider when making things for others to use.
 
@@ -72,7 +72,7 @@ The best way to submit Issues (problems with the project) and Pull Requests (add
 
 ### Prompt formats
 - [JSON](https://github.com/ericwbailey/empathy-prompts/blob/master/source/content.json)
-- [PDF](http://empathyprompts.net/static/downloads/empathy-prompt-cards.pdf)
+- [PDF](https://empathyprompts.net/static/downloads/empathy-prompt-cards.pdf)
 
 ### Links
 - [30 Days of Accessibility Testing](https://dojo.ministryoftesting.com/lessons/30-days-of-accessibility-testing)
@@ -102,7 +102,7 @@ Instructions on how to reset any of the technology a prompt makes you install:
 ### Dyslexia simulator bookmarklet
 
 - Right click on the bookmarklet on your browser's bookmarks bar and choose the `Delete` option
-- You may also have to refresh the page 
+- You may also have to refresh the page
 
 ### High Contrast Mode
 
@@ -117,19 +117,19 @@ Instructions on how to reset any of the technology a prompt makes you install:
 ### Low Bandwidth
 
 - Close the Chrome Developer Tools
-- You may also have to refresh the page 
+- You may also have to refresh the page
 
 ### NoCoffee Chrome Extension
 
 - To disable:
     1. Click on the extension's icon
     1. Choose the `Reset all` button
-    1. You may also have to refresh the page 
+    1. You may also have to refresh the page
 - To remove:
     1. Open Chrome's Preferences
     1. On the sidebar, select `Extensions`
     1. Find the NoCoffee extension and either uncheck `Enabled` to disable the extension, or select the trash can icon to delete it
-    1. You may also have to refresh the page 
+    1. You may also have to refresh the page
 
 ### Screen magnifiers
 
