@@ -3,7 +3,7 @@ humanstxt.org
 
 
 Empathy Prompts
-http://empathyprompts.net/
+https://empathyprompts.net/
 
 
 ## Team
