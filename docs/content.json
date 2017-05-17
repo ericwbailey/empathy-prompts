@@ -115,8 +115,8 @@
     },
     "quadriplegia": {
         "type":      "motor",
-        "prompt":    "Hold a pencil with your mouth",
-        "details":   "Keep your hands behind your back and try to use your computer with the <a rel='external noopener' href='http://webaim.org/articles/motor/assistive#mouthstick'>mouth stick</a>.",
+        "prompt":    "Hold a Sharpie with your mouth",
+        "details":   "Keep your hands behind your back and try to use your computer with the improvised <a rel='external noopener' href='http://webaim.org/articles/motor/assistive#mouthstick'>mouth stick</a>.",
         "condition": "quadriplegia"
     },
     "tinnitus": {
