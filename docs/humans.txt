@@ -1,0 +1,67 @@
+The Humans Responsible & Colophon
+humanstxt.org
+
+
+Empathy Prompts
+https://empathyprompts.net/
+
+
+## Team
+- Eric Bailey
+  - Designer
+  - Somerville, MA
+  - eric.w.bailey@gmail.com
+  - @ericwbailey
+
+
+## Thanks
+- Wayne Elgin, for his patience and JavaScript help
+- Scott Doxey, for Progressive Web App help
+- My friends, family, and coworkers
+
+
+## Site
+- Standards
+  - HTML (https://www.w3.org/TR/html5/)
+  - CSS (https://www.w3.org/TR/2001/WD-css3-roadmap-20010523/)
+  - JavaScript (https://www.javascript.com/)
+  - Markdown (https://daringfireball.net/projects/markdown/)
+  - SVG (https://www.w3.org/TR/SVG/)
+
+- Components
+  - enchilada (https://github.com/ericwbailey/enchilada)
+  - Git (https://git-scm.com/)
+  - GitHub (https://github.com/)
+  - Gulp (http://gulpjs.com/)
+  - Sass (http://sass-lang.com/)
+  - Node.js (https://nodejs.org/en/)
+
+- Libraries
+  - Google Fonts (https://fonts.google.com/)
+  - Lodash (https://lodash.com/)
+  - loadCSS (https://github.com/filamentgroup/loadCSS)
+  - Mappy Breakpoints (https://github.com/zellwk/mappy-breakpoints)
+  - Noun Project (http://thenounproject.com/)
+  - pwa-starter-kit (https://github.com/neogeek/pwa-starter-kit)
+  - Shoestring (https://github.com/filamentgroup/shoestring)
+
+- Browsers
+  - Chrome (https://www.google.com/chrome/)
+  - Edge (https://www.microsoft.com/en-us/windows/microsoft-edge)
+  - Firefox (https://www.mozilla.org/en-US/firefox/new/)
+  - Safari (http://www.apple.com/safari/)
+  - Opera (http://www.opera.com/)
+  - Vivaldi (https://vivaldi.com/)
+
+- Software and Services
+  - Atom (http://atom.io/)
+  - Cloudflare (https://www.cloudflare.com/)
+  - LightPaper (http://lightpaper.42squares.in/)
+  - MacOS (http://www.apple.com/macos/sierra/)
+  - NPM (http://npmjs.com/)
+  - NVDA (http://www.nvaccess.org/)
+  - Sketch (https://www.sketchapp.com/)
+  - SVGOMG (https://jakearchibald.github.io/svgomg/)
+  - Tower (https://www.git-tower.com/)
+  - VirtualBox (https://www.virtualbox.org/wiki/Downloads)
+  - Windows 10 (https://www.microsoft.com/en-us/windows)
