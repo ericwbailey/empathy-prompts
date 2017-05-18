@@ -46,9 +46,8 @@ $.get('./content.json', function (response) {
     $('title').html('Empathy Prompts: ' + _.get(response, hash + '.condition', ''));
     $('#' + hash).prop('hidden', false);
     $('body').attr('class', 't-' + hash);
-    $('#title-' + hash).attr('tabindex', '0');
-    $('#title-' + hash).triggerHandler('focus');
-    window.scrollTo(0, 0);
+    $('#title-' + hash).attr('tabindex', '0').get(0).focus();
+    // window.scrollTo(0, 0);
   }
 });
 
