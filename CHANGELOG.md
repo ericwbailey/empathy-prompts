@@ -7,9 +7,9 @@ This project adheres to [Semantic Versioning](http://semver.org/) and tries to f
 ## vNext - Unreleased
 
 - Better sharing experience
-- Converting into a Progressive Web App
-- Performance tweaks
+- Progressive Web App optimization
+- Better initial load experience 
 
-## v0.1.0 - yyyy-mm-dd
+## v0.1.0 - 2017-05-18
 
-- Initial release.
+- Initial release. Happy [Global Accessibility Awareness Day](http://globalaccessibilityawarenessday.org/)!
