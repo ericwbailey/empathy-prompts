@@ -42,12 +42,13 @@ $.get('./content.json', function (response) {
     _.each(pages, function (pageId) {
       $('#' + pageId).prop('hidden', true);
     });
-    // Gets the current page hash, selects the current page prompt, then modieifes its attributes
+    // Gets the current page hash, selects the current page prompt, then modifies its attributes
+    $('title').html('Empathy Prompts: ' + _.get(response, hash + '.condition', ''));
     $('#' + hash).prop('hidden', false);
     $('body').attr('class', 't-' + hash);
     $('#title-' + hash).attr('tabindex', '0');
     $('#title-' + hash).triggerHandler('focus');
-    $('title').html('Empathy Prompts: ' + _.get(response, hash + '.condition', ''));
+    window.scrollTo(0, 0);
   }
 });
 

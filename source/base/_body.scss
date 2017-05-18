@@ -5,8 +5,8 @@
 
 // [1] Ensure the page always fills at least the entire height of the viewport
 body {
-    height: 100vh;
-    min-height: 100%; // [1]
+    // height: 100vh;
+    // min-height: 100%; // [1]
     overflow-x: hidden;
 
     font-size: 0.65em;
