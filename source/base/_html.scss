@@ -17,10 +17,10 @@ html {
 
     margin: 0;
     min-height: 100%; // [1]
-    overflow-y: scroll; // [2]
+    // overflow-y: scroll; // [2]
     padding: 0;
 
-    background-color: c(base, background); // Set on `<html>` to keep the background color present if the browser bounces at a scrolling boundary
+    // background-color: c(base, background); // Set on `<html>` to keep the background color present if the browser bounces at a scrolling boundary
 
     color: c(base, type);
     direction: $global-type-direction;
