@@ -134,7 +134,7 @@
     "vertigo": {
         "type":      "motor",
         "prompt":    "Spin around",
-        "details":   "Try solving a crossword puzzle on your smartphone once you’re feeling dizzy.",
+        "details":   "Once you’ve gotten dizzy, try solving a crossword puzzle on your smartphone.",
         "condition": "vertigo"
     }
 }
