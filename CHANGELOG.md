@@ -8,7 +8,13 @@ This project adheres to [Semantic Versioning](http://semver.org/) and tries to f
 
 - Better sharing experience
 - Progressive Web App optimization
-- Better initial load experience 
+- Better initial load experience
+
+## v0.1.1 - 2017-05-21
+
+- Toned down the vibrancy on some prompts' color combinations
+- Konami theme now works
+- Copy tweaks
 
 ## v0.1.0 - 2017-05-18
 
