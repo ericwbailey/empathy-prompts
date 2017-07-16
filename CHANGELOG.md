@@ -10,11 +10,18 @@ This project adheres to [Semantic Versioning](http://semver.org/) and tries to f
 - Progressive Web App optimization
 - Better initial load experience
 
+
+## v0.1.2 - 2017-07-16
+
+- Removed redundant role declarations
+
+
 ## v0.1.1 - 2017-05-21
 
 - Toned down the vibrancy on some prompts' color combinations
 - Konami theme now works
 - Copy tweaks
+
 
 ## v0.1.0 - 2017-05-18
 
