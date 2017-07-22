@@ -11,6 +11,12 @@ This project adheres to [Semantic Versioning](http://semver.org/) and tries to f
 - Better initial load experience
 
 
+## v0.1.3 - 2017-07-22
+
+- More spacing between prompts on mobile when the Konami code is applied
+- Fixed focus state treatment for the "What is this?" link at mobile
+
+
 ## v0.1.2 - 2017-07-16
 
 - Removed redundant role declarations
