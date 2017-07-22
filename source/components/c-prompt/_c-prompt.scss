@@ -18,6 +18,17 @@
         @include content-hide(remove);
     }
 
+    .t-konami & {
+        @include after-first(1) {
+            margin-top: ms(6, rem);
+        }
+
+        // Breakpoints
+        @include mappy-bp(palm-medium) {
+            margin-top: 0;
+        }
+    }
+
     // Breakpoints
     @include mappy-bp(palm-medium) {
         @include component-size(100vh, 100vw, 0);
