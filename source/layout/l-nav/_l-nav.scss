@@ -15,6 +15,7 @@
 
     // Breakpoints
     @include mappy-bp(palm-medium) {
+        display: flex;
         margin: 0;
         position: absolute;
           bottom: ms(1, rem);

@@ -33,16 +33,23 @@
 
     // Breakpoints
     @include mappy-bp(palm-medium) {
-        display: inline-block;
+        display: flex;
         margin-bottom: 0;
 
         font-size: ms(0.7, em);
     }
 
+    &__text {
+        // Breakpoints
+        @include mappy-bp(palm-medium) {
+            order: 1;
+        }
+    }
+
     .icon {
         @include component-size(ms(0.75, rem), ms(0.75, rem), null);
 
-        margin-left: rem(5);
+        margin-right: rem(12);
         position: relative;
           left: 0; // Initial position to transition
 
@@ -51,6 +58,10 @@
         // Breakpoints
         @include mappy-bp(palm-medium) {
             @include component-size(ms(0.85, rem), ms(0.85, rem), null);
+
+            margin-left: rem(10);
+
+            order: 2;
         }
     }
 
@@ -60,7 +71,7 @@
 
             // Breakpoints
             @include mappy-bp(palm-medium) {
-                top: rem(7);
+                top: rem(2);
             }
         }
     }
@@ -69,24 +80,23 @@
         margin-right: ms(4, rem);
 
         .icon {
-            top: rem(4);
+            top: rem(5);
 
             // Breakpoints
             @include mappy-bp(palm-medium) {
-                top: rem(7);
+                top: rem(2);
             }
         }
     }
 
     &--what-is-this {
-        display: inline;
-
         .icon {
-            top: rem(4);
+            top: rem(5);
 
             // Breakpoints
             @include mappy-bp(palm-medium) {
-                top: rem(5);
+                display: flex;
+                top: rem(1);
             }
         }
     }
