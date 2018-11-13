@@ -7,7 +7,7 @@ This project is geared towards anyone involved with making digital products. It 
 - People who are not necessarily involved in the day-to-day part of the process, but who help shape things like budget, timeline, and scope, and
 - People who work every day to help to give these products shape and form
 
-These prompts are intended to help build empathy, not describe any one person's experience. These prompts are <em>not</em> intended to tokenize the experience of the individuals experiencing these conditions.
+These prompts are intended to help build empathy, not describe any one person's experience. These prompts are <em>not</em> intended to tokenize the experience of the individuals experiencing these conditions. For further reading about disability simulations, please refer to [Job van Achterberg](https://twitter.com/detonite)'s excellent presentation, [The Imitation Game](https://noti.st/jkva/tF5o8J/slides).
 
 
 ## Table of Contents
