@@ -53,8 +53,20 @@ $.get('./content.json', function (response) {
 
 
 // Super basic sharing
-$('#share').on('click', function (e) {
-  window.prompt('Copy this URL and paste it into the sharing site of your choice:', window.location);
+$('#share').on('click', async function (e) {
+  var title = window.title;
+  var text = 'Copy this URL and paste it into the sharing site of your choice:';
+  var url = window.location;
+
+  if (navigator.share) {
+    try {
+      await navigator.share({ title, url });
+    } catch (err) {
+      window.prompt(text, url);
+    }
+  } else {
+    window.prompt(text, url);
+  }
 });
 
 
