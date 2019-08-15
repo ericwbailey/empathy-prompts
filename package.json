@@ -100,5 +100,7 @@
     "browsersync-build": "gulp browsersync-build",
     "browsersync-test": "gulp browsersync-test"
   },
-  "engines" : { "node" : ">=0.10.3 <=11" }
+  "engines": {
+    "node": ">=0.10.3 <=11"
+  }
 }
