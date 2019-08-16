@@ -35,7 +35,7 @@
     "gulp-cssnano": "^2.1.2",
     "gulp-entity-convert": "0.0.2",
     "gulp-filesize": "0.0.6",
-    "gulp-git": "^1.11.3",
+    "gulp-git": "2.9.0",
     "gulp-gm": "0.0.8",
     "gulp-hb": "^5.1.4",
     "gulp-help": "^1.6.1",
@@ -61,7 +61,7 @@
     "jshint": "^2.9.2",
     "jshint-stylish": "^2.1.0",
     "konami-code.js": "^1.4.7",
-    "require-dir": "^0.3.0",
+    "require-dir": "1.2.0",
     "run-sequence": "^1.2.2",
     "sassdoc": "^2.1.20",
     "sassdoc-theme-flippant": "^0.1.0"
@@ -99,5 +99,8 @@
     "clean-screenshots": "gulp clean-screenshots",
     "browsersync-build": "gulp browsersync-build",
     "browsersync-test": "gulp browsersync-test"
+  },
+  "engines": {
+    "node": ">=0.10.3 <=11"
   }
 }
