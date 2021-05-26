@@ -24,7 +24,6 @@ These prompts are intended to help build empathy, not describe any one person's 
     1. [Brightness](#brightness)
     1. [Dyslexia simulator bookmarklet](#dyslexia-simulator-bookmarklet)
     1. [High Contrast Mode](#high-contrast-mode)
-    1. [NoCoffee Chrome Extension](#nocoffee-chrome-extension)
     1. [Screen magnifiers](#screen-magnifiers)
     1. [Screen readers](#screen-readers)
     1. [Zoomed Browser](#zoomed-browser)
@@ -119,12 +118,8 @@ Instructions on how to reset any of the technology a prompt makes you install:
 - Close the Chrome Developer Tools
 - You may also have to refresh the page
 
-### NoCoffee Chrome Extension
+### NoCoffee Chrome Extension - Has Malware Please Remove
 
-- To disable:
-    1. Click on the extension's icon
-    1. Choose the `Reset all` button
-    1. You may also have to refresh the page
 - To remove:
     1. Open Chrome's Preferences
     1. On the sidebar, select `Extensions`
